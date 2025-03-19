@@ -49,13 +49,14 @@ class ChatResponse(BaseModel):
     retrieval_sources: Optional[List[Dict[str, Any]]] = None
     
 # Constants
-DEFAULT_MODEL_PATH = "meta-llama/Meta-Llama-3-8B"  # Can be changed to local path if needed
+DEFAULT_MODEL_PATH = "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B"  # Long live DeepSeek!
 MAX_GPU_MEMORY = "13GiB"  # Adjust based on your GPU capacity
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 # Load model
 def load_model():
-    logger.info(f"Loading LLaMA-3-8B model on {DEVICE}...")
+    logger.info(f"Loading DeepSeek-R1 model on {DEVICE}...")
+    
     start_time = time.time()
     
     try:
@@ -64,17 +65,26 @@ def load_model():
             model = AutoModelForCausalLM.from_pretrained(
                 DEFAULT_MODEL_PATH,
                 torch_dtype=torch.float16,  # Use half precision for efficiency
-                # Load in 4-bit if memory is limited
-                # load_in_4bit=True,
+                load_in_4bit=True,  # For 4-bit quantization
                 device_map="auto",
+                trust_remote_code=True,
+                use_auth_token=None,
+                token=None,
             )
         else:
             model = AutoModelForCausalLM.from_pretrained(
                 DEFAULT_MODEL_PATH,
                 device_map="auto",
+                trust_remote_code=True,
+                use_auth_token=None,
+                token=None,
             )
             
-        tokenizer = AutoTokenizer.from_pretrained(DEFAULT_MODEL_PATH)
+        tokenizer = AutoTokenizer.from_pretrained(
+            DEFAULT_MODEL_PATH,
+            use_auth_token=None,
+            token=None,
+        )
         
         # Ensure padding token is set
         if tokenizer.pad_token is None:
@@ -90,31 +100,22 @@ def load_model():
 
 # Format messages for LLaMA-3 input
 def format_messages(messages):
-    formatted_text = ""
-    for message in messages:
-        role = message.get("role", "")
-        content = message.get("content", "")
-        
-        if role == "system":
-            formatted_text += f"<|system|>\n{content}</s>\n"
-        elif role == "user":
-            formatted_text += f"<|user|>\n{content}</s>\n"
-        elif role == "assistant":
-            formatted_text += f"<|assistant|>\n{content}</s>\n"
-    
-    # Add final assistant prefix for the model to continue
-    formatted_text += "<|assistant|>\n"
-    
-    return formatted_text
+    # DeepSeek-R1 can use the built-in chat template
+    # This is simpler than manually formatting
+    return messages  # Return messages directly, tokenizer will handle formatting
 
 # Generate response
 def generate_response(messages, model, tokenizer, max_length=2048, temperature=0.7, top_p=0.9):
     try:
-        # Format messages
-        prompt = format_messages(messages)
+        # Format using built-in chat template
+        chat_template = tokenizer.apply_chat_template(
+            messages, 
+            tokenize=False, 
+            add_generation_prompt=True
+        )
         
         # Tokenize input
-        inputs = tokenizer(prompt, return_tensors="pt").to(DEVICE)
+        inputs = tokenizer(chat_template, return_tensors="pt").to(DEVICE)
         
         # Set generation parameters
         generation_kwargs = {
@@ -136,19 +137,27 @@ def generate_response(messages, model, tokenizer, max_length=2048, temperature=0
         # Decode output
         output = tokenizer.decode(generation_output[0], skip_special_tokens=False)
         
+        # Add logging for raw output
+        logger.info(f"Raw output: {output}")
+        
         # Extract only the assistant response
         # Find the last assistant segment
         response_start = output.rfind("<|assistant|>") + len("<|assistant|>\n")
         response_end = output.rfind("</s>", response_start)
         
+        # Add logging for response extraction
+        logger.info(f"Response extraction: start={response_start}, end={response_end}")
+        
         if response_end == -1:
             response = output[response_start:]
         else:
             response = output[response_start:response_end]
-            
+        
+        logger.info(f"Final extracted response: {response.strip()}")
         return response.strip()
     except Exception as e:
         logger.error(f"Error occurred while generating response: {str(e)}")
+        logger.exception("Detailed traceback:")  # 添加完整堆栈跟踪
         raise e
 
 # Application startup event
@@ -165,28 +174,33 @@ async def startup_event():
 @app.post("/api/chat", response_model=ChatResponse)
 async def chat(request: ChatRequest):
     try:
-        # Check if retrieval is requested
+        # Handle retrieval if requested
         if request.use_retrieval and request.query_for_retrieval:
-            # This will be implemented later for RAG
-            logger.info("Retrieval requested but not yet implemented")
-            retrieval_results = []
+            # Retrieve relevant documents
+            retrieval_results = retriever.retrieve(request.query_for_retrieval)
             
-            # Future: Implement retrieval logic here
-            # retrieval_results = retriever.retrieve(request.query_for_retrieval)
+            # Create context from retrieved documents
+            context = "Retrieved information:\n"
+            for result in retrieval_results:
+                context += f"- {result['content']}\n"
             
-            # Modify messages with retrieved context
-            # Modified response will be created when RAG is implemented
+            # Add system message with context
+            augmented_messages = [
+                {"role": "system", "content": f"Use the following information to answer the user's question: {context}"}
+            ] + request.messages
+            
+            # Generate response with context-augmented messages
             response = generate_response(
-                request.messages, 
-                model, 
-                tokenizer, 
+                augmented_messages,
+                model,
+                tokenizer,
                 max_length=request.max_length,
                 temperature=request.temperature,
                 top_p=request.top_p
             )
             
             return ChatResponse(
-                response=response, 
+                response=response,
                 status="success",
                 retrieval_sources=retrieval_results
             )
@@ -206,7 +220,8 @@ async def chat(request: ChatRequest):
                 status="success"
             )
     except Exception as e:
-        logger.error(f"Error occurred while processing request: {str(e)}")
+        logger.error(f"Error in /api/chat: {str(e)}")
+        logger.exception("Detailed traceback:")
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/api/health")
@@ -219,4 +234,11 @@ if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8000))
     
     # Start server
-    uvicorn.run(app, host="0.0.0.0", port=port) 
+    uvicorn.run(app, host="0.0.0.0", port=port)
+
+# 在文件顶部添加
+import os
+os.environ["HF_HOME"] = "/scratch/sx2490/huggingface_cache"  # 使用scratch目录，通常有更大配额
+
+# 确保该目录存在
+os.makedirs("/scratch/sx2490/huggingface_cache", exist_ok=True) 

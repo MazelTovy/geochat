@@ -307,6 +307,9 @@
                     query_for_retrieval: useRetrieval ? message : null
                 };
                 
+                console.log("Sending request to:", apiUrl);
+                console.log("Request data:", requestData);
+                
                 fetch(apiUrl, {
                     method: 'POST',
                     headers: {
@@ -315,12 +318,16 @@
                     body: JSON.stringify(requestData)
                 })
                 .then(response => {
+                    console.log("Response status:", response.status);
+                    console.log("Response headers:", response.headers);
                     if (!response.ok) {
-                        throw new Error('Network request failed');
+                        throw new Error(`Network request failed with status ${response.status}`);
                     }
                     return response.json();
                 })
                 .then(data => {
+                    console.log("Response data:", data);
+                    
                     // Add model response
                     const modelResponse = data.response;
                     const messageElement = addMessageToChat('assistant', modelResponse);
@@ -365,8 +372,9 @@
                     statusDiv.innerHTML = '';
                 })
                 .catch(error => {
-                    console.error('Error:', error);
-                    statusDiv.innerHTML = `Error: ${error.message}`;
+                    console.error('Error details:', error);
+                    // Show specific error message
+                    statusDiv.innerHTML = `Error: ${error.message}<br>Check console for details`;
                 })
                 .finally(() => {
                     // Re-enable input and button
