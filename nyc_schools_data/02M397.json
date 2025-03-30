@@ -1,0 +1,177 @@
+{
+  "basic_info": {
+    "name": "Spruce Street School (02M397)",
+    "school_id": "02M397",
+    "google_maps_url": "https://www.google.com/maps/place/12+Spruce+Street,+Manhattan,+NY+10038",
+    "location": {
+      "street_address": "12 Spruce Street",
+      "city_state_zip": "Manhattan, NY 10038",
+      "full_address": "12 Spruce Street, Manhattan, NY 10038"
+    }
+  },
+  "survey_info": {
+    "Families (not including Pre-K)": "45% (197 surveys submitted)",
+    "Teachers": "85% (33 surveys submitted)",
+    "Students": "74% (122 surveys submitted)"
+  },
+  "metrics": {
+    "Gen": {
+      "School website": "www.sprucestreetnyc.org",
+      "Principal": "Nancy Harris",
+      "Grades served": "PK,0K,01,02,03,04,05,06,07,08,SE",
+      "Enrollment": "430",
+      "Kindergarten admissions methods": "Zoned",
+      "Middle school admissions methods": "D75 Special Education Inclusive Services, Zone Priority",
+      "State accountability status": "Local Support and Improvement"
+    },
+    "Location": {},
+    "Directory-overview": {},
+    "Sch-demog": {
+      "Asian": "24%",
+      "Black": "6%",
+      "Hispanic or Latinx": "16%",
+      "Native American": "0%",
+      "Native Hawaiian/Pacific Islander": "0%",
+      "White": "42%",
+      "English language learners": "7%",
+      "Students with IEPs": "18%",
+      "Economic Need Index": "25%",
+      "Female": "51%",
+      "Male": "49%",
+      "Neither female nor male": "0%"
+    },
+    "Program": {
+      "Boys": "N/A",
+      "Girls": "N/A",
+      "Co-Ed": "N/A",
+      "DYCD": "COMPASS/SONYC; NYC Reads; NYC Solves"
+    },
+    "Staff": {
+      "Asian": "N/A (fewer than 5 teachers)",
+      "Black": "N/A (fewer than 5 teachers)",
+      "Hispanic or Latinx": "13%",
+      "Native American": "0%",
+      "Native Hawaiian/Pacific Islander": "0%",
+      "White": "68%",
+      "Years of experience as principal at this school": "15.2",
+      "Teachers with three or more years of experience": "73%"
+    },
+    "Space": {
+      "Shared space": "Yes, colocated (75M094)"
+    },
+    "Survey-rr": {},
+    "Next-level": {
+      "Comparison Group*": "94% District 02: 96%  City: 90%"
+    },
+    "Core-course": {
+      "Comparison Group*": "99% District 02: 96%  City: 92%"
+    },
+    "Lre": {},
+    "Swiep": {},
+    "Ells": {},
+    "Learning-env": {
+      "District 02": "81%  City: 77%"
+    },
+    "Perf": {
+      "Comparison Group*": "72% District 02: 75%  City: 49%"
+    },
+    "Growth": {},
+    "Perf2": {
+      "Comparison Group*": "75% District 02: 78%  City: 53%"
+    },
+    "Growth2": {},
+    "Safety": {
+      "District 02": "77%  City: 63%"
+    },
+    "School-leadership": {
+      "District 02": "83%  City: 81%"
+    },
+    "Advising": {
+      "District 02": "82%  City: 88%"
+    },
+    "Attendance": {
+      "Student attendance": "93% (Comp group*: 96%)",
+      "Students with >90% attendance": "79% (Comp group*: 84%)",
+      "Teacher attendance": "96%"
+    },
+    "Stu-support": {
+      "District 02": "80%  City: 70%"
+    },
+    "Communication": {
+      "District 02": "94%  City: 94%"
+    },
+    "Family-involve": {
+      "District 02": "92%  City: 90%"
+    },
+    "Relation-w-family": {
+      "District 02": "93%  City: 94%"
+    },
+    "School Values": {
+      "Value 1": "93%",
+      "Value 2": "78%",
+      "Value 3": "93%",
+      "Value 4": "82%",
+      "Value 5": "84%",
+      "Value 6": "83%",
+      "Value 7": "83%",
+      "Value 8": "80%",
+      "Value 9": "86%",
+      "Value 10": "74%",
+      "Value 11": "93%",
+      "Value 12": "90%",
+      "Value 13": "90%"
+    }
+  },
+  "descriptions": [
+    "",
+    "As a Pre-K-8 school, Spruce students can expect many opportunities to build on the successes of elementary school, with an adolescent spin. Our instructional approach emphasizes inquiry and depth. All students engage in daily humanities blocks where they read, write, inquire, debate, and research. Mathematics plays a large role in our curriculum, and happens daily. Our math instruction emphasizes both conceptual understanding and fact fluency. All students engage in science instruction across the week, utilizing our state of-the-art science lab. Our curriculum also emphasizes social and emotional development through advisory. We offer visual art and music. Students also engage in electives which range from coding to sculpture to dance. At Spruce Street, we expect students to serve as leaders across our school.",
+    "(Number of students in subgroup is in parentheses)",
+    "What percentage of students say that this school offers a wide enough variety of programs, classes, and activities to keep them interested in school?",
+    "Art, Music, Modern Band",
+    "What percentage of students say that the school is kept clean?",
+    "What percentage of teachers say that the school is kept in good physical condition?",
+    "What percentage of teachers say that physical repairs to this school building are completed in a timely manner?",
+    "The NYC School Survey is administered every year to students in grades 6-12 and to families and teachers of children in grades K-12. The survey is designed to collect information about each school's ability to support student success.",
+    "Response rates show what percentage of the school community actually completed the survey. Higher response rates tell us that the results of the survey reflect the views of a larger portion of the group surveyed.",
+    "of this school's former eighth graders earned enough high school credit in ninth grade to be on track for graduation",
+    "Which high schools did students from this school most frequently attend?",
+    "of eighth grade students earned high school credit",
+    "pass rate by this school's students in their math, English, social studies, and science classes",
+    "Movement of students with special needs to less restrictive environments",
+    "What percentage of students with IEPs received their recommended special education programs?",
+    "What percentage of students with IEPs received their recommended related services (such as counseling or speech, occupational or physical therapy)?",
+    "How well does this school help English language learners demonstrate movement toward English language proficiency?",
+    "responded positively to survey questions about instruction/learning environment",
+    "What percentage of students say that their teachers have high expectations for them?",
+    "What percentage of students say that they learn a lot from feedback on their work?",
+    "What percentage of students say that their teachers treat students of different races, cultures, or backgrounds equally?",
+    "What percentage of teachers say that students in their class show that they respect each other's ideas?",
+    "of students at this school met State standards on the State English test; the average score was 3.7 out of 4.5",
+    "What percentage of different groups of students met State standards (scored a 3 or 4) on the State English test?",
+    "(Total number of test takers in the subgroup is in parentheses)",
+    "How well did this school help students improve on their State English tests?",
+    "Over the past two years, how did each eighth grade students' State test scores compare to their own scores from when they were in fifth grade?",
+    "of students at this school met State standards on the State math test; the average score was 3.6 out of 4.5",
+    "What percentage of different groups of students met State standards (scored a 3 or 4) on the State math test?",
+    "(Total number of test takers in the subgroup is in parentheses)",
+    "How well did this school help students improve on their State math tests?",
+    "Over the past two years, how did each eighth grade students' State test scores compare to their own scores from when they were in fifth grade?",
+    "responded positively to survey questions about safety",
+    "What percentage of students feel safe in the hallways, bathrooms, locker rooms, and cafeteria?",
+    "responded positively to survey questions about school leadership",
+    "What percentage of teachers say that the principal/school leader at this school sets high standards for student learning?",
+    "What percentage of teachers say that the principal/school leader encourages feedback through regular meetings with families and teacher leaders?",
+    "responded positively to survey questions about advising and planning",
+    "What percentage of students say that this school provides them with guidance on the high school application process?",
+    "responded positively to survey questions about student support",
+    "What percentage of students say that their teachers support them when they are upset?",
+    "What percentage of students say that their teachers treats them with respect?",
+    "What percentage of students say that they feel like they belong at this school?",
+    "responded positively to survey questions about communication",
+    "What percentage of families say that the school staff regularly communicates with them about how they can help their child learn?",
+    "responded positively to survey questions about family involvement",
+    "What percentage of families say that they have communicated with their child's teacher about their child's performance?",
+    "responded positively to survey questions about family-school trust",
+    "What percentage of families say that the school staff work hard to build trusting relationships with families like them?"
+  ]
+}

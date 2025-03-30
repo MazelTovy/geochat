@@ -1,0 +1,181 @@
+{
+  "basic_info": {
+    "name": "High School for Dual Language and Asian Studies (02M545)",
+    "school_id": "02M545",
+    "google_maps_url": "https://www.google.com/maps/place/350+Grand+Street,+Manhattan,+NY+10002",
+    "location": {
+      "street_address": "350 Grand Street",
+      "city_state_zip": "Manhattan, NY 10002",
+      "full_address": "350 Grand Street, Manhattan, NY 10002"
+    }
+  },
+  "survey_info": {
+    "Families": "20% (75 surveys submitted)",
+    "Teachers": "96% (25 surveys submitted)",
+    "Students": "90% (333 surveys submitted)"
+  },
+  "metrics": {
+    "Gen": {
+      "School website": "www.schools.nyc.gov/schools/M545",
+      "Principal": "Meesun John",
+      "Grades served": "09,10,11,12,SE",
+      "Enrollment": "369",
+      "Average SAT": "1163/1600",
+      "Admissions methods": "Screened: Language & Academics",
+      "State accountability status": "Local Support and Improvement"
+    },
+    "Location": {},
+    "Directory-overview": {},
+    "Sch-demog": {
+      "Asian": "93%",
+      "Black": "<1%",
+      "Hispanic or Latinx": "2%",
+      "Native American": "<1%",
+      "Native Hawaiian/Pacific Islander": "<1%",
+      "White": "3%",
+      "English language learners": "12%",
+      "Students with IEPs": "7%",
+      "Economic Need Index": "74%",
+      "Female": "49%",
+      "Male": "51%",
+      "Neither female nor male": "0%"
+    },
+    "Program": {
+      "Boys": "Bowling,Handball,Badminton,Wrestling,Baseball,Basketball,Volleyball,Soccer",
+      "Girls": "Badminton,Swimming,Basketball,Tennis,Bowling,Softball,Table Tennis,Volleyball,Wrestling",
+      "Co-Ed": "N/A",
+      "Dual Language or TBE; DYCD": "COMPASS/SONYC; NYC Solves; Project Pivot; Respect for All"
+    },
+    "Staff": {
+      "Asian": "54%",
+      "Black": "N/A (fewer than 5 teachers)",
+      "Hispanic or Latinx": "N/A (fewer than 5 teachers)",
+      "Native American": "0%",
+      "Native Hawaiian/Pacific Islander": "0%",
+      "White": "33%",
+      "Years of experience as principal at this school": "3.1",
+      "Teachers with 3 or more years of experience": "63%"
+    },
+    "Space": {
+      "Shared space": "Yes, colocated (02M294, 02M305, 02M308, 02M543)"
+    },
+    "Survey-rr": {},
+    "Ccr": {
+      "Comparison Group*": "89%  Manhattan: 66% City: 64%",
+      "(Number of students successfully completing out of 92 seniors)": ""
+    },
+    "Adv-demog": {},
+    "Adv-footnote": {},
+    "Lre": {},
+    "Swiep": {},
+    "Grad": {
+      "Comparison Group*": "100%  Manhattan: 87% City: 88%"
+    },
+    "Prog-to-grad": {
+      "Comparison Group*": "100%  Manhattan: 86% City: 84%"
+    },
+    "Learning-env": {
+      "Manhattan": "77% City: 77%"
+    },
+    "Safety": {
+      "Manhattan": "75% City: 74%"
+    },
+    "School-leadership": {
+      "Manhattan": "81% City: 82%"
+    },
+    "Advising": {
+      "Manhattan": "86% City: 86%"
+    },
+    "Attendance": {
+      "Student attendance": "98% (Comp group*: 93%)",
+      "Students with >90% attendance": "97% (Comp group*: 81%)",
+      "Teacher attendance": "98%"
+    },
+    "Stu-support": {
+      "Manhattan": "73% City: 73%"
+    },
+    "Communication": {
+      "Manhattan": "91% City: 92%"
+    },
+    "Family-involve": {
+      "Manhattan": "84% City: 83%"
+    },
+    "Relation-w-family": {
+      "Manhattan": "93% City: 94%"
+    },
+    "School Values": {
+      "Value 1": "85",
+      "Value 2": "99%",
+      "Value 3": "95%",
+      "Value 4": "99%",
+      "Value 5": "100%",
+      "Value 6": "98%",
+      "Value 7": "96%",
+      "Value 8": "74%",
+      "Value 9": "85%",
+      "Value 10": "79%",
+      "Value 11": "86%",
+      "Value 12": "66%",
+      "Value 13": "87%",
+      "Value 14": "67%",
+      "Value 15": "91%"
+    }
+  },
+  "descriptions": [
+    "",
+    "At our school, Chinese (Mandarin) speaking English Language Learners and English proficient students learn both languages while preparing for college and careers. We have a challenging curriculum that includes enriched math and science courses, and opportunities to participate in a variety of Advanced Placement (AP) classes. Asia-related topics are woven into all subject areas. Dual Language students are expected to exceed city and state standards and demonstrate cross-cultural behavior. All students are expected to comprehend, speak, read, and write in English and Chinese by the time they graduate.",
+    "(Number of students in subgroup is in parentheses)",
+    "What percentage of students say that this school offers a wide enough variety of programs, classes, and activities to keep them interested in school?",
+    "Debate Club, Chinese Yo-Yo, Dual Events Committee, Homework Help, Study Hall, Guitar and Chorus Club, Lion Dance, Red Cross, Key Club, Book Club, Vision Sphere, Muslim Student Association, K-pop and Korean culture Club, Chinese Cultural Club, IT and Contemporary Studies, Chess Club, Project Gateway, Career and College Readiness",
+    "Studio Art, Visual Art",
+    "What percentage of students say that the school is kept clean?",
+    "What percentage of teachers say that the school is kept in good physical condition?",
+    "What percentage of teachers say that physical repairs to this school building are completed in a timely manner?",
+    "The NYC School Survey is administered every year to students in grades 6-12 and to families and teachers of children in grades K-12. The survey is designed to collect information about each school's ability to support student success.",
+    "Response rates show what percentage of the school community actually completed the survey. Higher response rates tell us that the results of the survey reflect the views of a larger portion of the group surveyed.",
+    "is the average college and career readiness score for students at this school after four years in high school",
+    "successfully completed approved college or career preparatory courses and exams",
+    "graduated from high school and enrolled in college or other post-secondary program within six months",
+    "How many students were enrolled in at least one advanced class?",
+    "What is the racial breakdown of the students that were enrolled in at least one advanced class?",
+    "(Number of students in subgroup is in parentheses)",
+    "",
+    "Movement of students with special needs to less restrictive environments",
+    "What percentage of students with IEPs received their recommended special education programs?",
+    "What percentage of students with IEPs received their recommended related services (such as counseling or speech, occupational or physical therapy)?",
+    "of the class of 2024 graduated within four years",
+    "(Number in parentheses shows all class-of-2024 students who are in the subgroup)",
+    "of the class of 2022 graduated within six years",
+    "The citywide graduation rates are projected numbers, subject to correction by the New York State Education Department.",
+    "For the class of 2023, what was the graduation rate for seniors who entered the school with different eighth-grade test scores?",
+    "earned enough credits in ninth grade to be on track for graduation",
+    "earned enough credits in tenth grade to be on track for graduation",
+    "How well does this school help students improve from their incoming proficiency levels and perform on Regents exams?",
+    "English",
+    "Algebra",
+    "Social Studies",
+    "Living Environment",
+    "responded positively to survey questions about instruction/learning environment",
+    "What percentage of students say that their teachers have high expectations for them?",
+    "What percentage of students say that they learn a lot from feedback on their work?",
+    "What percentage of students say that their teachers treat students of different races, cultures, or backgrounds equally?",
+    "What percentage of teachers say that students in their class show that they respect each other's ideas?",
+    "responded positively to survey questions about safety",
+    "What percentage of students feel safe in the hallways, bathrooms, locker rooms, and cafeteria?",
+    "responded positively to survey questions about school leadership",
+    "What percentage of teachers say that the principal/school leader at this school sets high standards for student learning?",
+    "What percentage of teachers say that the principal/school leader encourages feedback through regular meetings with families and teacher leaders?",
+    "responded positively to survey questions about advising and planning",
+    "What percentage of students say that adults at this school help them plan for how to meet their future career goals?",
+    "responded positively to survey questions about student support",
+    "What percentage of students say that their teachers support them when they are upset?",
+    "What percentage of students say that their teachers treats them with respect?",
+    "What percentage of students say that they feel like they belong at this school?",
+    "responded positively to survey questions about communication",
+    "What percentage of families say that the school staff regularly communicates with them about how they can help their child learn?",
+    "responded positively to survey questions about family involvement",
+    "What percentage of families say that they have communicated with their child's teacher about their child's performance?",
+    "responded positively to survey questions about family-school trust",
+    "What percentage of families say that the school staff work hard to build trusting relationships with families like them?"
+  ]
+}

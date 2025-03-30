@@ -1,0 +1,177 @@
+{
+  "basic_info": {
+    "name": "New Explorations into Science, Technology and Math High School (01M539)",
+    "school_id": "01M539",
+    "google_maps_url": "https://www.google.com/maps/place/111+Columbia+Street,+Manhattan,+NY+10002",
+    "location": {
+      "street_address": "111 Columbia Street",
+      "city_state_zip": "Manhattan, NY 10002",
+      "full_address": "111 Columbia Street, Manhattan, NY 10002"
+    }
+  },
+  "survey_info": {
+    "Families": "50% (801 surveys submitted)",
+    "Teachers": "89% (92 surveys submitted)",
+    "Students": "89% (838 surveys submitted)"
+  },
+  "metrics": {
+    "Gen": {
+      "School website": "www.nestmk12.net",
+      "Principal": "Meaghan Lynch",
+      "Grades served": "0K,01,02,03,04,05,06,07,08,09,10,11,SE",
+      "Enrollment": "1040",
+      "Kindergarten admissions methods": "Choice School",
+      "Middle school admissions methods": "Screened",
+      "State accountability status": "Local Support and Improvement"
+    },
+    "Location": {},
+    "Directory-overview": {},
+    "Sch-demog": {
+      "Asian": "42%",
+      "Black": "2%",
+      "Hispanic or Latinx": "7%",
+      "Native American": "<1%",
+      "Native Hawaiian/Pacific Islander": "<1%",
+      "White": "36%",
+      "English language learners": "<1%",
+      "Students with IEPs": "9%",
+      "Economic Need Index": "19%",
+      "Female": "52%",
+      "Male": "48%",
+      "Neither female nor male": "0%"
+    },
+    "Program": {
+      "Boys": "N/A",
+      "Girls": "N/A",
+      "Co-Ed": "N/A",
+      "DYCD": "COMPASS/SONYC; Gifted & Talented; NYC Solves; Respect for All"
+    },
+    "Staff": {
+      "Asian": "20%",
+      "Black": "5%",
+      "Hispanic or Latinx": "5%",
+      "Native American": "0%",
+      "Native Hawaiian/Pacific Islander": "0%",
+      "White": "67%",
+      "Years of experience as principal at this school": "4.2",
+      "Teachers with three or more years of experience": "77%"
+    },
+    "Space": {
+      "Shared space": "No"
+    },
+    "Survey-rr": {},
+    "Next-level": {
+      "Comparison Group*": "98% District 01: 92%  City: 90%"
+    },
+    "Core-course": {
+      "Comparison Group*": "99% District 01: 94%  City: 92%"
+    },
+    "Lre": {},
+    "Swiep": {},
+    "Ells": {},
+    "Learning-env": {
+      "District 01": "80%  City: 75%"
+    },
+    "Perf": {
+      "Comparison Group*": "85% District 01: 58%  City: 49%"
+    },
+    "Growth": {},
+    "Perf2": {
+      "Comparison Group*": "89% District 01: 60%  City: 53%"
+    },
+    "Growth2": {},
+    "Safety": {
+      "District 01": "70%  City: 65%"
+    },
+    "School-leadership": {
+      "District 01": "86%  City: 79%"
+    },
+    "Advising": {
+      "District 01": "89%  City: 83%"
+    },
+    "Attendance": {
+      "Student attendance": "96% (Comp group*: 99%)",
+      "Students with >90% attendance": "92% (Comp group*: 93%)",
+      "Teacher attendance": "97%"
+    },
+    "Stu-support": {
+      "District 01": "80%  City: 68%"
+    },
+    "Communication": {
+      "District 01": "94%  City: 91%"
+    },
+    "Family-involve": {
+      "District 01": "93%  City: 86%"
+    },
+    "Relation-w-family": {
+      "District 01": "94%  City: 92%"
+    },
+    "School Values": {
+      "Value 1": "99%",
+      "Value 2": "100%",
+      "Value 3": "100%",
+      "Value 4": "81%",
+      "Value 5": "97%",
+      "Value 6": "99%",
+      "Value 7": "82%",
+      "Value 8": "85%",
+      "Value 9": "88%",
+      "Value 10": "72%",
+      "Value 11": "94%",
+      "Value 12": "91%",
+      "Value 13": "97%"
+    }
+  },
+  "descriptions": [
+    "",
+    "At NEST+m, intellectualism, inclusivity, collaboration and exploration within and beyond our school community enable our students to lead lives filled with learning, discovery and purpose. NEST+m is a K-12 Citywide G&T School. Our Middle Grades students participate in an accelerated curriculum which leads to the completion of multiple HS courses and exams by the end of 8th Grade (U.S. History, Living Environment, Algebra 1, World Language). NEST+m fosters community through Exploration Days, Field Days, and community-based partnerships.",
+    "(Number of students in subgroup is in parentheses)",
+    "What percentage of students say that this school offers a wide enough variety of programs, classes, and activities to keep them interested in school?",
+    "Art, Band, Chess, Coding, Creative Writing, Debate, Drama, Homework Help, Math Team, Music, Robotics, STEM, Talent Show, Visual Arts, Yearbook",
+    "What percentage of students say that the school is kept clean?",
+    "What percentage of teachers say that the school is kept in good physical condition?",
+    "What percentage of teachers say that physical repairs to this school building are completed in a timely manner?",
+    "The NYC School Survey is administered every year to students in grades 6-12 and to families and teachers of children in grades K-12. The survey is designed to collect information about each school's ability to support student success.",
+    "Response rates show what percentage of the school community actually completed the survey. Higher response rates tell us that the results of the survey reflect the views of a larger portion of the group surveyed.",
+    "of this school's former eighth graders earned enough high school credit in ninth grade to be on track for graduation",
+    "Which high schools did students from this school most frequently attend?",
+    "of eighth grade students earned high school credit",
+    "pass rate by this school's students in their math, English, social studies, and science classes",
+    "Movement of students with special needs to less restrictive environments",
+    "What percentage of students with IEPs received their recommended special education programs?",
+    "What percentage of students with IEPs received their recommended related services (such as counseling or speech, occupational or physical therapy)?",
+    "How well does this school help English language learners demonstrate movement toward English language proficiency?",
+    "responded positively to survey questions about instruction/learning environment",
+    "What percentage of students say that their teachers have high expectations for them?",
+    "What percentage of students say that they learn a lot from feedback on their work?",
+    "What percentage of students say that their teachers treat students of different races, cultures, or backgrounds equally?",
+    "What percentage of teachers say that students in their class show that they respect each other's ideas?",
+    "of students at this school met State standards on the State English test; the average score was 4.0 out of 4.5",
+    "What percentage of different groups of students met State standards (scored a 3 or 4) on the State English test?",
+    "(Total number of test takers in the subgroup is in parentheses)",
+    "How well did this school help students improve on their State English tests?",
+    "Over the past two years, how did each eighth grade students' State test scores compare to their own scores from when they were in fifth grade?",
+    "of students at this school met State standards on the State math test; the average score was 4.2 out of 4.5",
+    "What percentage of different groups of students met State standards (scored a 3 or 4) on the State math test?",
+    "(Total number of test takers in the subgroup is in parentheses)",
+    "How well did this school help students improve on their State math tests?",
+    "Over the past two years, how did each eighth grade students' State test scores compare to their own scores from when they were in fifth grade?",
+    "responded positively to survey questions about safety",
+    "What percentage of students feel safe in the hallways, bathrooms, locker rooms, and cafeteria?",
+    "responded positively to survey questions about school leadership",
+    "What percentage of teachers say that the principal/school leader at this school sets high standards for student learning?",
+    "What percentage of teachers say that the principal/school leader encourages feedback through regular meetings with families and teacher leaders?",
+    "responded positively to survey questions about advising and planning",
+    "What percentage of students say that this school provides them with guidance on the high school application process?",
+    "responded positively to survey questions about student support",
+    "What percentage of students say that their teachers support them when they are upset?",
+    "What percentage of students say that their teachers treats them with respect?",
+    "What percentage of students say that they feel like they belong at this school?",
+    "responded positively to survey questions about communication",
+    "What percentage of families say that the school staff regularly communicates with them about how they can help their child learn?",
+    "responded positively to survey questions about family involvement",
+    "What percentage of families say that they have communicated with their child's teacher about their child's performance?",
+    "responded positively to survey questions about family-school trust",
+    "What percentage of families say that the school staff work hard to build trusting relationships with families like them?"
+  ]
+}

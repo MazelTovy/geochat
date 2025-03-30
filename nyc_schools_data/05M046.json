@@ -1,0 +1,177 @@
+{
+  "basic_info": {
+    "name": "P.S. 046 Arthur Tappan (05M046)",
+    "school_id": "05M046",
+    "google_maps_url": "https://www.google.com/maps/place/2987+Frederick+Douglass+Boulevard,+Manhattan,+NY+10039",
+    "location": {
+      "street_address": "2987 Frederick Douglass Boulevard",
+      "city_state_zip": "Manhattan, NY 10039",
+      "full_address": "2987 Frederick Douglass Boulevard, Manhattan, NY 10039"
+    }
+  },
+  "survey_info": {
+    "Families (not including Pre-K)": "53% (188 surveys submitted)",
+    "Teachers": "89% (40 surveys submitted)",
+    "Students": "91% (99 surveys submitted)"
+  },
+  "metrics": {
+    "Gen": {
+      "School website": "www.psms46.org",
+      "Principal": "Kerry-Ann Hazell",
+      "Grades served": "PK,0K,01,02,03,04,05,06,07,08,SE",
+      "Enrollment": "330",
+      "Kindergarten admissions methods": "Zoned",
+      "Middle school admissions methods": "Zone Priority",
+      "State accountability status": "Local Support and Improvement"
+    },
+    "Location": {},
+    "Directory-overview": {},
+    "Sch-demog": {
+      "Asian": "<1%",
+      "Black": "47%",
+      "Hispanic or Latinx": "48%",
+      "Native American": "0%",
+      "Native Hawaiian/Pacific Islander": "0%",
+      "White": "4%",
+      "English language learners": "13%",
+      "Students with IEPs": "37%",
+      "Economic Need Index": ">95%",
+      "Female": "45%",
+      "Male": "55%",
+      "Neither female nor male": "0%"
+    },
+    "Program": {
+      "Boys": "N/A",
+      "Girls": "N/A",
+      "Co-Ed": "N/A",
+      "21st Century Community Learning Center; Community School; DYCD": "COMPASS/SONYC; NYC Reads"
+    },
+    "Staff": {
+      "Asian": "0%",
+      "Black": "39%",
+      "Hispanic or Latinx": "18%",
+      "Native American": "0%",
+      "Native Hawaiian/Pacific Islander": "0%",
+      "White": "39%",
+      "Years of experience as principal at this school": "9.1",
+      "Teachers with three or more years of experience": "89%"
+    },
+    "Space": {
+      "Shared space": "No"
+    },
+    "Survey-rr": {},
+    "Next-level": {
+      "Comparison Group*": "88% District 05: 87%  City: 90%"
+    },
+    "Core-course": {
+      "Comparison Group*": "97% District 05: 91%  City: 92%"
+    },
+    "Lre": {},
+    "Swiep": {},
+    "Ells": {},
+    "Learning-env": {
+      "District 05": "75%  City: 77%"
+    },
+    "Perf": {
+      "Comparison Group*": "35% District 05: 37%  City: 49%"
+    },
+    "Growth": {},
+    "Perf2": {
+      "Comparison Group*": "36% District 05: 34%  City: 53%"
+    },
+    "Growth2": {},
+    "Safety": {
+      "District 05": "65%  City: 63%"
+    },
+    "School-leadership": {
+      "District 05": "80%  City: 81%"
+    },
+    "Advising": {
+      "District 05": "87%  City: 88%"
+    },
+    "Attendance": {
+      "Student attendance": "87% (Comp group*: 92%)",
+      "Students with >90% attendance": "43% (Comp group*: 62%)",
+      "Teacher attendance": "94%"
+    },
+    "Stu-support": {
+      "District 05": "76%  City: 70%"
+    },
+    "Communication": {
+      "District 05": "92%  City: 94%"
+    },
+    "Family-involve": {
+      "District 05": "88%  City: 90%"
+    },
+    "Relation-w-family": {
+      "District 05": "92%  City: 94%"
+    },
+    "School Values": {
+      "Value 1": "93%",
+      "Value 2": "0%",
+      "Value 3": "87%",
+      "Value 4": "79%",
+      "Value 5": "35%",
+      "Value 6": "42%",
+      "Value 7": "61%",
+      "Value 8": "85%",
+      "Value 9": "94%",
+      "Value 10": "77%",
+      "Value 11": "99%",
+      "Value 12": "95%",
+      "Value 13": "100%"
+    }
+  },
+  "descriptions": [
+    "",
+    "PS/MS 46 - The Arthur Tappan School offers a well-rounded educational program geared to meeting students' academic, social-emotional, and physical needs. We have a school population of 49% Latinx, 46% Black, and 3% Arabic. We are departmentalized in Grades 3-8, offering Reading, Writing, Math, Science, Social Studies, Music, Art, Foreign Language, Library and Media Arts, Physical Education, and STEAM. We have partnerships with New York Edge, Police Athletic League (PAL), New York Giants, the Lang Lang Foundation, and Asphalt Green.",
+    "(Number of students in subgroup is in parentheses)",
+    "What percentage of students say that this school offers a wide enough variety of programs, classes, and activities to keep them interested in school?",
+    "Art, Coding, Cooking, Engineering, Gardening, Green Team, Lego Robotics, Music, Photography, Restorative Circles, Robotics, School Newspaper, Spelling Bee, STEM, Student Council, Technology, Visual Arts, Yearbook",
+    "What percentage of students say that the school is kept clean?",
+    "What percentage of teachers say that the school is kept in good physical condition?",
+    "What percentage of teachers say that physical repairs to this school building are completed in a timely manner?",
+    "The NYC School Survey is administered every year to students in grades 6-12 and to families and teachers of children in grades K-12. The survey is designed to collect information about each school's ability to support student success.",
+    "Response rates show what percentage of the school community actually completed the survey. Higher response rates tell us that the results of the survey reflect the views of a larger portion of the group surveyed.",
+    "of this school's former eighth graders earned enough high school credit in ninth grade to be on track for graduation",
+    "Which high schools did students from this school most frequently attend?",
+    "of eighth grade students earned high school credit",
+    "pass rate by this school's students in their math, English, social studies, and science classes",
+    "Movement of students with special needs to less restrictive environments",
+    "What percentage of students with IEPs received their recommended special education programs?",
+    "What percentage of students with IEPs received their recommended related services (such as counseling or speech, occupational or physical therapy)?",
+    "How well does this school help English language learners demonstrate movement toward English language proficiency?",
+    "responded positively to survey questions about instruction/learning environment",
+    "What percentage of students say that their teachers have high expectations for them?",
+    "What percentage of students say that they learn a lot from feedback on their work?",
+    "What percentage of students say that their teachers treat students of different races, cultures, or backgrounds equally?",
+    "What percentage of teachers say that students in their class show that they respect each other's ideas?",
+    "of students at this school met State standards on the State English test; the average score was 2.6 out of 4.5",
+    "What percentage of different groups of students met State standards (scored a 3 or 4) on the State English test?",
+    "(Total number of test takers in the subgroup is in parentheses)",
+    "How well did this school help students improve on their State English tests?",
+    "Over the past two years, how did each eighth grade students' State test scores compare to their own scores from when they were in fifth grade?",
+    "of students at this school met State standards on the State math test; the average score was 2.8 out of 4.5",
+    "What percentage of different groups of students met State standards (scored a 3 or 4) on the State math test?",
+    "(Total number of test takers in the subgroup is in parentheses)",
+    "How well did this school help students improve on their State math tests?",
+    "Over the past two years, how did each eighth grade students' State test scores compare to their own scores from when they were in fifth grade?",
+    "responded positively to survey questions about safety",
+    "What percentage of students feel safe in the hallways, bathrooms, locker rooms, and cafeteria?",
+    "responded positively to survey questions about school leadership",
+    "What percentage of teachers say that the principal/school leader at this school sets high standards for student learning?",
+    "What percentage of teachers say that the principal/school leader encourages feedback through regular meetings with families and teacher leaders?",
+    "responded positively to survey questions about advising and planning",
+    "What percentage of students say that this school provides them with guidance on the high school application process?",
+    "responded positively to survey questions about student support",
+    "What percentage of students say that their teachers support them when they are upset?",
+    "What percentage of students say that their teachers treats them with respect?",
+    "What percentage of students say that they feel like they belong at this school?",
+    "responded positively to survey questions about communication",
+    "What percentage of families say that the school staff regularly communicates with them about how they can help their child learn?",
+    "responded positively to survey questions about family involvement",
+    "What percentage of families say that they have communicated with their child's teacher about their child's performance?",
+    "responded positively to survey questions about family-school trust",
+    "What percentage of families say that the school staff work hard to build trusting relationships with families like them?"
+  ]
+}

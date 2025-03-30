@@ -1,0 +1,177 @@
+{
+  "basic_info": {
+    "name": "School for Global Leaders (01M378)",
+    "school_id": "01M378",
+    "google_maps_url": "https://www.google.com/maps/place/145+Stanton+Street,+Manhattan,+NY+10002",
+    "location": {
+      "street_address": "145 Stanton Street",
+      "city_state_zip": "Manhattan, NY 10002",
+      "full_address": "145 Stanton Street, Manhattan, NY 10002"
+    }
+  },
+  "survey_info": {
+    "Families": "48% (79 surveys submitted)",
+    "Teachers": "74% (14 surveys submitted)",
+    "Students": "38% (60 surveys submitted)"
+  },
+  "metrics": {
+    "Gen": {
+      "School website": "www.schools.nyc.gov/schools/M378",
+      "Principal": "Keri Ricks",
+      "Grades served": "06,07,08,SE",
+      "Enrollment": "178",
+      "Admissions methods": "Language Criteria, Open",
+      "Dual language programs": "Chinese",
+      "State accountability status": "Local Support and Improvement"
+    },
+    "Location": {},
+    "Directory-overview": {
+      "The School for Global Leaders is an approved  6-12 International Baccalaureate World School offering an authorized IB MYP Programme. Families love our small class sizes, dynamic teaching team, and warm classroom environments. We make learning relevant to the real world, encouraging collaborative work and problem solving as students explore community and world issues. All eight grade students complete a community project prior to moving onto high school. The community project focuses on community and service, encouraging students to explore their right and responsibility to implement service as action in the community. Alongside a challenging and engaging IB Curriculum, we offer a robust Arts and elective program; students select at least one elective course a year from the following options": "Instrumental music, Integrated Algebra, Culinary, Gardening and Ecology, Weight Training, Dance, Chorus, Theatre, and Advance Visual Arts (HS Portfolio Intensive). Global Leaders is not only a school-we are a family who learns together, plays together, grows together and supports one another. Note: School for Global Leaders  is a Candidate School* for the Diploma and Career Related IB Programmes.. This school is pursuing authorization as an IB World School. These are schools that share a common philosophy-a commitment to high quality, challenging, international education that [School Name] believes is important for our students. *Only schools authorized by the IB Organization can offer any of its four academic programmes: the Primary Years Programme (PYP), the Middle Years Programme (MYP), the Diploma Programme, or the Career-related Programme (CP). Candidate status gives no guarantee that authorization will be granted. For further information about the IB and its programmes, visit w"
+    },
+    "Sch-demog": {
+      "Asian": "10%",
+      "Black": "16%",
+      "Hispanic or Latinx": "64%",
+      "Native American": "1%",
+      "Native Hawaiian/Pacific Islander": "0%",
+      "White": "7%",
+      "English language learners": "35%",
+      "Students with IEPs": "30%",
+      "Economic Need Index": "93%",
+      "Female": "46%",
+      "Male": "54%",
+      "Neither female nor male": "<1%"
+    },
+    "Program": {
+      "Boys": "N/A",
+      "Girls": "N/A",
+      "Co-Ed": "N/A",
+      "Dual Language or TBE; DYCD": "COMPASS/SONYC"
+    },
+    "Staff": {
+      "Asian": "25%",
+      "Black": "N/A (fewer than 5 teachers)",
+      "Hispanic or Latinx": "N/A (fewer than 5 teachers)",
+      "Native American": "0%",
+      "Native Hawaiian/Pacific Islander": "N/A (fewer than 5 teachers)",
+      "White": "40%",
+      "Years of experience as principal at this school": "8.2",
+      "Teachers with three or more years of experience": "70%"
+    },
+    "Space": {
+      "Shared space": "Yes, colocated (01M515, 79M973)"
+    },
+    "Survey-rr": {},
+    "Next-level": {
+      "Comparison Group*": "87% District 01: 89%  City: 91%"
+    },
+    "Core-course": {
+      "Comparison Group*": "97% District 01: 93%  City: 95%"
+    },
+    "Lre": {},
+    "Swiep": {},
+    "Ells": {},
+    "Learning-env": {
+      "District 01": "80%  City: 77%"
+    },
+    "Perf": {
+      "Comparison Group*": "34% District 01: 60%  City: 51%"
+    },
+    "Growth": {},
+    "Perf2": {
+      "Comparison Group*": "38% District 01: 59%  City: 51%"
+    },
+    "Growth2": {},
+    "Safety": {
+      "District 01": "69%  City: 63%"
+    },
+    "School-leadership": {
+      "District 01": "90%  City: 84%"
+    },
+    "Advising": {
+      "District 01": "91%  City: 89%"
+    },
+    "Attendance": {
+      "Student attendance": "88% (Comp group*: 100%)",
+      "Students with >90% attendance": "52% (Comp group*: 73%)",
+      "Teacher attendance": "94%"
+    },
+    "Stu-support": {
+      "District 01": "76%  City: 71%"
+    },
+    "Communication": {
+      "District 01": "96%  City: 94%"
+    },
+    "Family-involve": {
+      "District 01": "93%  City: 87%"
+    },
+    "Relation-w-family": {
+      "District 01": "96%  City: 94%"
+    },
+    "School Values": {
+      "Value 1": "85%",
+      "Value 2": "25%",
+      "Value 3": "95%",
+      "Value 4": "75%",
+      "Value 5": "29%",
+      "Value 6": "44%",
+      "Value 7": "73%",
+      "Value 8": "92%",
+      "Value 9": "90%",
+      "Value 10": "74%",
+      "Value 11": "99%",
+      "Value 12": "96%",
+      "Value 13": "100%"
+    }
+  },
+  "descriptions": [
+    "(Number of students in subgroup is in parentheses)",
+    "What percentage of students say that this school offers a wide enough variety of programs, classes, and activities to keep them interested in school?",
+    "Art, Chorus, Coding, Cooking, Dance, Debate, Drama, Fashion, Fitness, Gardening, Homework Help, Lego Robotics, Music, Musical Theater, Peer Mediation, Photography, Restorative Circles, Robotics, Service Learning, STEM, Student Council, Talent Show, Technology, Theater, Tutoring, Video Game Club, Visual Arts, Yearbook, Yoga",
+    "What percentage of students say that the school is kept clean?",
+    "What percentage of teachers say that the school is kept in good physical condition?",
+    "What percentage of teachers say that physical repairs to this school building are completed in a timely manner?",
+    "The NYC School Survey is administered every year to students in grades 6-12 and to families and teachers of children in grades K-12. The survey is designed to collect information about each school's ability to support student success.",
+    "Response rates show what percentage of the school community actually completed the survey. Higher response rates tell us that the results of the survey reflect the views of a larger portion of the group surveyed.",
+    "of this school's former eighth graders earned enough high school credit in ninth grade to be on track for graduation",
+    "Which high schools did students from this school most frequently attend?",
+    "of eighth grade students earned high school credit",
+    "pass rate by this school's students in their math, English, social studies, and science classes",
+    "Movement of students with special needs to less restrictive environments",
+    "What percentage of students with IEPs received their recommended special education programs?",
+    "What percentage of students with IEPs received their recommended related services (such as counseling or speech, occupational or physical therapy)?",
+    "How well does this school help English language learners demonstrate movement toward English language proficiency?",
+    "responded positively to survey questions about instruction/learning environment",
+    "What percentage of students say that their teachers have high expectations for them?",
+    "What percentage of students say that they learn a lot from feedback on their work?",
+    "What percentage of students say that their teachers treat students of different races, cultures, or backgrounds equally?",
+    "What percentage of teachers say that students in their class show that they respect each other's ideas?",
+    "of students at this school met State standards on the State English test; the average score was 2.5 out of 4.5",
+    "What percentage of different groups of students met State standards (scored a 3 or 4) on the State English test?",
+    "(Total number of test takers in the subgroup is in parentheses)",
+    "How well did this school help students improve on their State English tests?",
+    "Over the past two years, how did each eighth grade students' State test scores compare to their own scores from when they were in fifth grade?",
+    "of students at this school met State standards on the State math test; the average score was 2.8 out of 4.5",
+    "What percentage of different groups of students met State standards (scored a 3 or 4) on the State math test?",
+    "(Total number of test takers in the subgroup is in parentheses)",
+    "How well did this school help students improve on their State math tests?",
+    "Over the past two years, how did each eighth grade students' State test scores compare to their own scores from when they were in fifth grade?",
+    "responded positively to survey questions about safety",
+    "What percentage of students feel safe in the hallways, bathrooms, locker rooms, and cafeteria?",
+    "responded positively to survey questions about school leadership",
+    "What percentage of teachers say that the principal/school leader at this school sets high standards for student learning?",
+    "What percentage of teachers say that the principal/school leader encourages feedback through regular meetings with families and teacher leaders?",
+    "responded positively to survey questions about advising and planning",
+    "What percentage of students say that this school provides them with guidance on the high school application process?",
+    "responded positively to survey questions about student support",
+    "What percentage of students say that their teachers support them when they are upset?",
+    "What percentage of students say that their teachers treats them with respect?",
+    "What percentage of students say that they feel like they belong at this school?",
+    "responded positively to survey questions about communication",
+    "What percentage of families say that the school staff regularly communicates with them about how they can help their child learn?",
+    "responded positively to survey questions about family involvement",
+    "What percentage of families say that they have communicated with their child's teacher about their child's performance?",
+    "responded positively to survey questions about family-school trust",
+    "What percentage of families say that the school staff work hard to build trusting relationships with families like them?"
+  ]
+}

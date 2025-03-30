@@ -1,0 +1,182 @@
+{
+  "basic_info": {
+    "name": "Bard High School Early College (01M696)",
+    "school_id": "01M696",
+    "google_maps_url": "https://www.google.com/maps/place/525+East+Houston+Street,+Manhattan,+NY+10002",
+    "location": {
+      "street_address": "525 East Houston Street",
+      "city_state_zip": "Manhattan, NY 10002",
+      "full_address": "525 East Houston Street, Manhattan, NY 10002"
+    }
+  },
+  "survey_info": {
+    "Families": "42% (230 surveys submitted)",
+    "Teachers": "77% (36 surveys submitted)",
+    "Students": "63% (342 surveys submitted)"
+  },
+  "metrics": {
+    "Gen": {
+      "School website": "bhsec.bard.edu/manhattan/",
+      "Principal": "Stephen Chaterpaul",
+      "Grades served": "09,10,11,12",
+      "Enrollment": "549",
+      "Average SAT": "1286/1600",
+      "Admissions methods": "Screened With Assessment",
+      "State accountability status": "Local Support and Improvement"
+    },
+    "Location": {},
+    "Directory-overview": {
+      "Bard High School Early College Manhattan (BHSEC Manhattan) was founded on the belief that many students are ready to do serious college work at age 16. Bard College partnered with the NYC Department of Education to create an innovative program that enables high school students to move in four years from 9th grade through the first two years of college, earning a high school diploma, up to sixty college credits, and an Associate in Arts (AA) degree upon graduation.    Diversity in Admissions (DIA)": "Priority to applicants eligible for free or reduced price lunch for 50% of seats"
+    },
+    "Sch-demog": {
+      "Asian": "19%",
+      "Black": "17%",
+      "Hispanic or Latinx": "22%",
+      "Native American": "<1%",
+      "Native Hawaiian/Pacific Islander": "<1%",
+      "White": "36%",
+      "English language learners": "<1%",
+      "Students with IEPs": "15%",
+      "Economic Need Index": "45%",
+      "Female": "62%",
+      "Male": "38%",
+      "Neither female nor male": "0%"
+    },
+    "Program": {
+      "Boys": "Baseball,Tennis,Soccer,Cross Country,Outdoor Track,Basketball",
+      "Girls": "Outdoor Track,Basketball,Tennis,Cross Country,Soccer,Volleyball",
+      "Co-Ed": "N/A"
+    },
+    "Staff": {
+      "Asian": "23%",
+      "Black": "N/A (fewer than 5 teachers)",
+      "Hispanic or Latinx": "16%",
+      "Native American": "N/A (fewer than 5 teachers)",
+      "Native Hawaiian/Pacific Islander": "N/A (fewer than 5 teachers)",
+      "White": "51%",
+      "Years of experience as principal at this school": "N/A",
+      "Teachers with 3 or more years of experience": "81%"
+    },
+    "Space": {
+      "Shared space": "No"
+    },
+    "Survey-rr": {},
+    "Ccr": {
+      "Comparison Group*": "85%  Manhattan: 66% City: 64%",
+      "(Number of students successfully completing out of 133 seniors)": ""
+    },
+    "Adv-demog": {},
+    "Adv-footnote": {},
+    "Lre": {},
+    "Swiep": {},
+    "Grad": {
+      "Comparison Group*": "100%  Manhattan: 87% City: 88%"
+    },
+    "Prog-to-grad": {
+      "Comparison Group*": "98%  Manhattan: 86% City: 84%"
+    },
+    "Learning-env": {
+      "Manhattan": "77% City: 77%"
+    },
+    "Safety": {
+      "Manhattan": "75% City: 74%"
+    },
+    "School-leadership": {
+      "Manhattan": "81% City: 82%"
+    },
+    "Advising": {
+      "Manhattan": "86% City: 86%"
+    },
+    "Attendance": {
+      "Student attendance": "92% (Comp group*: 91%)",
+      "Students with >90% attendance": "76% (Comp group*: 76%)",
+      "Teacher attendance": "96%"
+    },
+    "Stu-support": {
+      "Manhattan": "73% City: 73%"
+    },
+    "Communication": {
+      "Manhattan": "91% City: 92%"
+    },
+    "Family-involve": {
+      "Manhattan": "84% City: 83%"
+    },
+    "Relation-w-family": {
+      "Manhattan": "93% City: 94%"
+    },
+    "School Values": {
+      "Value 1": "82",
+      "Value 2": "99%",
+      "Value 3": "83%",
+      "Value 4": "97%",
+      "Value 5": "100%",
+      "Value 6": "100%",
+      "Value 7": "97%",
+      "Value 8": "87%",
+      "Value 9": "81%",
+      "Value 10": "70%",
+      "Value 11": "87%",
+      "Value 12": "73%",
+      "Value 13": "91%",
+      "Value 14": "83%",
+      "Value 15": "85%"
+    }
+  },
+  "descriptions": [
+    "",
+    "(Number of students in subgroup is in parentheses)",
+    "What percentage of students say that this school offers a wide enough variety of programs, classes, and activities to keep them interested in school?",
+    "Anime Club, Art Magazine, East Asian Culture Club, Bardvark Student Newspaper, Black Students Alliance, African Students Organization, Debate Team, Diversity Initiative, Eco Club,Gender Sexuality Alliance (GSA), Literary Magazine, Model UN, Robotics, Science Olympiad, Math Team, Itching to Stitch, Muslim Students Alliance, Philosophy Club, Quiz Bowl, Step Team, Student Union, Table Tennis, Theater Production, Winter and Spring Concerts, Yearbook, BuildON Malawi, CheerNastics, Swim Club, Poetry Club, Photography Club, Fitness Club, Scrap Art Magazine, Bollywood, Sailing Mentorships, Best Buddies, Chess Club, Cooking Club, Animal Rights Club, Theatre Club, Model Congress, Lend A Hand, Music Club, Indoor Track Club, Latin American Student Organization, Public Speaking Club, Youth Progressive Policy Group, Y2 Committee, Jewish Student Alliance,Gender Sexuality Alliance (GSA)",
+    "Digital Photography, Theater, Visual Art, Guitar, Three-Dimensional Art, Core Music, Music History, Painting, Classroom Music, Printmaking, and more",
+    "NYC Solves; PROSE",
+    "What percentage of students say that the school is kept clean?",
+    "What percentage of teachers say that the school is kept in good physical condition?",
+    "What percentage of teachers say that physical repairs to this school building are completed in a timely manner?",
+    "The NYC School Survey is administered every year to students in grades 6-12 and to families and teachers of children in grades K-12. The survey is designed to collect information about each school's ability to support student success.",
+    "Response rates show what percentage of the school community actually completed the survey. Higher response rates tell us that the results of the survey reflect the views of a larger portion of the group surveyed.",
+    "is the average college and career readiness score for students at this school after four years in high school",
+    "successfully completed approved college or career preparatory courses and exams",
+    "graduated from high school and enrolled in college or other post-secondary program within six months",
+    "How many students were enrolled in at least one advanced class?",
+    "What is the racial breakdown of the students that were enrolled in at least one advanced class?",
+    "(Number of students in subgroup is in parentheses)",
+    "",
+    "Movement of students with special needs to less restrictive environments",
+    "What percentage of students with IEPs received their recommended special education programs?",
+    "What percentage of students with IEPs received their recommended related services (such as counseling or speech, occupational or physical therapy)?",
+    "of the class of 2024 graduated within four years",
+    "(Number in parentheses shows all class-of-2024 students who are in the subgroup)",
+    "of the class of 2022 graduated within six years",
+    "The citywide graduation rates are projected numbers, subject to correction by the New York State Education Department.",
+    "For the class of 2023, what was the graduation rate for seniors who entered the school with different eighth-grade test scores?",
+    "earned enough credits in ninth grade to be on track for graduation",
+    "earned enough credits in tenth grade to be on track for graduation",
+    "How well does this school help students improve from their incoming proficiency levels and perform on Regents exams?",
+    "English",
+    "Algebra",
+    "Social Studies",
+    "Living Environment",
+    "responded positively to survey questions about instruction/learning environment",
+    "What percentage of students say that their teachers have high expectations for them?",
+    "What percentage of students say that they learn a lot from feedback on their work?",
+    "What percentage of students say that their teachers treat students of different races, cultures, or backgrounds equally?",
+    "What percentage of teachers say that students in their class show that they respect each other's ideas?",
+    "responded positively to survey questions about safety",
+    "What percentage of students feel safe in the hallways, bathrooms, locker rooms, and cafeteria?",
+    "responded positively to survey questions about school leadership",
+    "What percentage of teachers say that the principal/school leader at this school sets high standards for student learning?",
+    "What percentage of teachers say that the principal/school leader encourages feedback through regular meetings with families and teacher leaders?",
+    "responded positively to survey questions about advising and planning",
+    "What percentage of students say that adults at this school help them plan for how to meet their future career goals?",
+    "responded positively to survey questions about student support",
+    "What percentage of students say that their teachers support them when they are upset?",
+    "What percentage of students say that their teachers treats them with respect?",
+    "What percentage of students say that they feel like they belong at this school?",
+    "responded positively to survey questions about communication",
+    "What percentage of families say that the school staff regularly communicates with them about how they can help their child learn?",
+    "responded positively to survey questions about family involvement",
+    "What percentage of families say that they have communicated with their child's teacher about their child's performance?",
+    "responded positively to survey questions about family-school trust",
+    "What percentage of families say that the school staff work hard to build trusting relationships with families like them?"
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "basic_info": {
+    "name": "The Urban Assembly School for Green Careers (03M402)",
+    "school_id": "03M402",
+    "google_maps_url": "https://www.google.com/maps/place/145+West+84+Street,+Manhattan,+NY+10024",
+    "location": {
+      "street_address": "145 West  84 Street",
+      "city_state_zip": "Manhattan, NY 10024",
+      "full_address": "145 West  84 Street, Manhattan, NY 10024"
+    }
+  },
+  "survey_info": {
+    "Families": "11% (34 surveys submitted)",
+    "Teachers": "70% (23 surveys submitted)",
+    "Students": "64% (195 surveys submitted)"
+  },
+  "metrics": {
+    "Gen": {
+      "School website": "www.uagreencareers.org",
+      "Principal": "Kerry Rutishauser",
+      "Grades served": "09,10,11,12,SE",
+      "Enrollment": "318",
+      "Average SAT": "835/1600",
+      "Admissions methods": "Ed. Opt.",
+      "State accountability status": "Local Support and Improvement"
+    },
+    "Location": {},
+    "Directory-overview": {
+      "Welcome to Green, where we're dedicated to preparing students for success in a 21st-century world through innovative programs and a supportive learning environment.  College-Preparatory Curriculum and Instruction": "We offer rigorous college-preparatory curricula and individually tailored instruction that ensures students are well-equipped for higher education.    - Progressive Sustainability-Focused Science Programs: Our comprehensive technical science pathways, Building Science and Urban Agriculture, provide students with practical skills necessary to solve real-world problems. Students can also obtain paid internships and develop both their college and career resumes over the course of four years.  - FutureReady NYC Business Program: Our Business and Marketing program equips students with the essential skills and knowledge to excel in the dynamic world of commerce and entrepreneurship. Students will gain expertise with marking strategies, digital communications, business ethics, and financial literacy, preparing them for further studies in business-related fields.  - Core Values: Collaboration, intentionality, and responsibility are at the heart of everything we do at UAGC. We foster an environment where students develop leadership, cooperative problem-solving abilities, and superior communication skills-both written and verbal.  - Rich Learning Environments: We seek curious and collaborative learners who thrive in an environment that encourages active engagement with coursework and the community. Our goal is to fully engage students in their learning journey, preparing them not only academically, but also socially and emotionally for their future endeavors.    We invite you to explore our school and discover how our distinctive approach to education can empower you to"
+    },
+    "Sch-demog": {
+      "Asian": "<1%",
+      "Black": "21%",
+      "Hispanic or Latinx": "71%",
+      "Native American": "1%",
+      "Native Hawaiian/Pacific Islander": "0%",
+      "White": "4%",
+      "English language learners": "15%",
+      "Students with IEPs": "25%",
+      "Economic Need Index": "90%",
+      "Female": "47%",
+      "Male": "53%",
+      "Neither female nor male": "0%"
+    },
+    "Program": {
+      "Boys": "Volleyball,Soccer,Basketball,Bowling,Baseball",
+      "Girls": "Softball,Bowling,Volleyball,Basketball,Tennis,Soccer",
+      "Co-Ed": "N/A"
+    },
+    "Staff": {
+      "Asian": "N/A (fewer than 5 teachers)",
+      "Black": "N/A (fewer than 5 teachers)",
+      "Hispanic or Latinx": "21%",
+      "Native American": "0%",
+      "Native Hawaiian/Pacific Islander": "0%",
+      "White": "62%",
+      "Years of experience as principal at this school": "5.1",
+      "Teachers with 3 or more years of experience": "45%"
+    },
+    "Space": {
+      "Shared space": "Yes, colocated (03M403, 03M404, 03M417, 79M984, 84M523)"
+    },
+    "Survey-rr": {},
+    "Ccr": {
+      "Comparison Group*": "60%  Manhattan: 66% City: 64%",
+      "(Number of students successfully completing out of 56 seniors)": ""
+    },
+    "Adv-demog": {},
+    "Adv-footnote": {},
+    "Lre": {},
+    "Swiep": {},
+    "Grad": {
+      "Comparison Group*": "90%  Manhattan: 87% City: 88%"
+    },
+    "Prog-to-grad": {
+      "Comparison Group*": "80%  Manhattan: 86% City: 84%"
+    },
+    "Learning-env": {
+      "Manhattan": "77% City: 77%"
+    },
+    "Safety": {
+      "Manhattan": "75% City: 74%"
+    },
+    "School-leadership": {
+      "Manhattan": "81% City: 82%"
+    },
+    "Advising": {
+      "Manhattan": "86% City: 86%"
+    },
+    "Attendance": {
+      "Student attendance": "78% (Comp group*: 82%)",
+      "Students with >90% attendance": "32% (Comp group*: 52%)",
+      "Teacher attendance": "97%"
+    },
+    "Stu-support": {
+      "Manhattan": "73% City: 73%"
+    },
+    "Communication": {
+      "Manhattan": "91% City: 92%"
+    },
+    "Family-involve": {
+      "Manhattan": "84% City: 83%"
+    },
+    "Relation-w-family": {
+      "Manhattan": "93% City: 94%"
+    },
+    "School Values": {
+      "Value 1": "28",
+      "Value 2": "33%",
+      "Value 3": "61%",
+      "Value 4": "88%",
+      "Value 5": "96%",
+      "Value 6": "83%",
+      "Value 7": "80%",
+      "Value 8": "60%",
+      "Value 9": "56%",
+      "Value 10": "50%",
+      "Value 11": "77%",
+      "Value 12": "58%",
+      "Value 13": "81%",
+      "Value 14": "74%",
+      "Value 15": "79%"
+    }
+  },
+  "descriptions": [
+    "",
+    "(Number of students in subgroup is in parentheses)",
+    "What percentage of students say that this school offers a wide enough variety of programs, classes, and activities to keep them interested in school?",
+    "International Environmental Studies and Human Rights Trips, Keepers of the Culture (Student Leadership Program),Gender Sexuality Alliance (GSA), Green Team, Student-Run Green Market, Student Council, Weightlifting Club, Yearbook Club, Anime Club, Dance Club, Game Club, Student Mentoring, AM Basketball Club, Drama Program, Paid Internships",
+    "Visual Art, Choreography / Dance Composition",
+    "Career & Technical Education; Future Ready NYC; NYC Solves; Project Pivot",
+    "What percentage of students say that the school is kept clean?",
+    "What percentage of teachers say that the school is kept in good physical condition?",
+    "What percentage of teachers say that physical repairs to this school building are completed in a timely manner?",
+    "The NYC School Survey is administered every year to students in grades 6-12 and to families and teachers of children in grades K-12. The survey is designed to collect information about each school's ability to support student success.",
+    "Response rates show what percentage of the school community actually completed the survey. Higher response rates tell us that the results of the survey reflect the views of a larger portion of the group surveyed.",
+    "is the average college and career readiness score for students at this school after four years in high school",
+    "successfully completed approved college or career preparatory courses and exams",
+    "graduated from high school and enrolled in college or other post-secondary program within six months",
+    "How many students were enrolled in at least one advanced class?",
+    "What is the racial breakdown of the students that were enrolled in at least one advanced class?",
+    "(Number of students in subgroup is in parentheses)",
+    "",
+    "Movement of students with special needs to less restrictive environments",
+    "What percentage of students with IEPs received their recommended special education programs?",
+    "What percentage of students with IEPs received their recommended related services (such as counseling or speech, occupational or physical therapy)?",
+    "of the class of 2024 graduated within four years",
+    "(Number in parentheses shows all class-of-2024 students who are in the subgroup)",
+    "of the class of 2022 graduated within six years",
+    "The citywide graduation rates are projected numbers, subject to correction by the New York State Education Department.",
+    "For the class of 2023, what was the graduation rate for seniors who entered the school with different eighth-grade test scores?",
+    "earned enough credits in ninth grade to be on track for graduation",
+    "earned enough credits in tenth grade to be on track for graduation",
+    "How well does this school help students improve from their incoming proficiency levels and perform on Regents exams?",
+    "English",
+    "Algebra",
+    "Social Studies",
+    "Living Environment",
+    "responded positively to survey questions about instruction/learning environment",
+    "What percentage of students say that their teachers have high expectations for them?",
+    "What percentage of students say that they learn a lot from feedback on their work?",
+    "What percentage of students say that their teachers treat students of different races, cultures, or backgrounds equally?",
+    "What percentage of teachers say that students in their class show that they respect each other's ideas?",
+    "responded positively to survey questions about safety",
+    "What percentage of students feel safe in the hallways, bathrooms, locker rooms, and cafeteria?",
+    "responded positively to survey questions about school leadership",
+    "What percentage of teachers say that the principal/school leader at this school sets high standards for student learning?",
+    "What percentage of teachers say that the principal/school leader encourages feedback through regular meetings with families and teacher leaders?",
+    "responded positively to survey questions about advising and planning",
+    "What percentage of students say that adults at this school help them plan for how to meet their future career goals?",
+    "responded positively to survey questions about student support",
+    "What percentage of students say that their teachers support them when they are upset?",
+    "What percentage of students say that their teachers treats them with respect?",
+    "What percentage of students say that they feel like they belong at this school?",
+    "responded positively to survey questions about communication",
+    "What percentage of families say that the school staff regularly communicates with them about how they can help their child learn?",
+    "responded positively to survey questions about family involvement",
+    "What percentage of families say that they have communicated with their child's teacher about their child's performance?",
+    "responded positively to survey questions about family-school trust",
+    "What percentage of families say that the school staff work hard to build trusting relationships with families like them?"
+  ]
+}

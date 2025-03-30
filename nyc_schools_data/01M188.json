@@ -1,0 +1,177 @@
+{
+  "basic_info": {
+    "name": "P.S. 188 The Island School (01M188)",
+    "school_id": "01M188",
+    "google_maps_url": "https://www.google.com/maps/place/442+East+Houston+Street,+New+York,+NY+10002",
+    "location": {
+      "street_address": "442 East Houston Street",
+      "city_state_zip": "New York, NY 10002",
+      "full_address": "442 East Houston Street, New York, NY 10002"
+    }
+  },
+  "survey_info": {
+    "Families (not including Pre-K)": "95% (400 surveys submitted)",
+    "Teachers": "100% (36 surveys submitted)",
+    "Students": "74% (131 surveys submitted)"
+  },
+  "metrics": {
+    "Gen": {
+      "School website": "www.island188.org",
+      "Principal": "Suany Ramos",
+      "Grades served": "PK,0K,01,02,03,04,05,06,07,08,SE",
+      "Enrollment": "417",
+      "Kindergarten admissions methods": "Choice School",
+      "Middle school admissions methods": "D75 Special Education Inclusive Services, Open",
+      "Dual language programs": "Spanish",
+      "State accountability status": "Local Support and Improvement"
+    },
+    "Location": {},
+    "Directory-overview": {},
+    "Sch-demog": {
+      "Asian": "2%",
+      "Black": "24%",
+      "Hispanic or Latinx": "69%",
+      "Native American": "1%",
+      "Native Hawaiian/Pacific Islander": "<1%",
+      "White": "1%",
+      "English language learners": "32%",
+      "Students with IEPs": "29%",
+      "Economic Need Index": ">95%",
+      "Female": "46%",
+      "Male": "54%",
+      "Neither female nor male": "0%"
+    },
+    "Program": {
+      "Boys": "N/A",
+      "Girls": "N/A",
+      "Co-Ed": "N/A",
+      "Community School; Dual Language or TBE; DYCD": "COMPASS/SONYC; NYC Reads; Project Pivot"
+    },
+    "Staff": {
+      "Asian": "N/A (fewer than 5 teachers)",
+      "Black": "22%",
+      "Hispanic or Latinx": "43%",
+      "Native American": "0%",
+      "Native Hawaiian/Pacific Islander": "0%",
+      "White": "19%",
+      "Years of experience as principal at this school": "10.1",
+      "Teachers with three or more years of experience": "76%"
+    },
+    "Space": {
+      "Shared space": "Yes, colocated (75M094)"
+    },
+    "Survey-rr": {},
+    "Next-level": {
+      "Comparison Group*": "73% District 01: 92%  City: 90%"
+    },
+    "Core-course": {
+      "Comparison Group*": "97% District 01: 94%  City: 92%"
+    },
+    "Lre": {},
+    "Swiep": {},
+    "Ells": {},
+    "Learning-env": {
+      "District 01": "80%  City: 77%"
+    },
+    "Perf": {
+      "Comparison Group*": "33% District 01: 58%  City: 49%"
+    },
+    "Growth": {},
+    "Perf2": {
+      "Comparison Group*": "40% District 01: 60%  City: 53%"
+    },
+    "Growth2": {},
+    "Safety": {
+      "District 01": "70%  City: 63%"
+    },
+    "School-leadership": {
+      "District 01": "86%  City: 81%"
+    },
+    "Advising": {
+      "District 01": "89%  City: 88%"
+    },
+    "Attendance": {
+      "Student attendance": "83% (Comp group*: 91%)",
+      "Students with >90% attendance": "32% (Comp group*: 58%)",
+      "Teacher attendance": "96%"
+    },
+    "Stu-support": {
+      "District 01": "80%  City: 70%"
+    },
+    "Communication": {
+      "District 01": "94%  City: 94%"
+    },
+    "Family-involve": {
+      "District 01": "93%  City: 90%"
+    },
+    "Relation-w-family": {
+      "District 01": "94%  City: 94%"
+    },
+    "School Values": {
+      "Value 1": "68%",
+      "Value 2": "84%",
+      "Value 3": "93%",
+      "Value 4": "100%",
+      "Value 5": "36%",
+      "Value 6": "66%",
+      "Value 7": "100%",
+      "Value 8": "99%",
+      "Value 9": "100%",
+      "Value 10": "99%",
+      "Value 11": "100%",
+      "Value 12": "100%",
+      "Value 13": "100%"
+    }
+  },
+  "descriptions": [
+    "Our mission at the Island School is to be relentless in our pursuit of best practices to support student success. One way that we have done that?and will continue to do it?is by giving students a wide array of experiences so that they can identify areas of interest and talent and then develop those interests and talents into lifelong passions. Our faculty is committed to helping each of our children reach their full academic potential. We are developing a culture of college-minded students and working with community members to create a challenging learning environment. As a Community School, we look at how we can support the whole child.  We provide services not only for our children but for our families. Parents like that we help identify and nurture their children's interest as well as their own talents. Parents appreciate our partnerships with high schools such as Bard High School Early College and Orchard Collegiate High School.",
+    "(Number of students in subgroup is in parentheses)",
+    "What percentage of students say that this school offers a wide enough variety of programs, classes, and activities to keep them interested in school?",
+    "Saturday Academy, Student Council, Technology, Yearbook",
+    "What percentage of students say that the school is kept clean?",
+    "What percentage of teachers say that the school is kept in good physical condition?",
+    "What percentage of teachers say that physical repairs to this school building are completed in a timely manner?",
+    "The NYC School Survey is administered every year to students in grades 6-12 and to families and teachers of children in grades K-12. The survey is designed to collect information about each school's ability to support student success.",
+    "Response rates show what percentage of the school community actually completed the survey. Higher response rates tell us that the results of the survey reflect the views of a larger portion of the group surveyed.",
+    "of this school's former eighth graders earned enough high school credit in ninth grade to be on track for graduation",
+    "Which high schools did students from this school most frequently attend?",
+    "of eighth grade students earned high school credit",
+    "pass rate by this school's students in their math, English, social studies, and science classes",
+    "Movement of students with special needs to less restrictive environments",
+    "What percentage of students with IEPs received their recommended special education programs?",
+    "What percentage of students with IEPs received their recommended related services (such as counseling or speech, occupational or physical therapy)?",
+    "How well does this school help English language learners demonstrate movement toward English language proficiency?",
+    "responded positively to survey questions about instruction/learning environment",
+    "What percentage of students say that their teachers have high expectations for them?",
+    "What percentage of students say that they learn a lot from feedback on their work?",
+    "What percentage of students say that their teachers treat students of different races, cultures, or backgrounds equally?",
+    "What percentage of teachers say that students in their class show that they respect each other's ideas?",
+    "of students at this school met State standards on the State English test; the average score was 2.6 out of 4.5",
+    "What percentage of different groups of students met State standards (scored a 3 or 4) on the State English test?",
+    "(Total number of test takers in the subgroup is in parentheses)",
+    "How well did this school help students improve on their State English tests?",
+    "Over the past two years, how did each eighth grade students' State test scores compare to their own scores from when they were in fifth grade?",
+    "of students at this school met State standards on the State math test; the average score was 3.1 out of 4.5",
+    "What percentage of different groups of students met State standards (scored a 3 or 4) on the State math test?",
+    "(Total number of test takers in the subgroup is in parentheses)",
+    "How well did this school help students improve on their State math tests?",
+    "Over the past two years, how did each eighth grade students' State test scores compare to their own scores from when they were in fifth grade?",
+    "responded positively to survey questions about safety",
+    "What percentage of students feel safe in the hallways, bathrooms, locker rooms, and cafeteria?",
+    "responded positively to survey questions about school leadership",
+    "What percentage of teachers say that the principal/school leader at this school sets high standards for student learning?",
+    "What percentage of teachers say that the principal/school leader encourages feedback through regular meetings with families and teacher leaders?",
+    "responded positively to survey questions about advising and planning",
+    "What percentage of students say that this school provides them with guidance on the high school application process?",
+    "responded positively to survey questions about student support",
+    "What percentage of students say that their teachers support them when they are upset?",
+    "What percentage of students say that their teachers treats them with respect?",
+    "What percentage of students say that they feel like they belong at this school?",
+    "responded positively to survey questions about communication",
+    "What percentage of families say that the school staff regularly communicates with them about how they can help their child learn?",
+    "responded positively to survey questions about family involvement",
+    "What percentage of families say that they have communicated with their child's teacher about their child's performance?",
+    "responded positively to survey questions about family-school trust",
+    "What percentage of families say that the school staff work hard to build trusting relationships with families like them?"
+  ]
+}

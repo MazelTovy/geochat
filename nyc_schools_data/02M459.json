@@ -1,0 +1,181 @@
+{
+  "basic_info": {
+    "name": "Manhattan International High School (02M459)",
+    "school_id": "02M459",
+    "google_maps_url": "https://www.google.com/maps/place/317+East+67+Street,+Manhattan,+NY+10065",
+    "location": {
+      "street_address": "317 East  67 Street",
+      "city_state_zip": "Manhattan, NY 10065",
+      "full_address": "317 East  67 Street, Manhattan, NY 10065"
+    }
+  },
+  "survey_info": {
+    "Families": "76% (270 surveys submitted)",
+    "Teachers": "92% (24 surveys submitted)",
+    "Students": "81% (286 surveys submitted)"
+  },
+  "metrics": {
+    "Gen": {
+      "School website": "www.mihsnyc.org",
+      "Principal": "Gladys Rodriguez",
+      "Grades served": "09,10,11,12",
+      "Enrollment": "373",
+      "Average SAT": "804/1600",
+      "Admissions methods": "Language Criteria",
+      "State accountability status": "Local Support and Improvement"
+    },
+    "Location": {},
+    "Directory-overview": {},
+    "Sch-demog": {
+      "Asian": "8%",
+      "Black": "16%",
+      "Hispanic or Latinx": "63%",
+      "Native American": "<1%",
+      "Native Hawaiian/Pacific Islander": "<1%",
+      "White": "11%",
+      "English language learners": "73%",
+      "Students with IEPs": "3%",
+      "Economic Need Index": ">95%",
+      "Female": "48%",
+      "Male": "52%",
+      "Neither female nor male": "0%"
+    },
+    "Program": {
+      "Boys": "Basketball,Badminton,Soccer,Volleyball",
+      "Girls": "Swimming,Volleyball,Badminton,Basketball,Soccer",
+      "Co-Ed": "N/A",
+      "Afterschool": "Cooking Club, French Heritage Club, NYPD Explorers, Theater Club, Student Government, Yearbook, Anime Club, Fitness Club, Big Brother/Big Sister, Swimming (onsite Pool in building), Gaming Club, onsite YMCA (Rowe Scholars, Community Service, Internships, Learn to Earn, Y Swear, Swimming, Global Teens, SAT Prep, Biking, College Road Trips and Rallies).     Saturday Academy: Literacy Program, Regents Prep and Math Prep    Summer Programs: Summer Youth Employment Program, Career Connect- Workplace Challenge with Solar One (Paid stipend), John Jay Upward Bound, College Now Summer, English Enrichment Classes, and Incoming Student Orientation Program.,Gender Sexuality Alliance (GSA)"
+    },
+    "Staff": {
+      "Asian": "26%",
+      "Black": "N/A (fewer than 5 teachers)",
+      "Hispanic or Latinx": "N/A (fewer than 5 teachers)",
+      "Native American": "0%",
+      "Native Hawaiian/Pacific Islander": "0%",
+      "White": "39%",
+      "Years of experience as principal at this school": "12",
+      "Teachers with 3 or more years of experience": "83%"
+    },
+    "Space": {
+      "Shared space": "Yes, colocated (02M225, 02M449, 02M519, 02M565, 75M226, 79M984)"
+    },
+    "Survey-rr": {},
+    "Ccr": {
+      "Comparison Group*": "54%  Manhattan: 66% City: 64%",
+      "(Number of students successfully completing out of 84 seniors)": ""
+    },
+    "Adv-demog": {},
+    "Adv-footnote": {},
+    "Lre": {},
+    "Swiep": {},
+    "Grad": {
+      "Comparison Group*": "86%  Manhattan: 87% City: 88%"
+    },
+    "Prog-to-grad": {
+      "Comparison Group*": "81%  Manhattan: 86% City: 84%"
+    },
+    "Learning-env": {
+      "Manhattan": "77% City: 77%"
+    },
+    "Safety": {
+      "Manhattan": "75% City: 74%"
+    },
+    "School-leadership": {
+      "Manhattan": "81% City: 82%"
+    },
+    "Advising": {
+      "Manhattan": "86% City: 86%"
+    },
+    "Attendance": {
+      "Student attendance": "86% (Comp group*: 81%)",
+      "Students with >90% attendance": "56% (Comp group*: 58%)",
+      "Teacher attendance": "97%"
+    },
+    "Stu-support": {
+      "Manhattan": "73% City: 73%"
+    },
+    "Communication": {
+      "Manhattan": "91% City: 92%"
+    },
+    "Family-involve": {
+      "Manhattan": "84% City: 83%"
+    },
+    "Relation-w-family": {
+      "Manhattan": "93% City: 94%"
+    },
+    "School Values": {
+      "Value 1": "47",
+      "Value 2": "49%",
+      "Value 3": "49%",
+      "Value 4": "85%",
+      "Value 5": "93%",
+      "Value 6": "99%",
+      "Value 7": "87%",
+      "Value 8": "85%",
+      "Value 9": "83%",
+      "Value 10": "90%",
+      "Value 11": "91%",
+      "Value 12": "82%",
+      "Value 13": "96%",
+      "Value 14": "83%",
+      "Value 15": "96%"
+    }
+  },
+  "descriptions": [
+    "",
+    "Manhattan International High School (MIHS) is a thriving, multicultural community where students from over 60 nationalities and speakers of 40 different languages come together. Specializing in serving recently immigrated students who are new learners of English, MIHS offers a supportive and dynamic learning environment. Our dedicated teachers collaborate to create engaging interdisciplinary curricula, ensuring students acquire the competency-based skills and knowledge necessary for success in both higher education and their future careers. Each student benefits from personalized attention with a counselor available for every 75 students. Our hands-on, project-based approach culminates in the presentation of Portfolios as a graduation requirement, fostering both linguistic and academic growth.    MIHS offers a robust Software Engineering Program, College Now & Advanced Placement (AP) classes, and extensive Work-Based Learning (WBL) opportunities. Recognized as an Apple Distinguished School, we are committed to integrating cutting-edge technology into education. As part of the Career Readiness and Modern Youth Apprenticeship (CRMYA) pilot and Future Ready NYC, we prepare our students for future careers by developing Career and Technical Education (CTE) programs in Education and Computer Science. Our ninth and tenth graders explore career interests and develop readiness skills through specialized courses. In 11th grade, students participate in internships through the WBL program, gaining valuable real-world experience. Students have the opportunity to apply for apprenticeships in tech, finance, and business, allowing them to earn and learn while in high school. Additionally, through the EdEquity program, our students can take college courses from prestigious institutions",
+    "(Number of students in subgroup is in parentheses)",
+    "What percentage of students say that this school offers a wide enough variety of programs, classes, and activities to keep them interested in school?",
+    "Visual Art, Graphic Design, Studio Art, Mixed Media, Filmmaking / Video",
+    "Career Readiness and Modern Youth Apprenticeship; Consortium; CS for All; Future Ready NYC; New Arrivals; PROSE; Respect for All",
+    "What percentage of students say that the school is kept clean?",
+    "What percentage of teachers say that the school is kept in good physical condition?",
+    "What percentage of teachers say that physical repairs to this school building are completed in a timely manner?",
+    "The NYC School Survey is administered every year to students in grades 6-12 and to families and teachers of children in grades K-12. The survey is designed to collect information about each school's ability to support student success.",
+    "Response rates show what percentage of the school community actually completed the survey. Higher response rates tell us that the results of the survey reflect the views of a larger portion of the group surveyed.",
+    "is the average college and career readiness score for students at this school after four years in high school",
+    "successfully completed approved college or career preparatory courses and exams",
+    "graduated from high school and enrolled in college or other post-secondary program within six months",
+    "How many students were enrolled in at least one advanced class?",
+    "What is the racial breakdown of the students that were enrolled in at least one advanced class?",
+    "(Number of students in subgroup is in parentheses)",
+    "",
+    "Movement of students with special needs to less restrictive environments",
+    "What percentage of students with IEPs received their recommended special education programs?",
+    "What percentage of students with IEPs received their recommended related services (such as counseling or speech, occupational or physical therapy)?",
+    "of the class of 2024 graduated within four years",
+    "(Number in parentheses shows all class-of-2024 students who are in the subgroup)",
+    "of the class of 2022 graduated within six years",
+    "The citywide graduation rates are projected numbers, subject to correction by the New York State Education Department.",
+    "For the class of 2023, what was the graduation rate for seniors who entered the school with different eighth-grade test scores?",
+    "earned enough credits in ninth grade to be on track for graduation",
+    "earned enough credits in tenth grade to be on track for graduation",
+    "How well does this school help students improve from their incoming proficiency levels and perform on Regents exams?",
+    "English",
+    "Algebra",
+    "Social Studies",
+    "Living Environment",
+    "responded positively to survey questions about instruction/learning environment",
+    "What percentage of students say that their teachers have high expectations for them?",
+    "What percentage of students say that they learn a lot from feedback on their work?",
+    "What percentage of students say that their teachers treat students of different races, cultures, or backgrounds equally?",
+    "What percentage of teachers say that students in their class show that they respect each other's ideas?",
+    "responded positively to survey questions about safety",
+    "What percentage of students feel safe in the hallways, bathrooms, locker rooms, and cafeteria?",
+    "responded positively to survey questions about school leadership",
+    "What percentage of teachers say that the principal/school leader at this school sets high standards for student learning?",
+    "What percentage of teachers say that the principal/school leader encourages feedback through regular meetings with families and teacher leaders?",
+    "responded positively to survey questions about advising and planning",
+    "What percentage of students say that adults at this school help them plan for how to meet their future career goals?",
+    "responded positively to survey questions about student support",
+    "What percentage of students say that their teachers support them when they are upset?",
+    "What percentage of students say that their teachers treats them with respect?",
+    "What percentage of students say that they feel like they belong at this school?",
+    "responded positively to survey questions about communication",
+    "What percentage of families say that the school staff regularly communicates with them about how they can help their child learn?",
+    "responded positively to survey questions about family involvement",
+    "What percentage of families say that they have communicated with their child's teacher about their child's performance?",
+    "responded positively to survey questions about family-school trust",
+    "What percentage of families say that the school staff work hard to build trusting relationships with families like them?"
+  ]
+}

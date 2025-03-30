@@ -1,0 +1,181 @@
+{
+  "basic_info": {
+    "name": "Baruch College Campus High School (02M411)",
+    "school_id": "02M411",
+    "google_maps_url": "https://www.google.com/maps/place/55+East+25+Street,+Manhattan,+NY+10010",
+    "location": {
+      "street_address": "55 East  25 Street",
+      "city_state_zip": "Manhattan, NY 10010",
+      "full_address": "55 East  25 Street, Manhattan, NY 10010"
+    }
+  },
+  "survey_info": {
+    "Families": "24% (112 surveys submitted)",
+    "Teachers": "88% (28 surveys submitted)",
+    "Students": "68% (318 surveys submitted)"
+  },
+  "metrics": {
+    "Gen": {
+      "School website": "www.bcchsnyc.net",
+      "Principal": "Alicia Perez Katz",
+      "Grades served": "09,10,11,SE",
+      "Enrollment": "473",
+      "Average SAT": "1168/1600",
+      "Admissions methods": "Screened",
+      "State accountability status": "Local Support and Improvement"
+    },
+    "Location": {},
+    "Directory-overview": {},
+    "Sch-demog": {
+      "Asian": "30%",
+      "Black": "10%",
+      "Hispanic or Latinx": "29%",
+      "Native American": "<1%",
+      "Native Hawaiian/Pacific Islander": "<1%",
+      "White": "27%",
+      "English language learners": "2%",
+      "Students with IEPs": "16%",
+      "Economic Need Index": "58%",
+      "Female": "56%",
+      "Male": "44%",
+      "Neither female nor male": "0%"
+    },
+    "Program": {
+      "Boys": "Basketball,Baseball,Wrestling,Soccer",
+      "Girls": "Volleyball,Softball,Basketball,Soccer,Fencing,Badminton",
+      "Co-Ed": "N/A",
+      "Affinity Groups": "Black & Latinx Student Union, Asian Affinity Club,Gender Sexuality Alliance (GSA), Equity Team, Jewish Club, Muslim Club.   Media Clubs: School Newspaper, Media Team, Tech Team, Film Club.   Service Clubs: Key Club, Lorax Environmental Club, Cookies for Cancer, NHS, SAP Board, Baruch Events Committee, Student Government.  Academic/Arts Clubs: Peer Tutors, Baruch AP Tutors, Art club, Drama club, Philosophy Club, Career clubs: Rock the Street Wall Street, PENCIL partnership, Debate Team."
+    },
+    "Staff": {
+      "Asian": "N/A (fewer than 5 teachers)",
+      "Black": "N/A (fewer than 5 teachers)",
+      "Hispanic or Latinx": "N/A (fewer than 5 teachers)",
+      "Native American": "0%",
+      "Native Hawaiian/Pacific Islander": "0%",
+      "White": "71%",
+      "Years of experience as principal at this school": "20.5",
+      "Teachers with 3 or more years of experience": "81%"
+    },
+    "Space": {
+      "Shared space": "No"
+    },
+    "Survey-rr": {},
+    "Ccr": {
+      "Comparison Group*": "86%  Manhattan: 66% City: 64%",
+      "(Number of students successfully completing out of 123 seniors)": ""
+    },
+    "Adv-demog": {},
+    "Adv-footnote": {},
+    "Lre": {},
+    "Swiep": {},
+    "Grad": {
+      "Comparison Group*": "100%  Manhattan: 87% City: 88%"
+    },
+    "Prog-to-grad": {
+      "Comparison Group*": "97%  Manhattan: 86% City: 84%"
+    },
+    "Learning-env": {
+      "Manhattan": "77% City: 77%"
+    },
+    "Safety": {
+      "Manhattan": "75% City: 74%"
+    },
+    "School-leadership": {
+      "Manhattan": "81% City: 82%"
+    },
+    "Advising": {
+      "Manhattan": "86% City: 86%"
+    },
+    "Attendance": {
+      "Student attendance": "93% (Comp group*: 91%)",
+      "Students with >90% attendance": "78% (Comp group*: 75%)",
+      "Teacher attendance": "95%"
+    },
+    "Stu-support": {
+      "Manhattan": "73% City: 73%"
+    },
+    "Communication": {
+      "Manhattan": "91% City: 92%"
+    },
+    "Family-involve": {
+      "Manhattan": "84% City: 83%"
+    },
+    "Relation-w-family": {
+      "Manhattan": "93% City: 94%"
+    },
+    "School Values": {
+      "Value 1": "85",
+      "Value 2": "95%",
+      "Value 3": "95%",
+      "Value 4": "100%",
+      "Value 5": "99%",
+      "Value 6": "100%",
+      "Value 7": "98%",
+      "Value 8": "81%",
+      "Value 9": "88%",
+      "Value 10": "80%",
+      "Value 11": "90%",
+      "Value 12": "78%",
+      "Value 13": "95%",
+      "Value 14": "80%",
+      "Value 15": "98%"
+    }
+  },
+  "descriptions": [
+    "",
+    "At Baruch College Campus High School (BCCHS),  every student receives a personalized education, supporting their growth and development. As a small, college preparatory high school, we focus on the development of strong community ties, academic rigor and a culture of social advocacy.  Incoming 9th grade students are supported in transitioning to high school with a senior mentor program and study skills course. As a small school, we expand our reach by partnering with organizations, providing partnerships in theater arts, dance, and computer science. We offer nine Advanced Placement courses and students complete two years of Visual Art in 9th and 10th grade. As part of our focus around community, our four-year Advisory program supports social emotional learning and restorative circles. Students are taught to think critically by completing a social action project in 10th grade and an independent research project in 12th grade. Our full time college counselor and college college readiness electives in 11th and 12th grade help us maintain our strong college placement rate.",
+    "(Number of students in subgroup is in parentheses)",
+    "What percentage of students say that this school offers a wide enough variety of programs, classes, and activities to keep them interested in school?",
+    "Studio Art, Music History, Playwriting, Visual Art, Fashion and Textile Design, Filmmaking / Video, Musical Theater",
+    "NYC Solves",
+    "What percentage of students say that the school is kept clean?",
+    "What percentage of teachers say that the school is kept in good physical condition?",
+    "What percentage of teachers say that physical repairs to this school building are completed in a timely manner?",
+    "The NYC School Survey is administered every year to students in grades 6-12 and to families and teachers of children in grades K-12. The survey is designed to collect information about each school's ability to support student success.",
+    "Response rates show what percentage of the school community actually completed the survey. Higher response rates tell us that the results of the survey reflect the views of a larger portion of the group surveyed.",
+    "is the average college and career readiness score for students at this school after four years in high school",
+    "successfully completed approved college or career preparatory courses and exams",
+    "graduated from high school and enrolled in college or other post-secondary program within six months",
+    "How many students were enrolled in at least one advanced class?",
+    "What is the racial breakdown of the students that were enrolled in at least one advanced class?",
+    "(Number of students in subgroup is in parentheses)",
+    "",
+    "Movement of students with special needs to less restrictive environments",
+    "What percentage of students with IEPs received their recommended special education programs?",
+    "What percentage of students with IEPs received their recommended related services (such as counseling or speech, occupational or physical therapy)?",
+    "of the class of 2024 graduated within four years",
+    "(Number in parentheses shows all class-of-2024 students who are in the subgroup)",
+    "of the class of 2022 graduated within six years",
+    "The citywide graduation rates are projected numbers, subject to correction by the New York State Education Department.",
+    "For the class of 2023, what was the graduation rate for seniors who entered the school with different eighth-grade test scores?",
+    "earned enough credits in ninth grade to be on track for graduation",
+    "earned enough credits in tenth grade to be on track for graduation",
+    "How well does this school help students improve from their incoming proficiency levels and perform on Regents exams?",
+    "English",
+    "Algebra",
+    "Social Studies",
+    "Living Environment",
+    "responded positively to survey questions about instruction/learning environment",
+    "What percentage of students say that their teachers have high expectations for them?",
+    "What percentage of students say that they learn a lot from feedback on their work?",
+    "What percentage of students say that their teachers treat students of different races, cultures, or backgrounds equally?",
+    "What percentage of teachers say that students in their class show that they respect each other's ideas?",
+    "responded positively to survey questions about safety",
+    "What percentage of students feel safe in the hallways, bathrooms, locker rooms, and cafeteria?",
+    "responded positively to survey questions about school leadership",
+    "What percentage of teachers say that the principal/school leader at this school sets high standards for student learning?",
+    "What percentage of teachers say that the principal/school leader encourages feedback through regular meetings with families and teacher leaders?",
+    "responded positively to survey questions about advising and planning",
+    "What percentage of students say that adults at this school help them plan for how to meet their future career goals?",
+    "responded positively to survey questions about student support",
+    "What percentage of students say that their teachers support them when they are upset?",
+    "What percentage of students say that their teachers treats them with respect?",
+    "What percentage of students say that they feel like they belong at this school?",
+    "responded positively to survey questions about communication",
+    "What percentage of families say that the school staff regularly communicates with them about how they can help their child learn?",
+    "responded positively to survey questions about family involvement",
+    "What percentage of families say that they have communicated with their child's teacher about their child's performance?",
+    "responded positively to survey questions about family-school trust",
+    "What percentage of families say that the school staff work hard to build trusting relationships with families like them?"
+  ]
+}

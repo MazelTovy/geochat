@@ -1,0 +1,173 @@
+{
+  "basic_info": {
+    "name": "Urban Academy Laboratory High School (02M565)",
+    "school_id": "02M565",
+    "google_maps_url": "https://www.google.com/maps/place/317+East+67+Street,+Manhattan,+NY+10065",
+    "location": {
+      "street_address": "317 East  67 Street",
+      "city_state_zip": "Manhattan, NY 10065",
+      "full_address": "317 East  67 Street, Manhattan, NY 10065"
+    }
+  },
+  "survey_info": {
+    "Families": "55% (67 surveys submitted)",
+    "Teachers": "100% (16 surveys submitted)",
+    "Students": "84% (102 surveys submitted)"
+  },
+  "metrics": {
+    "Gen": {
+      "School website": "www.schools.nyc.gov/schools/M565",
+      "Principal": "Christine Olson",
+      "Enrollment": "133",
+      "Average SAT": "1042/1600",
+      "State accountability status": "Local Support and Improvement"
+    },
+    "Location": {},
+    "Sch-demog": {
+      "Asian": "2%",
+      "Black": "26%",
+      "Hispanic or Latinx": "32%",
+      "Native American": "0%",
+      "Native Hawaiian/Pacific Islander": "<1%",
+      "White": "31%",
+      "English language learners": "4%",
+      "Students with IEPs": "23%",
+      "Economic Need Index": "54%",
+      "Overage/under-credited": "14%",
+      "Female": "63%",
+      "Male": "35%",
+      "Neither female nor male": "2%"
+    },
+    "Program": {},
+    "Staff": {
+      "Asian": "N/A (fewer than 5 teachers)",
+      "Black": "38%",
+      "Hispanic or Latinx": "N/A (fewer than 5 teachers)",
+      "Native American": "0%",
+      "Native Hawaiian/Pacific Islander": "0%",
+      "White": "38%",
+      "Years of experience as principal at this school": "4",
+      "Teachers with 3 or more years of experience": "75%"
+    },
+    "Space": {
+      "Shared space": "Yes, colocated (02M225, 02M449, 02M459, 02M519, 75M226, 79M984)"
+    },
+    "Survey-rr": {},
+    "Ccr": {
+      "Comparison Group*": "60%",
+      "(Number of students successfully completing out of 33 seniors)": ""
+    },
+    "Adv-demog": {},
+    "Adv-footnote": {},
+    "Lre": {},
+    "Swiep": {},
+    "Grad": {
+      "Comparison Group*": "89%"
+    },
+    "Prog-to-grad": {
+      "Comparison Group*": "12.3"
+    },
+    "Learning-env": {
+      "City": "78%"
+    },
+    "Safety": {
+      "City": "84%"
+    },
+    "School-leadership": {
+      "City": "88%"
+    },
+    "Advising": {
+      "City": "92%"
+    },
+    "Attendance": {
+      "Average change in student attendance": "-1% (Comp group*: -3%)",
+      "Teacher attendance": "99%"
+    },
+    "Stu-support": {
+      "City": "85%"
+    },
+    "Communication": {
+      "City": "95%"
+    },
+    "Family-involve": {
+      "City": "84%"
+    },
+    "Relation-w-family": {
+      "City": "95%"
+    },
+    "School Values": {
+      "Value 1": "33%",
+      "Value 2": "52%",
+      "Value 3": "76%",
+      "Value 4": "N/A",
+      "Value 5": "N/A",
+      "Value 6": "85%",
+      "Value 7": "12.4",
+      "Value 8": "12.2",
+      "Value 9": "90%",
+      "Value 10": "90%",
+      "Value 11": "93%",
+      "Value 12": "91%",
+      "Value 13": "83%",
+      "Value 14": "97%",
+      "Value 15": "87%",
+      "Value 16": "96%"
+    }
+  },
+  "descriptions": [
+    "",
+    "(Number of students in subgroup is in parentheses)",
+    "What percentage of students say that this school offers a wide enough variety of programs, classes, and activities to keep them interested in school?",
+    "Visual Art, Painting, Art History, Filmmaking / Video, Photography, Musical Theater, Mixed Media",
+    "Consortium; PROSE; Respect for All",
+    "What percentage of students say that the school is kept clean?",
+    "What percentage of teachers say that the school is kept in good physical condition?",
+    "What percentage of teachers say that physical repairs to this school building are completed in a timely manner?",
+    "The NYC School Survey is administered every year to students in grades 6-12 and to families and teachers of children in grades K-12. The survey is designed to collect information about each school's ability to support student success.",
+    "Response rates show what percentage of the school community actually completed the survey. Higher response rates tell us that the results of the survey reflect the views of a larger portion of the group surveyed.",
+    "successfully completed approved college or career preparatory courses and exams",
+    "graduated from high school and enrolled in college or other post-secondary program within six months",
+    "How many students were enrolled in at least one advanced class?",
+    "What is the racial breakdown of the students that were enrolled in at least one advanced class?",
+    "(Number of students in subgroup is in parentheses)",
+    "",
+    "Movement of students with special needs to less restrictive environments",
+    "What percentage of students with IEPs received their recommended special education programs?",
+    "What percentage of students with IEPs received their recommended related services (such as counseling or speech, occupational or physical therapy)?",
+    "of students graduated high school",
+    "(Number in parentheses shows how many students in the graduating class are in the subgroup)",
+    "graduation rate for students who entered this school very far off-track for their age",
+    "graduation rate for students who entered this school far off-track for their age",
+    "of students graduated, earned a high school equivalency, earned an alternative commencement credential, or remained enrolled and attending the school",
+    "The transfer school graduation rate is based on whether students graduated within six years of starting high school, or seven years for students who entered this school very far off-track for their age. Other students (from prior cohorts) who graduated this year are also included.",
+    "average credits earned by students who started the year with 22 credits or less",
+    "average credits earned by students who started the year with more than 22 credits",
+    "How well does this school help students improve from their incoming proficiency levels and perform on Regents exams?",
+    "English",
+    "Algebra",
+    "Social Studies",
+    "Living Environment",
+    "responded positively to survey questions about instruction/learning environment",
+    "What percentage of students say that their teachers have high expectations for them?",
+    "What percentage of students say that they learn a lot from feedback on their work?",
+    "What percentage of students say that their teachers treat students of different races, cultures, or backgrounds equally?",
+    "What percentage of teachers say that students in their class show that they respect each other's ideas?",
+    "responded positively to survey questions about safety",
+    "What percentage of students feel safe in the hallways, bathrooms, locker rooms, and cafeteria?",
+    "responded positively to survey questions about school leadership",
+    "What percentage of teachers say that the principal/school leader at this school sets high standards for student learning?",
+    "What percentage of teachers say that the principal/school leader encourages feedback through regular meetings with families and teacher leaders?",
+    "responded positively to survey questions about advising and planning",
+    "What percentage of students say that adults at this school help them plan for how to meet their future career goals?",
+    "responded positively to survey questions about student support",
+    "What percentage of students say that their teachers support them when they are upset?",
+    "What percentage of students say that their teachers treats them with respect?",
+    "What percentage of students say that they feel like they belong at this school?",
+    "responded positively to survey questions about communication",
+    "What percentage of families say that the school staff regularly communicates with them about how they can help their child learn?",
+    "responded positively to survey questions about family involvement",
+    "What percentage of families say that they have communicated with their child's teacher about their child's performance?",
+    "responded positively to survey questions about family-school trust",
+    "What percentage of families say that the school staff work hard to build trusting relationships with families like them?"
+  ]
+}

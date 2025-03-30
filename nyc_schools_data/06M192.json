@@ -1,0 +1,147 @@
+{
+  "basic_info": {
+    "name": "P.S. 192 Jacob H. Schiff (06M192)",
+    "school_id": "06M192",
+    "google_maps_url": "https://www.google.com/maps/place/500+West+138+Street,+Manhattan,+NY+10031",
+    "location": {
+      "street_address": "500 West 138 Street",
+      "city_state_zip": "Manhattan, NY 10031",
+      "full_address": "500 West 138 Street, Manhattan, NY 10031"
+    }
+  },
+  "survey_info": {
+    "Families (not including Pre-K)": "94% (216 surveys submitted)",
+    "Teachers": "92% (22 surveys submitted)"
+  },
+  "metrics": {
+    "Gen": {
+      "School website": "WWW.PS192.ORG",
+      "Principal": "Hilduara Abreu",
+      "Grades served": "PK,0K,01,02,03,04,05,SE",
+      "Enrollment": "203",
+      "Admission methods": "Zoned",
+      "State accountability status": "Local Support and Improvement"
+    },
+    "Location": {},
+    "Sch-demog": {
+      "Asian": "<1%",
+      "Black": "6%",
+      "Hispanic or Latinx": "89%",
+      "Native American": "0%",
+      "Native Hawaiian/Pacific Islander": "0%",
+      "White": "4%",
+      "English language learners": "25%",
+      "Students with IEPs": "27%",
+      "Economic Need Index": "90%",
+      "Female": "48%",
+      "Male": "52%",
+      "Neither female nor male": "0%"
+    },
+    "Program": {
+      "Community School; DYCD": "COMPASS/SONYC; NYC Reads"
+    },
+    "Staff": {
+      "Asian": "N/A (fewer than 5 teachers)",
+      "Black": "N/A (fewer than 5 teachers)",
+      "Hispanic or Latinx": "46%",
+      "Native American": "0%",
+      "Native Hawaiian/Pacific Islander": "0%",
+      "White": "29%",
+      "Years of experience as principal at this school": "8.2",
+      "Teachers with 3 or more years of experience": "79%"
+    },
+    "Space": {
+      "Shared space": "Yes, colocated (06M209)"
+    },
+    "Survey-rr": {},
+    "Next-level": {
+      "Comparison Group*": "73% District 06: 94%  City: 96%"
+    },
+    "Lre": {},
+    "Swiep": {},
+    "Ells": {},
+    "Learning-env": {
+      "District 06": "83%  City: 82%"
+    },
+    "Perf": {
+      "Comparison Group*": "45% District 06: 40%  City: 47%"
+    },
+    "Growth": {},
+    "Perf2": {
+      "Comparison Group*": "51% District 06: 48%  City: 55%"
+    },
+    "Growth2": {},
+    "Attendance": {
+      "Student attendance": "90% (Comp group*: 87%)",
+      "Students with >90% attendance": "58% (Comp group*: 59%)",
+      "Teacher attendance": "96%"
+    },
+    "Safety": {
+      "District 06": "83%  City: 79%"
+    },
+    "School-leadership": {
+      "District 06": "85%  City: 84%"
+    },
+    "Communication": {
+      "District 06": "97%  City: 96%"
+    },
+    "Family-involve": {
+      "District 06": "96%  City: 93%"
+    },
+    "Relation-w-family": {
+      "District 06": "97%  City: 95%"
+    },
+    "School Values": {
+      "Value 1": "66%",
+      "Value 2": "75%",
+      "Value 3": "63%",
+      "Value 4": "77%",
+      "Value 5": "79%",
+      "Value 6": "65%",
+      "Value 7": "94%",
+      "Value 8": "90%",
+      "Value 9": "97%"
+    }
+  },
+  "descriptions": [
+    "",
+    "(Number of students in subgroup is in parentheses)",
+    "What percentage of families say that their school offers a wide enough variety of programs, classes, and activities to keep their child engaged in school?",
+    "What percentage of teachers say that the school is kept clean?",
+    "What percentage of teachers say that the school is kept in good physical condition?",
+    "What percentage of teachers say that physical repairs to this school building are completed in a timely manner?",
+    "The NYC School Survey is administered every year to students in grades 6-12 and to families and teachers of children in grades K-12. The survey is designed to collect information about each school's ability to support student success.",
+    "Response rates show what percentage of the school community actually completed the survey. Higher response rates tell us that the results of the survey reflect the views of a larger portion of the group surveyed.",
+    "pass rate by this school's former fifth graders in their sixth-grade classes in math, English, social studies, and science",
+    "Which middle schools did students from this school most frequently attend?",
+    "Movement of students with special needs to less restrictive environments",
+    "What percentage of students with IEPs received their recommended special education programs?",
+    "What percentage of students with IEPs received their recommended related services (such as counseling or speech, occupational or physical therapy)?",
+    "How well does this school help English language learners demonstrate movement toward English language proficiency?",
+    "responded positively to survey questions about instruction/learning environment",
+    "What percentage of teachers say that students in their class respond to challenging questions in class?",
+    "of students at this school met State standards on the State English test; the average score was 3.1 out of 4.5",
+    "What percentage of different groups of students met State standards (scored a 3 or 4) on the State English test?",
+    "(Total number of test takers in the subgroup is in parentheses)",
+    "How well did this school help students improve on their State English tests?",
+    "Over the past two years, how did fifth graders' State test scores compare to their scores from when they were in third grade?",
+    "of students at this school met State standards on the State math test; the average score was 3.3 out of 4.5",
+    "What percentage of different groups of students met State standards (scored a 3 or 4) on the State math test?",
+    "(Total number of test takers in the subgroup is in parentheses)",
+    "How well did this school help students improve on their State math tests?",
+    "Over the past two years, how did fifth graders' State test scores compare to their scores from when they were in third grade?",
+    "responded positively to survey questions about safety",
+    "What percentage of teachers say that students are safe in the hallways, bathrooms, locker rooms, and cafeteria of the school?",
+    "responded positively to survey questions about school leadership",
+    "What percentage of families feel that the principal works to create a sense of community in the school?",
+    "What percentage of teachers say that the principal/school leader at this school sets high standards for student learning?",
+    "What percentage of teachers say that the principal/school leader encourages feedback through regular meetings with families and teacher leaders?",
+    "responded positively to survey questions about communication",
+    "What percentage of families say that teachers work closely with families to meet their child's needs?",
+    "What percentage of families say that school staff regularly communicate with them about how families can help their child learn?",
+    "responded positively to survey questions about family involvement",
+    "What percentage of families say that they have communicated with their child's teacher about their child's performance?",
+    "responded positively to survey questions about family-school trust",
+    "What percentage of families say that school staff work hard to build trusting relationships with families like them?"
+  ]
+}

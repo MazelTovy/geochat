@@ -1,0 +1,177 @@
+{
+  "basic_info": {
+    "name": "P.S. 126 Jacob August Riis (02M126)",
+    "school_id": "02M126",
+    "google_maps_url": "https://www.google.com/maps/place/80+Catherine+Street,+Manhattan,+NY+10038",
+    "location": {
+      "street_address": "80 Catherine Street",
+      "city_state_zip": "Manhattan, NY 10038",
+      "full_address": "80 Catherine Street, Manhattan, NY 10038"
+    }
+  },
+  "survey_info": {
+    "Families (not including Pre-K)": "65% (358 surveys submitted)",
+    "Teachers": "95% (55 surveys submitted)",
+    "Students": "97% (316 surveys submitted)"
+  },
+  "metrics": {
+    "Gen": {
+      "School website": "www.ps126mat.org",
+      "Principal": "Carlos Romero",
+      "Grades served": "PK,0K,01,02,03,04,05,06,07,08,SE",
+      "Enrollment": "548",
+      "Kindergarten admissions methods": "Zoned",
+      "Middle school admissions methods": "Zone Priority",
+      "State accountability status": "Local Support and Improvement"
+    },
+    "Location": {},
+    "Directory-overview": {},
+    "Sch-demog": {
+      "Asian": "56%",
+      "Black": "12%",
+      "Hispanic or Latinx": "20%",
+      "Native American": "<1%",
+      "Native Hawaiian/Pacific Islander": "<1%",
+      "White": "7%",
+      "English language learners": "8%",
+      "Students with IEPs": "26%",
+      "Economic Need Index": "76%",
+      "Female": "46%",
+      "Male": "54%",
+      "Neither female nor male": "0%"
+    },
+    "Program": {
+      "Boys": "N/A",
+      "Girls": "N/A",
+      "Co-Ed": "N/A",
+      "DYCD": "COMPASS/SONYC; Gifted & Talented; NYC Reads; NYC Solves"
+    },
+    "Staff": {
+      "Asian": "16%",
+      "Black": "N/A (fewer than 5 teachers)",
+      "Hispanic or Latinx": "12%",
+      "Native American": "N/A (fewer than 5 teachers)",
+      "Native Hawaiian/Pacific Islander": "0%",
+      "White": "63%",
+      "Years of experience as principal at this school": "8.3",
+      "Teachers with three or more years of experience": "82%"
+    },
+    "Space": {
+      "Shared space": "No"
+    },
+    "Survey-rr": {},
+    "Next-level": {
+      "Comparison Group*": "96% District 02: 96%  City: 90%"
+    },
+    "Core-course": {
+      "Comparison Group*": "99% District 02: 96%  City: 92%"
+    },
+    "Lre": {},
+    "Swiep": {},
+    "Ells": {},
+    "Learning-env": {
+      "District 02": "81%  City: 77%"
+    },
+    "Perf": {
+      "Comparison Group*": "67% District 02: 75%  City: 49%"
+    },
+    "Growth": {},
+    "Perf2": {
+      "Comparison Group*": "73% District 02: 78%  City: 53%"
+    },
+    "Growth2": {},
+    "Safety": {
+      "District 02": "77%  City: 63%"
+    },
+    "School-leadership": {
+      "District 02": "83%  City: 81%"
+    },
+    "Advising": {
+      "District 02": "82%  City: 88%"
+    },
+    "Attendance": {
+      "Student attendance": "94% (Comp group*: 100%)",
+      "Students with >90% attendance": "79% (Comp group*: 89%)",
+      "Teacher attendance": "96%"
+    },
+    "Stu-support": {
+      "District 02": "80%  City: 70%"
+    },
+    "Communication": {
+      "District 02": "94%  City: 94%"
+    },
+    "Family-involve": {
+      "District 02": "92%  City: 90%"
+    },
+    "Relation-w-family": {
+      "District 02": "93%  City: 94%"
+    },
+    "School Values": {
+      "Value 1": "98%",
+      "Value 2": "93%",
+      "Value 3": "98%",
+      "Value 4": "76%",
+      "Value 5": "72%",
+      "Value 6": "78%",
+      "Value 7": "60%",
+      "Value 8": "71%",
+      "Value 9": "91%",
+      "Value 10": "67%",
+      "Value 11": "94%",
+      "Value 12": "87%",
+      "Value 13": "96%"
+    }
+  },
+  "descriptions": [
+    "",
+    "While at P.S. 126/MAT, students will engage in a creative and rigorous curriculum that is geared towards fostering collaboration, inquiry, research, public speaking, and overall social-emotional development. Students will interact and incorporate technology in all of the core classes, with opportunities to learn coding, animation, and robotics. In eighth grade, all of our students will be offered the course work necessary to take the Earth Science and Algebra I Regents exams as well as the Spanish Proficiency exam. Our elective program allows students to major in fine arts, percussion, or band; providing students the necessary skills and preparation for high school auditions. Additionally, we have an extensive competitive sports program that offers 23 different sports for both male and female students.",
+    "(Number of students in subgroup is in parentheses)",
+    "What percentage of students say that this school offers a wide enough variety of programs, classes, and activities to keep them interested in school?",
+    "Chess, Leadership, Student Council, Yearbook",
+    "What percentage of students say that the school is kept clean?",
+    "What percentage of teachers say that the school is kept in good physical condition?",
+    "What percentage of teachers say that physical repairs to this school building are completed in a timely manner?",
+    "The NYC School Survey is administered every year to students in grades 6-12 and to families and teachers of children in grades K-12. The survey is designed to collect information about each school's ability to support student success.",
+    "Response rates show what percentage of the school community actually completed the survey. Higher response rates tell us that the results of the survey reflect the views of a larger portion of the group surveyed.",
+    "of this school's former eighth graders earned enough high school credit in ninth grade to be on track for graduation",
+    "Which high schools did students from this school most frequently attend?",
+    "of eighth grade students earned high school credit",
+    "pass rate by this school's students in their math, English, social studies, and science classes",
+    "Movement of students with special needs to less restrictive environments",
+    "What percentage of students with IEPs received their recommended special education programs?",
+    "What percentage of students with IEPs received their recommended related services (such as counseling or speech, occupational or physical therapy)?",
+    "How well does this school help English language learners demonstrate movement toward English language proficiency?",
+    "responded positively to survey questions about instruction/learning environment",
+    "What percentage of students say that their teachers have high expectations for them?",
+    "What percentage of students say that they learn a lot from feedback on their work?",
+    "What percentage of students say that their teachers treat students of different races, cultures, or backgrounds equally?",
+    "What percentage of teachers say that students in their class show that they respect each other's ideas?",
+    "of students at this school met State standards on the State English test; the average score was 3.4 out of 4.5",
+    "What percentage of different groups of students met State standards (scored a 3 or 4) on the State English test?",
+    "(Total number of test takers in the subgroup is in parentheses)",
+    "How well did this school help students improve on their State English tests?",
+    "Over the past two years, how did each eighth grade students' State test scores compare to their own scores from when they were in fifth grade?",
+    "of students at this school met State standards on the State math test; the average score was 3.6 out of 4.5",
+    "What percentage of different groups of students met State standards (scored a 3 or 4) on the State math test?",
+    "(Total number of test takers in the subgroup is in parentheses)",
+    "How well did this school help students improve on their State math tests?",
+    "Over the past two years, how did each eighth grade students' State test scores compare to their own scores from when they were in fifth grade?",
+    "responded positively to survey questions about safety",
+    "What percentage of students feel safe in the hallways, bathrooms, locker rooms, and cafeteria?",
+    "responded positively to survey questions about school leadership",
+    "What percentage of teachers say that the principal/school leader at this school sets high standards for student learning?",
+    "What percentage of teachers say that the principal/school leader encourages feedback through regular meetings with families and teacher leaders?",
+    "responded positively to survey questions about advising and planning",
+    "What percentage of students say that this school provides them with guidance on the high school application process?",
+    "responded positively to survey questions about student support",
+    "What percentage of students say that their teachers support them when they are upset?",
+    "What percentage of students say that their teachers treats them with respect?",
+    "What percentage of students say that they feel like they belong at this school?",
+    "responded positively to survey questions about communication",
+    "What percentage of families say that the school staff regularly communicates with them about how they can help their child learn?",
+    "responded positively to survey questions about family involvement",
+    "What percentage of families say that they have communicated with their child's teacher about their child's performance?",
+    "responded positively to survey questions about family-school trust",
+    "What percentage of families say that the school staff work hard to build trusting relationships with families like them?"
+  ]
+}

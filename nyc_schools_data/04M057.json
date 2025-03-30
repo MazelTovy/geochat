@@ -1,0 +1,177 @@
+{
+  "basic_info": {
+    "name": "James Weldon Johnson (04M057)",
+    "school_id": "04M057",
+    "google_maps_url": "https://www.google.com/maps/place/176+East+115+Street,+Manhattan,+NY+10029",
+    "location": {
+      "street_address": "176 East 115 Street",
+      "city_state_zip": "Manhattan, NY 10029",
+      "full_address": "176 East 115 Street, Manhattan, NY 10029"
+    }
+  },
+  "survey_info": {
+    "Families (not including Pre-K)": "27% (139 surveys submitted)",
+    "Teachers": "73% (40 surveys submitted)",
+    "Students": "65% (135 surveys submitted)"
+  },
+  "metrics": {
+    "Gen": {
+      "School website": "PSMS57.ORG/",
+      "Principal": "Yaira Jimenez",
+      "Grades served": "PK,0K,01,02,03,04,05,06,07,08,SE",
+      "Enrollment": "532",
+      "Kindergarten admissions methods": "Zoned",
+      "Middle school admissions methods": "Zone Priority",
+      "Dual language programs": "Spanish",
+      "State accountability status": "Local Support and Improvement"
+    },
+    "Location": {},
+    "Directory-overview": {},
+    "Sch-demog": {
+      "Asian": "<1%",
+      "Black": "17%",
+      "Hispanic or Latinx": "79%",
+      "Native American": "<1%",
+      "Native Hawaiian/Pacific Islander": "0%",
+      "White": "1%",
+      "English language learners": "32%",
+      "Students with IEPs": "23%",
+      "Economic Need Index": ">95%",
+      "Female": "50%",
+      "Male": "50%",
+      "Neither female nor male": "0%"
+    },
+    "Program": {
+      "Boys": "N/A",
+      "Girls": "N/A",
+      "Co-Ed": "N/A",
+      "Community School; Dual Language or TBE; DYCD": "COMPASS/SONYC; NYC Reads"
+    },
+    "Staff": {
+      "Asian": "N/A (fewer than 5 teachers)",
+      "Black": "21%",
+      "Hispanic or Latinx": "39%",
+      "Native American": "N/A (fewer than 5 teachers)",
+      "Native Hawaiian/Pacific Islander": "0%",
+      "White": "25%",
+      "Years of experience as principal at this school": "6.5",
+      "Teachers with three or more years of experience": "70%"
+    },
+    "Space": {
+      "Shared space": "No"
+    },
+    "Survey-rr": {},
+    "Next-level": {
+      "Comparison Group*": "85% District 04: 88%  City: 90%"
+    },
+    "Core-course": {
+      "Comparison Group*": "98% District 04: 87%  City: 92%"
+    },
+    "Lre": {},
+    "Swiep": {},
+    "Ells": {},
+    "Learning-env": {
+      "District 04": "78%  City: 77%"
+    },
+    "Perf": {
+      "Comparison Group*": "36% District 04: 45%  City: 49%"
+    },
+    "Growth": {},
+    "Perf2": {
+      "Comparison Group*": "37% District 04: 42%  City: 53%"
+    },
+    "Growth2": {},
+    "Safety": {
+      "District 04": "66%  City: 63%"
+    },
+    "School-leadership": {
+      "District 04": "82%  City: 81%"
+    },
+    "Advising": {
+      "District 04": "85%  City: 88%"
+    },
+    "Attendance": {
+      "Student attendance": "87% (Comp group*: 92%)",
+      "Students with >90% attendance": "47% (Comp group*: 62%)",
+      "Teacher attendance": "97%"
+    },
+    "Stu-support": {
+      "District 04": "75%  City: 70%"
+    },
+    "Communication": {
+      "District 04": "95%  City: 94%"
+    },
+    "Family-involve": {
+      "District 04": "91%  City: 90%"
+    },
+    "Relation-w-family": {
+      "District 04": "95%  City: 94%"
+    },
+    "School Values": {
+      "Value 1": "87%",
+      "Value 2": "11%",
+      "Value 3": "98%",
+      "Value 4": "76%",
+      "Value 5": "28%",
+      "Value 6": "21%",
+      "Value 7": "56%",
+      "Value 8": "85%",
+      "Value 9": "90%",
+      "Value 10": "68%",
+      "Value 11": "94%",
+      "Value 12": "88%",
+      "Value 13": "95%"
+    }
+  },
+  "descriptions": [
+    "We provide a rigorous learning environment that encourages all students to expand their horizons, achieve their dreams, and become lifelong learners. Our students will be prepared academically for Specialized High Schools and Regents exams. The main expectation of James Weldon Johnson Leadership Academy is that every student is high school ready and post-secondary ready. We prepare our students with the tools that they need to achieve this goal by partnering with community based organizations to help develop academic and socio-emotional growth. It is our vision that every child will grow up to be an educated and responsible adult. We expect students, parents, staff, and the community to work collaboratively to help us attain our goal of excellence. James Weldon Johnson Leadership Academy is a screened school that caters to the varied academic needs of all students. Our students follow our core values of \"Respect, Responsibility, and Reflection.\"",
+    "(Number of students in subgroup is in parentheses)",
+    "What percentage of students say that this school offers a wide enough variety of programs, classes, and activities to keep them interested in school?",
+    "N/A",
+    "What percentage of students say that the school is kept clean?",
+    "What percentage of teachers say that the school is kept in good physical condition?",
+    "What percentage of teachers say that physical repairs to this school building are completed in a timely manner?",
+    "The NYC School Survey is administered every year to students in grades 6-12 and to families and teachers of children in grades K-12. The survey is designed to collect information about each school's ability to support student success.",
+    "Response rates show what percentage of the school community actually completed the survey. Higher response rates tell us that the results of the survey reflect the views of a larger portion of the group surveyed.",
+    "of this school's former eighth graders earned enough high school credit in ninth grade to be on track for graduation",
+    "Which high schools did students from this school most frequently attend?",
+    "of eighth grade students earned high school credit",
+    "pass rate by this school's students in their math, English, social studies, and science classes",
+    "Movement of students with special needs to less restrictive environments",
+    "What percentage of students with IEPs received their recommended special education programs?",
+    "What percentage of students with IEPs received their recommended related services (such as counseling or speech, occupational or physical therapy)?",
+    "How well does this school help English language learners demonstrate movement toward English language proficiency?",
+    "responded positively to survey questions about instruction/learning environment",
+    "What percentage of students say that their teachers have high expectations for them?",
+    "What percentage of students say that they learn a lot from feedback on their work?",
+    "What percentage of students say that their teachers treat students of different races, cultures, or backgrounds equally?",
+    "What percentage of teachers say that students in their class show that they respect each other's ideas?",
+    "of students at this school met State standards on the State English test; the average score was 2.4 out of 4.5",
+    "What percentage of different groups of students met State standards (scored a 3 or 4) on the State English test?",
+    "(Total number of test takers in the subgroup is in parentheses)",
+    "How well did this school help students improve on their State English tests?",
+    "Over the past two years, how did each eighth grade students' State test scores compare to their own scores from when they were in fifth grade?",
+    "of students at this school met State standards on the State math test; the average score was 2.3 out of 4.5",
+    "What percentage of different groups of students met State standards (scored a 3 or 4) on the State math test?",
+    "(Total number of test takers in the subgroup is in parentheses)",
+    "How well did this school help students improve on their State math tests?",
+    "Over the past two years, how did each eighth grade students' State test scores compare to their own scores from when they were in fifth grade?",
+    "responded positively to survey questions about safety",
+    "What percentage of students feel safe in the hallways, bathrooms, locker rooms, and cafeteria?",
+    "responded positively to survey questions about school leadership",
+    "What percentage of teachers say that the principal/school leader at this school sets high standards for student learning?",
+    "What percentage of teachers say that the principal/school leader encourages feedback through regular meetings with families and teacher leaders?",
+    "responded positively to survey questions about advising and planning",
+    "What percentage of students say that this school provides them with guidance on the high school application process?",
+    "responded positively to survey questions about student support",
+    "What percentage of students say that their teachers support them when they are upset?",
+    "What percentage of students say that their teachers treats them with respect?",
+    "What percentage of students say that they feel like they belong at this school?",
+    "responded positively to survey questions about communication",
+    "What percentage of families say that the school staff regularly communicates with them about how they can help their child learn?",
+    "responded positively to survey questions about family involvement",
+    "What percentage of families say that they have communicated with their child's teacher about their child's performance?",
+    "responded positively to survey questions about family-school trust",
+    "What percentage of families say that the school staff work hard to build trusting relationships with families like them?"
+  ]
+}

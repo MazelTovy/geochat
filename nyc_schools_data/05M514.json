@@ -1,0 +1,177 @@
+{
+  "basic_info": {
+    "name": "New Design Middle School (05M514)",
+    "school_id": "05M514",
+    "google_maps_url": "https://www.google.com/maps/place/625+West+133+Street,+Manhattan,+NY+10027",
+    "location": {
+      "street_address": "625 West 133 Street",
+      "city_state_zip": "Manhattan, NY 10027",
+      "full_address": "625 West 133 Street, Manhattan, NY 10027"
+    }
+  },
+  "survey_info": {
+    "Families": "23% (19 surveys submitted)",
+    "Teachers": "94% (17 surveys submitted)",
+    "Students": "43% (35 surveys submitted)"
+  },
+  "metrics": {
+    "Gen": {
+      "School website": "youtu.be/opzp9i9CU-s",
+      "Principal": "Marcellus Stovall",
+      "Grades served": "06,07,08,SE",
+      "Enrollment": "88",
+      "Admissions methods": "ASD/ACES Program, Open",
+      "State accountability status": "Targeted Support and Improvement"
+    },
+    "Location": {},
+    "Directory-overview": {
+      "Beyond academics, New Design offers a vibrant array of clubs that cater to diverse interests. Students can explore the cutting-edge world of Virtual Reality, delve into the creative realms of Art and Dance, or build robots and compete in thrilling challenges with the Robotics Club.  These enriching activities provide opportunities for students to explore passions, develop new skills, and build lasting friendships.  New Design also boasts top-tier athletics programs, including basketball and football. Our dedicated coaches provide a positive and challenging environment where students can hone their athletic skills, develop sportsmanship, and work together towards a common goal.  For academically advanced students, we offer a range of challenging courses to nurture a thirst for knowledge.  These include": "Advanced Math: Explore concepts beyond the core curriculum, with options like algebra. Science: Delve deeper into the natural world with courses like Living Environment. Foreign Language: Gain fluency in another language and broaden your cultural horizons."
+    },
+    "Sch-demog": {
+      "Asian": "0%",
+      "Black": "45%",
+      "Hispanic or Latinx": "49%",
+      "Native American": "0%",
+      "Native Hawaiian/Pacific Islander": "0%",
+      "White": "6%",
+      "English language learners": "22%",
+      "Students with IEPs": "53%",
+      "Economic Need Index": "94%",
+      "Female": "38%",
+      "Male": "63%",
+      "Neither female nor male": "0%"
+    },
+    "Program": {
+      "Boys": "N/A",
+      "Girls": "N/A",
+      "Co-Ed": "N/A",
+      "Community School; DYCD": "COMPASS/SONYC; Project Pivot"
+    },
+    "Staff": {
+      "Asian": "N/A (fewer than 5 teachers)",
+      "Black": "29%",
+      "Hispanic or Latinx": "N/A (fewer than 5 teachers)",
+      "Native American": "N/A (fewer than 5 teachers)",
+      "Native Hawaiian/Pacific Islander": "N/A (fewer than 5 teachers)",
+      "White": "47%",
+      "Years of experience as principal at this school": "6.5",
+      "Teachers with three or more years of experience": "82%"
+    },
+    "Space": {
+      "Shared space": "Yes, colocated (84M336, 84M726)"
+    },
+    "Survey-rr": {},
+    "Next-level": {
+      "Comparison Group*": "82% District 05: 85%  City: 91%"
+    },
+    "Core-course": {
+      "Comparison Group*": "97% District 05: 90%  City: 95%"
+    },
+    "Lre": {},
+    "Swiep": {},
+    "Ells": {},
+    "Learning-env": {
+      "District 05": "68%  City: 77%"
+    },
+    "Perf": {
+      "Comparison Group*": "23% District 05: 41%  City: 51%"
+    },
+    "Growth": {},
+    "Perf2": {
+      "Comparison Group*": "23% District 05: 32%  City: 51%"
+    },
+    "Growth2": {},
+    "Safety": {
+      "District 05": "61%  City: 63%"
+    },
+    "School-leadership": {
+      "District 05": "73%  City: 84%"
+    },
+    "Advising": {
+      "District 05": "82%  City: 89%"
+    },
+    "Attendance": {
+      "Student attendance": "80% (Comp group*: 100%)",
+      "Students with >90% attendance": "35% (Comp group*: 68%)",
+      "Teacher attendance": "96%"
+    },
+    "Stu-support": {
+      "District 05": "66%  City: 71%"
+    },
+    "Communication": {
+      "District 05": "87%  City: 94%"
+    },
+    "Family-involve": {
+      "District 05": "80%  City: 87%"
+    },
+    "Relation-w-family": {
+      "District 05": "87%  City: 94%"
+    },
+    "School Values": {
+      "Value 1": "83%",
+      "Value 2": "21%",
+      "Value 3": "82%",
+      "Value 4": "70%",
+      "Value 5": "15%",
+      "Value 6": "14%",
+      "Value 7": "61%",
+      "Value 8": "82%",
+      "Value 9": "91%",
+      "Value 10": "71%",
+      "Value 11": "95%",
+      "Value 12": "80%",
+      "Value 13": "92%"
+    }
+  },
+  "descriptions": [
+    "",
+    "(Number of students in subgroup is in parentheses)",
+    "What percentage of students say that this school offers a wide enough variety of programs, classes, and activities to keep them interested in school?",
+    "Art, Book Club, Chess, Coding, Cooking, Dance, Fitness, Homework Help, Leadership, Lego Robotics, Math Team, Robotics, Saturday Academy, School Newspaper, Science Olympiad, Spelling Bee, STEM, Student Council, Talent Show, Technology, Tutoring, Video Game Club, Visual Arts, Yearbook",
+    "What percentage of students say that the school is kept clean?",
+    "What percentage of teachers say that the school is kept in good physical condition?",
+    "What percentage of teachers say that physical repairs to this school building are completed in a timely manner?",
+    "The NYC School Survey is administered every year to students in grades 6-12 and to families and teachers of children in grades K-12. The survey is designed to collect information about each school's ability to support student success.",
+    "Response rates show what percentage of the school community actually completed the survey. Higher response rates tell us that the results of the survey reflect the views of a larger portion of the group surveyed.",
+    "of this school's former eighth graders earned enough high school credit in ninth grade to be on track for graduation",
+    "Which high schools did students from this school most frequently attend?",
+    "of eighth grade students earned high school credit",
+    "pass rate by this school's students in their math, English, social studies, and science classes",
+    "Movement of students with special needs to less restrictive environments",
+    "What percentage of students with IEPs received their recommended special education programs?",
+    "What percentage of students with IEPs received their recommended related services (such as counseling or speech, occupational or physical therapy)?",
+    "How well does this school help English language learners demonstrate movement toward English language proficiency?",
+    "responded positively to survey questions about instruction/learning environment",
+    "What percentage of students say that their teachers have high expectations for them?",
+    "What percentage of students say that they learn a lot from feedback on their work?",
+    "What percentage of students say that their teachers treat students of different races, cultures, or backgrounds equally?",
+    "What percentage of teachers say that students in their class show that they respect each other's ideas?",
+    "of students at this school met State standards on the State English test; the average score was 2.3 out of 4.5",
+    "What percentage of different groups of students met State standards (scored a 3 or 4) on the State English test?",
+    "(Total number of test takers in the subgroup is in parentheses)",
+    "How well did this school help students improve on their State English tests?",
+    "Over the past two years, how did each eighth grade students' State test scores compare to their own scores from when they were in fifth grade?",
+    "of students at this school met State standards on the State math test; the average score was 2.2 out of 4.5",
+    "What percentage of different groups of students met State standards (scored a 3 or 4) on the State math test?",
+    "(Total number of test takers in the subgroup is in parentheses)",
+    "How well did this school help students improve on their State math tests?",
+    "Over the past two years, how did each eighth grade students' State test scores compare to their own scores from when they were in fifth grade?",
+    "responded positively to survey questions about safety",
+    "What percentage of students feel safe in the hallways, bathrooms, locker rooms, and cafeteria?",
+    "responded positively to survey questions about school leadership",
+    "What percentage of teachers say that the principal/school leader at this school sets high standards for student learning?",
+    "What percentage of teachers say that the principal/school leader encourages feedback through regular meetings with families and teacher leaders?",
+    "responded positively to survey questions about advising and planning",
+    "What percentage of students say that this school provides them with guidance on the high school application process?",
+    "responded positively to survey questions about student support",
+    "What percentage of students say that their teachers support them when they are upset?",
+    "What percentage of students say that their teachers treats them with respect?",
+    "What percentage of students say that they feel like they belong at this school?",
+    "responded positively to survey questions about communication",
+    "What percentage of families say that the school staff regularly communicates with them about how they can help their child learn?",
+    "responded positively to survey questions about family involvement",
+    "What percentage of families say that they have communicated with their child's teacher about their child's performance?",
+    "responded positively to survey questions about family-school trust",
+    "What percentage of families say that the school staff work hard to build trusting relationships with families like them?"
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "basic_info": {
+    "name": "P.S. 180 Hugo Newman (03M180)",
+    "school_id": "03M180",
+    "google_maps_url": "https://www.google.com/maps/place/370+West+120th+Street,+Manhattan,+NY+10027",
+    "location": {
+      "street_address": "370 West 120th Street",
+      "city_state_zip": "Manhattan, NY 10027",
+      "full_address": "370 West 120th Street, Manhattan, NY 10027"
+    }
+  },
+  "survey_info": {
+    "Families (not including Pre-K)": "20% (69 surveys submitted)",
+    "Teachers": "69% (27 surveys submitted)",
+    "Students": "82% (74 surveys submitted)"
+  },
+  "metrics": {
+    "Gen": {
+      "School website": "www.hugonewmanprep.org",
+      "Principal": "Nickia Burgess",
+      "Grades served": "PK,0K,01,02,03,04,05,06,07,08,SE",
+      "Enrollment": "338",
+      "Kindergarten admissions methods": "Zoned",
+      "Middle school admissions methods": "Zone Priority",
+      "Dual language programs": "Spanish",
+      "State accountability status": "Local Support and Improvement"
+    },
+    "Location": {},
+    "Directory-overview": {},
+    "Sch-demog": {
+      "Asian": "1%",
+      "Black": "44%",
+      "Hispanic or Latinx": "43%",
+      "Native American": "0%",
+      "Native Hawaiian/Pacific Islander": "0%",
+      "White": "9%",
+      "English language learners": "21%",
+      "Students with IEPs": "28%",
+      "Economic Need Index": "84%",
+      "Female": "51%",
+      "Male": "49%",
+      "Neither female nor male": "0%"
+    },
+    "Program": {
+      "Boys": "N/A",
+      "Girls": "N/A",
+      "Co-Ed": "N/A"
+    },
+    "Staff": {
+      "Asian": "0%",
+      "Black": "21%",
+      "Hispanic or Latinx": "21%",
+      "Native American": "0%",
+      "Native Hawaiian/Pacific Islander": "0%",
+      "White": "58%",
+      "Years of experience as principal at this school": "1.1",
+      "Teachers with three or more years of experience": "92%"
+    },
+    "Space": {
+      "Shared space": "No"
+    },
+    "Survey-rr": {},
+    "Next-level": {
+      "Comparison Group*": "89% District 03: 87%  City: 90%"
+    },
+    "Core-course": {
+      "Comparison Group*": "95% District 03: 92%  City: 92%"
+    },
+    "Lre": {},
+    "Swiep": {},
+    "Ells": {},
+    "Learning-env": {
+      "District 03": "80%  City: 77%"
+    },
+    "Perf": {
+      "Comparison Group*": "41% District 03: 64%  City: 49%"
+    },
+    "Growth": {},
+    "Perf2": {
+      "Comparison Group*": "41% District 03: 65%  City: 53%"
+    },
+    "Growth2": {},
+    "Safety": {
+      "District 03": "74%  City: 63%"
+    },
+    "School-leadership": {
+      "District 03": "82%  City: 81%"
+    },
+    "Advising": {
+      "District 03": "86%  City: 88%"
+    },
+    "Attendance": {
+      "Student attendance": "86% (Comp group*: 91%)",
+      "Students with >90% attendance": "47% (Comp group*: 62%)",
+      "Teacher attendance": "95%"
+    },
+    "Stu-support": {
+      "District 03": "76%  City: 70%"
+    },
+    "Communication": {
+      "District 03": "94%  City: 94%"
+    },
+    "Family-involve": {
+      "District 03": "91%  City: 90%"
+    },
+    "Relation-w-family": {
+      "District 03": "93%  City: 94%"
+    },
+    "School Values": {
+      "Value 1": "91%",
+      "Value 2": "25%",
+      "Value 3": "77%",
+      "Value 4": "81%",
+      "Value 5": "44%",
+      "Value 6": "34%",
+      "Value 7": "66%",
+      "Value 8": "89%",
+      "Value 9": "97%",
+      "Value 10": "76%",
+      "Value 11": "96%",
+      "Value 12": "97%",
+      "Value 13": "95%"
+    }
+  },
+  "descriptions": [
+    "NYCPS has proposed the truncation of the middle school grades of PS/MS 180, pending approval by the Panel for Educational Policy (PEP). We expect the PEP to vote on this proposal on October 30, 2024. If this proposal is approved, any families with students who applied to P.S./M.S. 180 will have that choice removed from their middle school applications. Please ensure you list other middle schools on your application. The middle school at PS/IS 180 is a small environment where everyone knows everyone.   Having only two classes per grade allows the teachers to really get to know the individual needs of every student.  Our school offers a rigorous academic program where all 8th graders take the Living Environment and Algebra 1 regents exams in June. There are also plenty of opportunities to participate in extracurricular activities like student council, girls and boys' basketball, cheerleading, football, speech and debate.....and more. Our school believes in mastery based grading and is partnered with Outward Bound for our Crew/Advisory program. As our name suggests, we have a strong belief that all our students will go to college.  With that in mind, our 7th graders visit several colleges (both in state and out of state) each year.",
+    "(Number of students in subgroup is in parentheses)",
+    "What percentage of students say that this school offers a wide enough variety of programs, classes, and activities to keep them interested in school?",
+    "Book Club, Chess, Debate, Leadership, Peer Mediation, Student Council, Yearbook",
+    "Dual Language or TBE; NYC Reads",
+    "What percentage of students say that the school is kept clean?",
+    "What percentage of teachers say that the school is kept in good physical condition?",
+    "What percentage of teachers say that physical repairs to this school building are completed in a timely manner?",
+    "The NYC School Survey is administered every year to students in grades 6-12 and to families and teachers of children in grades K-12. The survey is designed to collect information about each school's ability to support student success.",
+    "Response rates show what percentage of the school community actually completed the survey. Higher response rates tell us that the results of the survey reflect the views of a larger portion of the group surveyed.",
+    "of this school's former eighth graders earned enough high school credit in ninth grade to be on track for graduation",
+    "Which high schools did students from this school most frequently attend?",
+    "of eighth grade students earned high school credit",
+    "pass rate by this school's students in their math, English, social studies, and science classes",
+    "Movement of students with special needs to less restrictive environments",
+    "What percentage of students with IEPs received their recommended special education programs?",
+    "What percentage of students with IEPs received their recommended related services (such as counseling or speech, occupational or physical therapy)?",
+    "How well does this school help English language learners demonstrate movement toward English language proficiency?",
+    "responded positively to survey questions about instruction/learning environment",
+    "What percentage of students say that their teachers have high expectations for them?",
+    "What percentage of students say that they learn a lot from feedback on their work?",
+    "What percentage of students say that their teachers treat students of different races, cultures, or backgrounds equally?",
+    "What percentage of teachers say that students in their class show that they respect each other's ideas?",
+    "of students at this school met State standards on the State English test; the average score was 2.8 out of 4.5",
+    "What percentage of different groups of students met State standards (scored a 3 or 4) on the State English test?",
+    "(Total number of test takers in the subgroup is in parentheses)",
+    "How well did this school help students improve on their State English tests?",
+    "Over the past two years, how did each eighth grade students' State test scores compare to their own scores from when they were in fifth grade?",
+    "of students at this school met State standards on the State math test; the average score was 2.6 out of 4.5",
+    "What percentage of different groups of students met State standards (scored a 3 or 4) on the State math test?",
+    "(Total number of test takers in the subgroup is in parentheses)",
+    "How well did this school help students improve on their State math tests?",
+    "Over the past two years, how did each eighth grade students' State test scores compare to their own scores from when they were in fifth grade?",
+    "responded positively to survey questions about safety",
+    "What percentage of students feel safe in the hallways, bathrooms, locker rooms, and cafeteria?",
+    "responded positively to survey questions about school leadership",
+    "What percentage of teachers say that the principal/school leader at this school sets high standards for student learning?",
+    "What percentage of teachers say that the principal/school leader encourages feedback through regular meetings with families and teacher leaders?",
+    "responded positively to survey questions about advising and planning",
+    "What percentage of students say that this school provides them with guidance on the high school application process?",
+    "responded positively to survey questions about student support",
+    "What percentage of students say that their teachers support them when they are upset?",
+    "What percentage of students say that their teachers treats them with respect?",
+    "What percentage of students say that they feel like they belong at this school?",
+    "responded positively to survey questions about communication",
+    "What percentage of families say that the school staff regularly communicates with them about how they can help their child learn?",
+    "responded positively to survey questions about family involvement",
+    "What percentage of families say that they have communicated with their child's teacher about their child's performance?",
+    "responded positively to survey questions about family-school trust",
+    "What percentage of families say that the school staff work hard to build trusting relationships with families like them?"
+  ]
+}

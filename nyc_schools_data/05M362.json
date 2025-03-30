@@ -1,0 +1,176 @@
+{
+  "basic_info": {
+    "name": "Columbia Secondary School (05M362)",
+    "school_id": "05M362",
+    "google_maps_url": "https://www.google.com/maps/place/425+West+123+Street,+Manhattan,+NY+10027",
+    "location": {
+      "street_address": "425 West 123 Street",
+      "city_state_zip": "Manhattan, NY 10027",
+      "full_address": "425 West 123 Street, Manhattan, NY 10027"
+    }
+  },
+  "survey_info": {
+    "Families": "38% (270 surveys submitted)",
+    "Teachers": "44% (22 surveys submitted)",
+    "Students": "76% (547 surveys submitted)"
+  },
+  "metrics": {
+    "Gen": {
+      "School website": "www.schools.nyc.gov/schools/M362",
+      "Principal": "Vikram Arora",
+      "Grades served": "06,07,08,09,10,11,SE",
+      "Enrollment": "296",
+      "Admissions methods": "Screened",
+      "State accountability status": "Local Support and Improvement"
+    },
+    "Location": {},
+    "Directory-overview": {},
+    "Sch-demog": {
+      "Asian": "11%",
+      "Black": "19%",
+      "Hispanic or Latinx": "35%",
+      "Native American": "1%",
+      "Native Hawaiian/Pacific Islander": "<1%",
+      "White": "24%",
+      "English language learners": "3%",
+      "Students with IEPs": "20%",
+      "Economic Need Index": "53%",
+      "Female": "45%",
+      "Male": "55%",
+      "Neither female nor male": "0%"
+    },
+    "Program": {
+      "Boys": "N/A",
+      "Girls": "N/A",
+      "Co-Ed": "N/A",
+      "DYCD": "COMPASS/SONYC"
+    },
+    "Staff": {
+      "Asian": "13%",
+      "Black": "10%",
+      "Hispanic or Latinx": "10%",
+      "Native American": "0%",
+      "Native Hawaiian/Pacific Islander": "0%",
+      "White": "65%",
+      "Years of experience as principal at this school": "1.5",
+      "Teachers with three or more years of experience": "75%"
+    },
+    "Space": {
+      "Shared space": "Yes, colocated (05M125, 84M726)"
+    },
+    "Survey-rr": {},
+    "Next-level": {
+      "Comparison Group*": "96% District 05: 85%  City: 91%"
+    },
+    "Core-course": {
+      "Comparison Group*": "99% District 05: 90%  City: 95%"
+    },
+    "Lre": {},
+    "Swiep": {},
+    "Ells": {},
+    "Learning-env": {
+      "District 05": "68%  City: 75%"
+    },
+    "Perf": {
+      "Comparison Group*": "77% District 05: 41%  City: 51%"
+    },
+    "Growth": {},
+    "Perf2": {
+      "Comparison Group*": "73% District 05: 32%  City: 51%"
+    },
+    "Growth2": {},
+    "Safety": {
+      "District 05": "61%  City: 65%"
+    },
+    "School-leadership": {
+      "District 05": "73%  City: 79%"
+    },
+    "Advising": {
+      "District 05": "82%  City: 83%"
+    },
+    "Attendance": {
+      "Student attendance": "97% (Comp group*: 100%)",
+      "Students with >90% attendance": "93% (Comp group*: 100%)",
+      "Teacher attendance": "96%"
+    },
+    "Stu-support": {
+      "District 05": "66%  City: 68%"
+    },
+    "Communication": {
+      "District 05": "87%  City: 91%"
+    },
+    "Family-involve": {
+      "District 05": "80%  City: 86%"
+    },
+    "Relation-w-family": {
+      "District 05": "87%  City: 92%"
+    },
+    "School Values": {
+      "Value 1": "96%",
+      "Value 2": "88%",
+      "Value 3": "94%",
+      "Value 4": "73%",
+      "Value 5": "79%",
+      "Value 6": "73%",
+      "Value 7": "67%",
+      "Value 8": "43%",
+      "Value 9": "81%",
+      "Value 10": "64%",
+      "Value 11": "84%",
+      "Value 12": "86%",
+      "Value 13": "92%"
+    }
+  },
+  "descriptions": [
+    "",
+    "Students like our family atmosphere and the creative vibe of our teachers and courses. Students also like the opportunities to take courses at Columbia University in high school. Parents like the availability of the teachers and the cultural events that celebrate the diverse community, like our yearly musical, Black History Month celebration, and Hispanic Month celebration. Parents also appreciate the quality of the teachers and the breadth and depth of the curriculum. Columbia Secondary School for Math, Science, and Engineering has one of the only middle to high school engineering sequences in the state as well as a seven-year philosophy curriculum. We created our own community garden in partnership with the New York City Department of Parks & Recreation, which has become an integral part of our community. Our school focuses on hands-on, inventive learning experiences, and our teachers develop field experiences that bring coursework into an authentic setting without losing rigor.",
+    "(Number of students in subgroup is in parentheses)",
+    "What percentage of students say that this school offers a wide enough variety of programs, classes, and activities to keep them interested in school?",
+    "N/A",
+    "What percentage of students say that the school is kept clean?",
+    "What percentage of teachers say that the school is kept in good physical condition?",
+    "What percentage of teachers say that physical repairs to this school building are completed in a timely manner?",
+    "The NYC School Survey is administered every year to students in grades 6-12 and to families and teachers of children in grades K-12. The survey is designed to collect information about each school's ability to support student success.",
+    "Response rates show what percentage of the school community actually completed the survey. Higher response rates tell us that the results of the survey reflect the views of a larger portion of the group surveyed.",
+    "of this school's former eighth graders earned enough high school credit in ninth grade to be on track for graduation",
+    "Which high schools did students from this school most frequently attend?",
+    "of eighth grade students earned high school credit",
+    "pass rate by this school's students in their math, English, social studies, and science classes",
+    "Movement of students with special needs to less restrictive environments",
+    "What percentage of students with IEPs received their recommended special education programs?",
+    "What percentage of students with IEPs received their recommended related services (such as counseling or speech, occupational or physical therapy)?",
+    "How well does this school help English language learners demonstrate movement toward English language proficiency?",
+    "responded positively to survey questions about instruction/learning environment",
+    "What percentage of students say that their teachers have high expectations for them?",
+    "What percentage of students say that they learn a lot from feedback on their work?",
+    "What percentage of students say that their teachers treat students of different races, cultures, or backgrounds equally?",
+    "What percentage of teachers say that students in their class show that they respect each other's ideas?",
+    "of students at this school met State standards on the State English test; the average score was 3.6 out of 4.5",
+    "What percentage of different groups of students met State standards (scored a 3 or 4) on the State English test?",
+    "(Total number of test takers in the subgroup is in parentheses)",
+    "How well did this school help students improve on their State English tests?",
+    "Over the past two years, how did each eighth grade students' State test scores compare to their own scores from when they were in fifth grade?",
+    "of students at this school met State standards on the State math test; the average score was 3.5 out of 4.5",
+    "What percentage of different groups of students met State standards (scored a 3 or 4) on the State math test?",
+    "(Total number of test takers in the subgroup is in parentheses)",
+    "How well did this school help students improve on their State math tests?",
+    "Over the past two years, how did each eighth grade students' State test scores compare to their own scores from when they were in fifth grade?",
+    "responded positively to survey questions about safety",
+    "What percentage of students feel safe in the hallways, bathrooms, locker rooms, and cafeteria?",
+    "responded positively to survey questions about school leadership",
+    "What percentage of teachers say that the principal/school leader at this school sets high standards for student learning?",
+    "What percentage of teachers say that the principal/school leader encourages feedback through regular meetings with families and teacher leaders?",
+    "responded positively to survey questions about advising and planning",
+    "What percentage of students say that this school provides them with guidance on the high school application process?",
+    "responded positively to survey questions about student support",
+    "What percentage of students say that their teachers support them when they are upset?",
+    "What percentage of students say that their teachers treats them with respect?",
+    "What percentage of students say that they feel like they belong at this school?",
+    "responded positively to survey questions about communication",
+    "What percentage of families say that the school staff regularly communicates with them about how they can help their child learn?",
+    "responded positively to survey questions about family involvement",
+    "What percentage of families say that they have communicated with their child's teacher about their child's performance?",
+    "responded positively to survey questions about family-school trust",
+    "What percentage of families say that the school staff work hard to build trusting relationships with families like them?"
+  ]
+}

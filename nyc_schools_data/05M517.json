@@ -1,0 +1,178 @@
+{
+  "basic_info": {
+    "name": "Teachers College Community School (05M517)",
+    "school_id": "05M517",
+    "google_maps_url": "https://www.google.com/maps/place/168+Morningside+Avenue,+Manhattan,+NY+10027",
+    "location": {
+      "street_address": "168 Morningside Avenue",
+      "city_state_zip": "Manhattan, NY 10027",
+      "full_address": "168 Morningside Avenue, Manhattan, NY 10027"
+    }
+  },
+  "survey_info": {
+    "Families (not including Pre-K)": "50% (159 surveys submitted)",
+    "Teachers": "64% (18 surveys submitted)",
+    "Students": "8% (13 surveys submitted)"
+  },
+  "metrics": {
+    "Gen": {
+      "School website": "www.tccsps517.org/",
+      "Principal": "Michelle Verdiner",
+      "Grades served": "PK,0K,01,02,03,04,05,06,07,08,SE",
+      "Enrollment": "322",
+      "Kindergarten admissions methods": "Non-Zoned",
+      "Middle school admissions methods": "Open",
+      "State accountability status": "Local Support and Improvement"
+    },
+    "Location": {},
+    "Directory-overview": {
+      "The Teachers College Community School (TCCS) is a university assisted, non-selective Pre-K-8 demonstration school that applies state of-the-art knowledge and best practices in teaching, learning, and child development. We have been established since 2011 and are proud to have become a complete Pre-K-8th grade school 2019. The mission of TCCS is to provide a child-centered environment that will inspire and challenge all of our students to become independent thinkers, problem solvers and life-long learners, and to work as a collaborative unit of parents, faculty and staff to ensure that our students perform their optimal best. We are a nurturing community that believes students learn best through positive framing, setting personalized goals and knowing what they need to do to achieve their goals. TCCS takes pride in a rigorous curriculum that develops students knowledge, concepts, and skills, and encourages proactive and engaged learning. The school community is notable for its diverse and respectful learning environment and attention to nourishing the whole student. We offer all of our 8th Grade students the opportunity to take the Living Environment, Algebra I and ELA Regent Exams. This will allow them to advance to High School with up to three of the five required exams necessary to earn a diploma in NY State. We have a long-standing relationship with Teachers College, Columbia University which provides expertise and services to help ensure student success. For example, TCCS provides rigorous professional development to teachers and intervention supports to students. Other special features of the school include": "customized NGS aligned Math curriculum and customized Science curriculum both designed with support from Teachers College, small group targeted interventions a"
+    },
+    "Sch-demog": {
+      "Asian": "1%",
+      "Black": "44%",
+      "Hispanic or Latinx": "40%",
+      "Native American": "<1%",
+      "Native Hawaiian/Pacific Islander": "1%",
+      "White": "9%",
+      "English language learners": "10%",
+      "Students with IEPs": "23%",
+      "Economic Need Index": "81%",
+      "Female": "49%",
+      "Male": "51%",
+      "Neither female nor male": "0%"
+    },
+    "Program": {
+      "Boys": "N/A",
+      "Girls": "N/A",
+      "Co-Ed": "N/A",
+      "DYCD": "COMPASS/SONYC; NYC Reads"
+    },
+    "Staff": {
+      "Asian": "18%",
+      "Black": "18%",
+      "Hispanic or Latinx": "21%",
+      "Native American": "0%",
+      "Native Hawaiian/Pacific Islander": "0%",
+      "White": "43%",
+      "Years of experience as principal at this school": "9.2",
+      "Teachers with three or more years of experience": "64%"
+    },
+    "Space": {
+      "Shared space": "No"
+    },
+    "Survey-rr": {},
+    "Next-level": {
+      "Comparison Group*": "92% District 05: 87%  City: 90%"
+    },
+    "Core-course": {
+      "Comparison Group*": "98% District 05: 91%  City: 92%"
+    },
+    "Lre": {},
+    "Swiep": {},
+    "Ells": {},
+    "Learning-env": {
+      "District 05": "75%  City: 77%"
+    },
+    "Perf": {
+      "Comparison Group*": "55% District 05: 37%  City: 49%"
+    },
+    "Growth": {},
+    "Perf2": {
+      "Comparison Group*": "54% District 05: 34%  City: 53%"
+    },
+    "Growth2": {},
+    "Safety": {
+      "District 05": "65%  City: 63%"
+    },
+    "School-leadership": {
+      "District 05": "80%  City: 81%"
+    },
+    "Advising": {
+      "District 05": "87%  City: 88%"
+    },
+    "Attendance": {
+      "Student attendance": "89% (Comp group*: 96%)",
+      "Students with >90% attendance": "58% (Comp group*: 72%)",
+      "Teacher attendance": "94%"
+    },
+    "Stu-support": {
+      "District 05": "76%  City: 70%"
+    },
+    "Communication": {
+      "District 05": "92%  City: 94%"
+    },
+    "Family-involve": {
+      "District 05": "88%  City: 90%"
+    },
+    "Relation-w-family": {
+      "District 05": "92%  City: 94%"
+    },
+    "School Values": {
+      "Value 1": "93%",
+      "Value 2": "55%",
+      "Value 3": "92%",
+      "Value 4": "N/A",
+      "Value 5": "52%",
+      "Value 6": "47%",
+      "Value 7": "N/A",
+      "Value 8": "N/A",
+      "Value 9": "N/A",
+      "Value 10": "N/A",
+      "Value 11": "93%",
+      "Value 12": "95%",
+      "Value 13": "94%"
+    }
+  },
+  "descriptions": [
+    "",
+    "(Number of students in subgroup is in parentheses)",
+    "What percentage of students say that this school offers a wide enough variety of programs, classes, and activities to keep them interested in school?",
+    "Dance, Homework Help, Restorative Circles, Student Council, Yearbook",
+    "What percentage of students say that the school is kept clean?",
+    "What percentage of teachers say that the school is kept in good physical condition?",
+    "What percentage of teachers say that physical repairs to this school building are completed in a timely manner?",
+    "The NYC School Survey is administered every year to students in grades 6-12 and to families and teachers of children in grades K-12. The survey is designed to collect information about each school's ability to support student success.",
+    "Response rates show what percentage of the school community actually completed the survey. Higher response rates tell us that the results of the survey reflect the views of a larger portion of the group surveyed.",
+    "of this school's former eighth graders earned enough high school credit in ninth grade to be on track for graduation",
+    "Which high schools did students from this school most frequently attend?",
+    "of eighth grade students earned high school credit",
+    "pass rate by this school's students in their math, English, social studies, and science classes",
+    "Movement of students with special needs to less restrictive environments",
+    "What percentage of students with IEPs received their recommended special education programs?",
+    "What percentage of students with IEPs received their recommended related services (such as counseling or speech, occupational or physical therapy)?",
+    "How well does this school help English language learners demonstrate movement toward English language proficiency?",
+    "responded positively to survey questions about instruction/learning environment",
+    "What percentage of students say that their teachers have high expectations for them?",
+    "What percentage of students say that they learn a lot from feedback on their work?",
+    "What percentage of students say that their teachers treat students of different races, cultures, or backgrounds equally?",
+    "What percentage of teachers say that students in their class show that they respect each other's ideas?",
+    "of students at this school met State standards on the State English test; the average score was 3.0 out of 4.5",
+    "What percentage of different groups of students met State standards (scored a 3 or 4) on the State English test?",
+    "(Total number of test takers in the subgroup is in parentheses)",
+    "How well did this school help students improve on their State English tests?",
+    "Over the past two years, how did each eighth grade students' State test scores compare to their own scores from when they were in fifth grade?",
+    "of students at this school met State standards on the State math test; the average score was 2.9 out of 4.5",
+    "What percentage of different groups of students met State standards (scored a 3 or 4) on the State math test?",
+    "(Total number of test takers in the subgroup is in parentheses)",
+    "How well did this school help students improve on their State math tests?",
+    "Over the past two years, how did each eighth grade students' State test scores compare to their own scores from when they were in fifth grade?",
+    "responded positively to survey questions about safety",
+    "What percentage of students feel safe in the hallways, bathrooms, locker rooms, and cafeteria?",
+    "responded positively to survey questions about school leadership",
+    "What percentage of teachers say that the principal/school leader at this school sets high standards for student learning?",
+    "What percentage of teachers say that the principal/school leader encourages feedback through regular meetings with families and teacher leaders?",
+    "responded positively to survey questions about advising and planning",
+    "What percentage of students say that this school provides them with guidance on the high school application process?",
+    "responded positively to survey questions about student support",
+    "What percentage of students say that their teachers support them when they are upset?",
+    "What percentage of students say that their teachers treats them with respect?",
+    "What percentage of students say that they feel like they belong at this school?",
+    "responded positively to survey questions about communication",
+    "What percentage of families say that the school staff regularly communicates with them about how they can help their child learn?",
+    "responded positively to survey questions about family involvement",
+    "What percentage of families say that they have communicated with their child's teacher about their child's performance?",
+    "responded positively to survey questions about family-school trust",
+    "What percentage of families say that the school staff work hard to build trusting relationships with families like them?"
+  ]
+}

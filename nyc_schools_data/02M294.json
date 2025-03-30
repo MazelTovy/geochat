@@ -1,0 +1,181 @@
+{
+  "basic_info": {
+    "name": "Essex Street Academy (02M294)",
+    "school_id": "02M294",
+    "google_maps_url": "https://www.google.com/maps/place/350+Grand+Street,+Manhattan,+NY+10002",
+    "location": {
+      "street_address": "350 Grand Street",
+      "city_state_zip": "Manhattan, NY 10002",
+      "full_address": "350 Grand Street, Manhattan, NY 10002"
+    }
+  },
+  "survey_info": {
+    "Families": "47% (164 surveys submitted)",
+    "Teachers": "97% (29 surveys submitted)",
+    "Students": "87% (309 surveys submitted)"
+  },
+  "metrics": {
+    "Gen": {
+      "School website": "www.essexstreetacademy.org",
+      "Principal": "Wallace Simpson",
+      "Grades served": "09,10,11,12,SE",
+      "Enrollment": "361",
+      "Average SAT": "924/1600",
+      "Admissions methods": "Open",
+      "State accountability status": "Local Support and Improvement"
+    },
+    "Location": {},
+    "Directory-overview": {},
+    "Sch-demog": {
+      "Asian": "7%",
+      "Black": "20%",
+      "Hispanic or Latinx": "39%",
+      "Native American": "<1%",
+      "Native Hawaiian/Pacific Islander": "<1%",
+      "White": "29%",
+      "English language learners": "2%",
+      "Students with IEPs": "31%",
+      "Economic Need Index": "60%",
+      "Female": "52%",
+      "Male": "48%",
+      "Neither female nor male": "0%"
+    },
+    "Program": {
+      "Boys": "Wrestling,Handball,Volleyball,Bowling,Baseball,Basketball,Badminton,Soccer",
+      "Girls": "Bowling,Wrestling,Swimming,Tennis,Basketball,Softball,Volleyball,Badminton,Table Tennis",
+      "Co-Ed": "N/A"
+    },
+    "Staff": {
+      "Asian": "N/A (fewer than 5 teachers)",
+      "Black": "N/A (fewer than 5 teachers)",
+      "Hispanic or Latinx": "N/A (fewer than 5 teachers)",
+      "Native American": "0%",
+      "Native Hawaiian/Pacific Islander": "0%",
+      "White": "55%",
+      "Years of experience as principal at this school": "8.8",
+      "Teachers with 3 or more years of experience": "79%"
+    },
+    "Space": {
+      "Shared space": "Yes, colocated (02M305, 02M308, 02M543, 02M545)"
+    },
+    "Survey-rr": {},
+    "Ccr": {
+      "Comparison Group*": "71%  Manhattan: 66% City: 64%",
+      "(Number of students successfully completing out of 89 seniors)": ""
+    },
+    "Adv-demog": {},
+    "Adv-footnote": {},
+    "Lre": {},
+    "Swiep": {},
+    "Grad": {
+      "Comparison Group*": "95%  Manhattan: 87% City: 88%"
+    },
+    "Prog-to-grad": {
+      "Comparison Group*": "84%  Manhattan: 86% City: 84%"
+    },
+    "Learning-env": {
+      "Manhattan": "77% City: 77%"
+    },
+    "Safety": {
+      "Manhattan": "75% City: 74%"
+    },
+    "School-leadership": {
+      "Manhattan": "81% City: 82%"
+    },
+    "Advising": {
+      "Manhattan": "86% City: 86%"
+    },
+    "Attendance": {
+      "Student attendance": "86% (Comp group*: 85%)",
+      "Students with >90% attendance": "58% (Comp group*: 61%)",
+      "Teacher attendance": "96%"
+    },
+    "Stu-support": {
+      "Manhattan": "73% City: 73%"
+    },
+    "Communication": {
+      "Manhattan": "91% City: 92%"
+    },
+    "Family-involve": {
+      "Manhattan": "84% City: 83%"
+    },
+    "Relation-w-family": {
+      "Manhattan": "93% City: 94%"
+    },
+    "School Values": {
+      "Value 1": "58",
+      "Value 2": "97%",
+      "Value 3": "73%",
+      "Value 4": "93%",
+      "Value 5": "96%",
+      "Value 6": "96%",
+      "Value 7": "83%",
+      "Value 8": "86%",
+      "Value 9": "84%",
+      "Value 10": "94%",
+      "Value 11": "90%",
+      "Value 12": "80%",
+      "Value 13": "93%",
+      "Value 14": "85%",
+      "Value 15": "91%"
+    }
+  },
+  "descriptions": [
+    "",
+    "At Essex Street Academy, students learn to be critical, creative thinkers in a diverse and supportive school community. Graduates demonstrate mastery of skills and content in each discipline by completing in-depth, inquiry-based projects. Through small classes and advisories, teachers get to know their students as individuals while nurturing their intellectual curiosity and emotional development. Students are encouraged to explore opportunities outside the classroom through partnerships with local universities, professional internships, international study, and outdoor leadership programs; and to become active members of their community both inside and outside of school.",
+    "(Number of students in subgroup is in parentheses)",
+    "What percentage of students say that this school offers a wide enough variety of programs, classes, and activities to keep them interested in school?",
+    "Black Student Union, Boxing / Martial Arts, Big Sibs, Community Service, Dance Club, Fitness Club, Senior Activities, Junior Fundraising,Gender Sexuality Alliance (GSA), Mock Trial, Music Club, Art and Literary Magazine, Newspaper Club, Strength Training Club, Student Government, Theater Club, Video Game Club, Yearbook, Photography, Fashion Club, Sewing Club, Knitting Club, Film Club, French Club, ESA Student Ambassadors, RJAT",
+    "Visual Art, Studio Art, Theater Survey, Classroom Music, Core Music, Mixed Media, Theater",
+    "Consortium; Project Pivot; PROSE; Respect for All",
+    "What percentage of students say that the school is kept clean?",
+    "What percentage of teachers say that the school is kept in good physical condition?",
+    "What percentage of teachers say that physical repairs to this school building are completed in a timely manner?",
+    "The NYC School Survey is administered every year to students in grades 6-12 and to families and teachers of children in grades K-12. The survey is designed to collect information about each school's ability to support student success.",
+    "Response rates show what percentage of the school community actually completed the survey. Higher response rates tell us that the results of the survey reflect the views of a larger portion of the group surveyed.",
+    "is the average college and career readiness score for students at this school after four years in high school",
+    "successfully completed approved college or career preparatory courses and exams",
+    "graduated from high school and enrolled in college or other post-secondary program within six months",
+    "How many students were enrolled in at least one advanced class?",
+    "What is the racial breakdown of the students that were enrolled in at least one advanced class?",
+    "(Number of students in subgroup is in parentheses)",
+    "",
+    "Movement of students with special needs to less restrictive environments",
+    "What percentage of students with IEPs received their recommended special education programs?",
+    "What percentage of students with IEPs received their recommended related services (such as counseling or speech, occupational or physical therapy)?",
+    "of the class of 2024 graduated within four years",
+    "(Number in parentheses shows all class-of-2024 students who are in the subgroup)",
+    "of the class of 2022 graduated within six years",
+    "The citywide graduation rates are projected numbers, subject to correction by the New York State Education Department.",
+    "For the class of 2023, what was the graduation rate for seniors who entered the school with different eighth-grade test scores?",
+    "earned enough credits in ninth grade to be on track for graduation",
+    "earned enough credits in tenth grade to be on track for graduation",
+    "How well does this school help students improve from their incoming proficiency levels and perform on Regents exams?",
+    "English",
+    "Algebra",
+    "Social Studies",
+    "Living Environment",
+    "responded positively to survey questions about instruction/learning environment",
+    "What percentage of students say that their teachers have high expectations for them?",
+    "What percentage of students say that they learn a lot from feedback on their work?",
+    "What percentage of students say that their teachers treat students of different races, cultures, or backgrounds equally?",
+    "What percentage of teachers say that students in their class show that they respect each other's ideas?",
+    "responded positively to survey questions about safety",
+    "What percentage of students feel safe in the hallways, bathrooms, locker rooms, and cafeteria?",
+    "responded positively to survey questions about school leadership",
+    "What percentage of teachers say that the principal/school leader at this school sets high standards for student learning?",
+    "What percentage of teachers say that the principal/school leader encourages feedback through regular meetings with families and teacher leaders?",
+    "responded positively to survey questions about advising and planning",
+    "What percentage of students say that adults at this school help them plan for how to meet their future career goals?",
+    "responded positively to survey questions about student support",
+    "What percentage of students say that their teachers support them when they are upset?",
+    "What percentage of students say that their teachers treats them with respect?",
+    "What percentage of students say that they feel like they belong at this school?",
+    "responded positively to survey questions about communication",
+    "What percentage of families say that the school staff regularly communicates with them about how they can help their child learn?",
+    "responded positively to survey questions about family involvement",
+    "What percentage of families say that they have communicated with their child's teacher about their child's performance?",
+    "responded positively to survey questions about family-school trust",
+    "What percentage of families say that the school staff work hard to build trusting relationships with families like them?"
+  ]
+}

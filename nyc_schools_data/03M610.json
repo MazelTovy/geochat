@@ -1,0 +1,176 @@
+{
+  "basic_info": {
+    "name": "Young Women's Leadership School (03M610)",
+    "school_id": "03M610",
+    "google_maps_url": "https://www.google.com/maps/place/140+West+102+Street,+Manhattan,+NY+10025",
+    "location": {
+      "street_address": "140 West 102 Street",
+      "city_state_zip": "Manhattan, NY 10025",
+      "full_address": "140 West 102 Street, Manhattan, NY 10025"
+    }
+  },
+  "survey_info": {
+    "Families": "32% (115 surveys submitted)",
+    "Teachers": "83% (30 surveys submitted)",
+    "Students": "57% (208 surveys submitted)"
+  },
+  "metrics": {
+    "Gen": {
+      "School website": "www.schools.nyc.gov/schools/M610",
+      "Principal": "Colleen Mcgeehan",
+      "Grades served": "06,07,08,09,10,11,12,SE",
+      "Enrollment": "92",
+      "Admissions methods": "Screened",
+      "State accountability status": "Local Support and Improvement"
+    },
+    "Location": {},
+    "Directory-overview": {},
+    "Sch-demog": {
+      "Asian": "4%",
+      "Black": "49%",
+      "Hispanic or Latinx": "45%",
+      "Native American": "0%",
+      "Native Hawaiian/Pacific Islander": "0%",
+      "White": "2%",
+      "English language learners": "2%",
+      "Students with IEPs": "37%",
+      "Economic Need Index": "88%",
+      "Female": "100%",
+      "Male": "0%",
+      "Neither female nor male": "0%"
+    },
+    "Program": {
+      "Boys": "N/A",
+      "Girls": "N/A",
+      "Co-Ed": "N/A",
+      "DYCD": "COMPASS/SONYC; NYC Solves; PROSE"
+    },
+    "Staff": {
+      "Asian": "0%",
+      "Black": "17%",
+      "Hispanic or Latinx": "28%",
+      "Native American": "0%",
+      "Native Hawaiian/Pacific Islander": "0%",
+      "White": "47%",
+      "Years of experience as principal at this school": "6.1",
+      "Teachers with three or more years of experience": "67%"
+    },
+    "Space": {
+      "Shared space": "Yes, colocated (79M984, 79Q950)"
+    },
+    "Survey-rr": {},
+    "Next-level": {
+      "Comparison Group*": "94% District 03: 92%  City: 91%"
+    },
+    "Core-course": {
+      "Comparison Group*": "98% District 03: 96%  City: 95%"
+    },
+    "Lre": {},
+    "Swiep": {},
+    "Ells": {},
+    "Learning-env": {
+      "District 03": "81%  City: 75%"
+    },
+    "Perf": {
+      "Comparison Group*": "46% District 03: 63%  City: 51%"
+    },
+    "Growth": {},
+    "Perf2": {
+      "Comparison Group*": "43% District 03: 63%  City: 51%"
+    },
+    "Growth2": {},
+    "Safety": {
+      "District 03": "73%  City: 65%"
+    },
+    "School-leadership": {
+      "District 03": "88%  City: 79%"
+    },
+    "Advising": {
+      "District 03": "90%  City: 83%"
+    },
+    "Attendance": {
+      "Student attendance": "89% (Comp group*: 100%)",
+      "Students with >90% attendance": "53% (Comp group*: 82%)",
+      "Teacher attendance": "95%"
+    },
+    "Stu-support": {
+      "District 03": "73%  City: 68%"
+    },
+    "Communication": {
+      "District 03": "94%  City: 91%"
+    },
+    "Family-involve": {
+      "District 03": "89%  City: 86%"
+    },
+    "Relation-w-family": {
+      "District 03": "95%  City: 92%"
+    },
+    "School Values": {
+      "Value 1": "98%",
+      "Value 2": "43%",
+      "Value 3": "96%",
+      "Value 4": "84%",
+      "Value 5": "31%",
+      "Value 6": "21%",
+      "Value 7": "79%",
+      "Value 8": "90%",
+      "Value 9": "89%",
+      "Value 10": "78%",
+      "Value 11": "92%",
+      "Value 12": "73%",
+      "Value 13": "86%"
+    }
+  },
+  "descriptions": [
+    "",
+    "The Young Women's Leadership School of Manhattan (TYWLS) is the first in a national network of excellent all-girls college prep schools. Starting in 6th grade, TYWLS works to support the 'whole girl'  in order to maximize achievement and well-being. Our middle school is dedicated to creating a supportive and challenging environment, leveraging what we know about tween and teen girls' development to nurture positive self-image, effective communication, leadership behavior, and comfort with productive struggle. Our supportive school culture includes advisory, after-school academic tutoring, and regular contact with parents. Girls' Inc. provides after-school support, fun, and leadership opportunities.  Middle Schoolers are encouraged to engage in our school community, grabbing leadership opportunities to perform in whole-school events, exhibit their work for all the grades, and even create new school rituals and activities.  Most importantly, TYWLS middle schoolers have priority admission to  TYWLS' high-school program, where we have a full-time CollegeBound Initiative college counselor on staff to guide students and parents through the process of visiting and choosing colleges, applying to college, and applying for financial aid. TYWLS has maintained near perfect graduation and college acceptance rates since its inception in 1996, nurturing the intellectual curiosity and creativity of young women for thirty years.",
+    "(Number of students in subgroup is in parentheses)",
+    "What percentage of students say that this school offers a wide enough variety of programs, classes, and activities to keep them interested in school?",
+    "Art, Book Club, Dance, Fitness, Gardening, Green Team, Homework Help, Leadership, Restorative Circles, Science Club, Step Team, Student Council, Talent Show, Theater, Tutoring, Visual Arts",
+    "What percentage of students say that the school is kept clean?",
+    "What percentage of teachers say that the school is kept in good physical condition?",
+    "What percentage of teachers say that physical repairs to this school building are completed in a timely manner?",
+    "The NYC School Survey is administered every year to students in grades 6-12 and to families and teachers of children in grades K-12. The survey is designed to collect information about each school's ability to support student success.",
+    "Response rates show what percentage of the school community actually completed the survey. Higher response rates tell us that the results of the survey reflect the views of a larger portion of the group surveyed.",
+    "of this school's former eighth graders earned enough high school credit in ninth grade to be on track for graduation",
+    "Which high schools did students from this school most frequently attend?",
+    "of eighth grade students earned high school credit",
+    "pass rate by this school's students in their math, English, social studies, and science classes",
+    "Movement of students with special needs to less restrictive environments",
+    "What percentage of students with IEPs received their recommended special education programs?",
+    "What percentage of students with IEPs received their recommended related services (such as counseling or speech, occupational or physical therapy)?",
+    "How well does this school help English language learners demonstrate movement toward English language proficiency?",
+    "responded positively to survey questions about instruction/learning environment",
+    "What percentage of students say that their teachers have high expectations for them?",
+    "What percentage of students say that they learn a lot from feedback on their work?",
+    "What percentage of students say that their teachers treat students of different races, cultures, or backgrounds equally?",
+    "What percentage of teachers say that students in their class show that they respect each other's ideas?",
+    "of students at this school met State standards on the State English test; the average score was 2.6 out of 4.5",
+    "What percentage of different groups of students met State standards (scored a 3 or 4) on the State English test?",
+    "(Total number of test takers in the subgroup is in parentheses)",
+    "How well did this school help students improve on their State English tests?",
+    "Over the past two years, how did each eighth grade students' State test scores compare to their own scores from when they were in fifth grade?",
+    "of students at this school met State standards on the State math test; the average score was 2.4 out of 4.5",
+    "What percentage of different groups of students met State standards (scored a 3 or 4) on the State math test?",
+    "(Total number of test takers in the subgroup is in parentheses)",
+    "How well did this school help students improve on their State math tests?",
+    "Over the past two years, how did each eighth grade students' State test scores compare to their own scores from when they were in fifth grade?",
+    "responded positively to survey questions about safety",
+    "What percentage of students feel safe in the hallways, bathrooms, locker rooms, and cafeteria?",
+    "responded positively to survey questions about school leadership",
+    "What percentage of teachers say that the principal/school leader at this school sets high standards for student learning?",
+    "What percentage of teachers say that the principal/school leader encourages feedback through regular meetings with families and teacher leaders?",
+    "responded positively to survey questions about advising and planning",
+    "What percentage of students say that this school provides them with guidance on the high school application process?",
+    "responded positively to survey questions about student support",
+    "What percentage of students say that their teachers support them when they are upset?",
+    "What percentage of students say that their teachers treats them with respect?",
+    "What percentage of students say that they feel like they belong at this school?",
+    "responded positively to survey questions about communication",
+    "What percentage of families say that the school staff regularly communicates with them about how they can help their child learn?",
+    "responded positively to survey questions about family involvement",
+    "What percentage of families say that they have communicated with their child's teacher about their child's performance?",
+    "responded positively to survey questions about family-school trust",
+    "What percentage of families say that the school staff work hard to build trusting relationships with families like them?"
+  ]
+}
