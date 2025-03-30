@@ -6,8 +6,8 @@ This module handles the processing of documents: loading, chunking, and indexing
 import os
 import logging
 import re
-from typing import List, Dict, Any, Optional, Callable
 import json
+from typing import List, Dict, Any, Optional, Callable
 
 logger = logging.getLogger("document_processor")
 
@@ -40,7 +40,7 @@ class DocumentProcessor:
         
         logger.info(f"Document processor initialized with chunk size {chunk_size} and overlap {chunk_overlap}")
     
-    def list_documents(self, file_extensions: List[str] = ['.txt', '.md', '.pdf', '.docx']) -> List[str]:
+    def list_documents(self, file_extensions: List[str] = ['.txt', '.md', '.pdf', '.docx', '.json']) -> List[str]:
         """
         List all documents in the documents directory with specified extensions.
         
@@ -67,8 +67,7 @@ class DocumentProcessor:
     def load_document(self, file_path: str) -> str:
         """
         Load document content from file.
-        This is a simple implementation for text files.
-        Extensions for PDF, DOCX, etc. to be added.
+        Support for text files, JSON, and markdown.
         
         Args:
             file_path: Path to the document file
@@ -82,6 +81,15 @@ class DocumentProcessor:
             if file_path.endswith('.txt') or file_path.endswith('.md'):
                 with open(file_path, 'r', encoding='utf-8') as f:
                     return f.read()
+            elif file_path.endswith('.json'):
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    json_data = json.load(f)
+                    # Process and format information from NYC schools JSON files
+                    if isinstance(json_data, dict):
+                        formatted_text = self._format_nyc_school_json(json_data, file_path)
+                        return formatted_text
+                    else:
+                        return json.dumps(json_data, ensure_ascii=False)
             elif file_path.endswith('.pdf'):
                 logger.warning("PDF support not yet implemented. Returning empty string.")
                 return ""
@@ -94,6 +102,73 @@ class DocumentProcessor:
         except Exception as e:
             logger.error(f"Error loading document {file_path}: {str(e)}")
             return ""
+    
+    def _format_nyc_school_json(self, json_data: Dict, file_path: str) -> str:
+        """
+        Format NYC school JSON data into a readable text format for RAG processing.
+        
+        Args:
+            json_data: The loaded JSON data
+            file_path: Original file path
+            
+        Returns:
+            Formatted text representation
+        """
+        # Extract school ID (usually the filename without extension)
+        school_id = os.path.basename(file_path).replace('.json', '')
+        
+        # Initialize formatted text
+        formatted_text = f"NYC School Information for {school_id}\n\n"
+        
+        # Add school basic information
+        if "name" in json_data:
+            formatted_text += f"School Name: {json_data['name']}\n"
+        
+        if "dbn" in json_data:
+            formatted_text += f"DBN: {json_data['dbn']}\n"
+            
+        if "overview_paragraph" in json_data:
+            formatted_text += f"Overview: {json_data['overview_paragraph']}\n\n"
+        
+        # Add location information
+        if "location" in json_data:
+            loc = json_data["location"]
+            formatted_text += "Location:\n"
+            for key, value in loc.items():
+                formatted_text += f"  {key}: {value}\n"
+            formatted_text += "\n"
+        
+        # Add contact information
+        if "phone_number" in json_data:
+            formatted_text += f"Phone: {json_data['phone_number']}\n"
+            
+        if "school_email" in json_data:
+            formatted_text += f"Email: {json_data['school_email']}\n"
+            
+        if "website" in json_data:
+            formatted_text += f"Website: {json_data['website']}\n\n"
+        
+        # Add school performance data
+        if "performance" in json_data:
+            formatted_text += "School Performance:\n"
+            perf = json_data["performance"]
+            for key, value in perf.items():
+                formatted_text += f"  {key}: {value}\n"
+            formatted_text += "\n"
+        
+        # Add other potentially useful information fields
+        for key, value in json_data.items():
+            if key not in ["name", "dbn", "overview_paragraph", "location", "phone_number", 
+                          "school_email", "website", "performance"]:
+                if isinstance(value, (str, int, float, bool)):
+                    formatted_text += f"{key}: {value}\n"
+                elif isinstance(value, dict) and len(value) < 5:  # Only add simpler dictionaries
+                    formatted_text += f"{key}:\n"
+                    for k, v in value.items():
+                        if isinstance(v, (str, int, float, bool)):
+                            formatted_text += f"  {k}: {v}\n"
+        
+        return formatted_text
     
     def chunk_document(self, text: str) -> List[str]:
         """
