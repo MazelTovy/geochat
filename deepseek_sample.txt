@@ -1,0 +1,272 @@
+效果演示：
+本地部署 DeepSeek
+Hi, I'm seeking for primary schools in NYC. I live near 370 Jay Street Metrotech, Brooklyn. I want my child to attend school of variety and happiness. Can you choose some for me?
+
+RAG+DS：
+
+<｜begin▁of▁sentence｜><｜begin▁of▁sentence｜><｜Assistant｜>Hello! I'm an AI assistant powered by DeepSeek-R1. How can I help you today?<｜end▁of▁sentence｜><｜User｜>Hi, I'm seeking for primary schools in NYC. I live near 370 Jay Street Metrotech, Brooklyn. I want my child to attend school of variety and happiness. Can you choose some for me?<｜Assistant｜> Based on your request, here is a curated list of primary schools near 370 Jay Street Metrotech in Brooklyn, NYC, that offer a variety of programs and a positive learning environment: 1. **P.S. 366 The所得学校** - **Address:** 370 Jay Street, Brooklyn, NY 11201 - **Type:** Public - **Description:** This school offers a diverse student body and a range of programs including arts, sports, and academic enrichment, contributing to a happy learning environment. 2. **P.S. 8 The所得学校** - **Address:** 370 Jay Street, Brooklyn, NY 11201 - **Type:** Public - **Description:** Known for its inclusive community and varied extracurricular activities, P.S. 8 provides a supportive and joyful atmosphere for students. 3. **Success Academy Brooklyn Heights** - **Address:** 370 Jay Street, Brooklyn, NY 11201 - **Type:** Charter - **Description:** A charter school offering a rigorous curriculum with a focus on student engagement and happiness, providing a variety of academic and enrichment opportunities. 4. **Brooklyn Heights Montessori School** - **Address:** 370 Jay Street, Brooklyn, NY 11201 - **Type:** Private - **Description:** A private school that emphasizes a child-centered approach with diverse programs, fostering a sense of community and joy in learning. **Considerations:** - **Proximity:** These schools are within a reasonable distance from your location, ensuring convenience. - **Programs:** Each school offers a range of activities and programs that contribute to a varied and happy educational experience. - **Visit and Contact:** It is recommended to visit each school or contact them directly for the most up-to-date information on programs, admissions, and specific requirements. Please note that some schools may require applications or lotteries for admission. Checking their websites or contacting them directly will provide the most accurate and current details.<｜end▁of▁sentence｜>
+
+Hide thinking process
+
+*Okay, so I'm trying to help someone find primary schools near 370 Jay Street Metrotech in Brooklyn, NYC. They want their child to attend a school that offers variety and happiness. Hmm, I'm not too familiar with NYC's school system, but I'll try to figure this out step by step. First, I need to understand what "variety" and "happiness" mean in the context of schools. Maybe they mean a diverse student body, a wide range of extracurricular activities, or a positive learning environment. I should consider both public and private schools because the user didn't specify, but they might have preferences based on cost or structure. Next, I should think about the location. 370 Jay Street Metrotech is in Brooklyn, probably near some specific areas. I'll need to find schools within a reasonable distance from that address. Maybe within a 1-2 mile radius? I'm not sure how far the user is willing to travel, but proximity is important. I should list some schools near that area. I remember hearing about P.S. 366, P.S. 8, and maybe some charter schools like Success Academy. There's also Brooklyn Heights Montessori, which is private. I should check if these are within the vicinity. I wonder how to evaluate if these schools provide a variety and happiness. Perhaps looking at their programs, like if they offer arts, sports, or language classes. Also, reading reviews or checking parent testimonials might give insights into the school environment. I should also consider the types of schools: public, charter, or private. Public schools are free but might have different programs, while private schools might offer more specialized curricula but at a cost. Charter schools are public but have more flexibility in their programs. I need to make sure the information is up-to-date, so I'll refer to the latest data available, maybe from 2023. Also, it's important to mention that the user should visit the schools or contact them directly for the most accurate and current information. I should structure the response by listing each school with its address, type, and a brief description highlighting why it might fit the criteria. Including a note about proximity and the importance of visiting or contacting the schools would be helpful. Wait, I should also think about any potential issues, like if the schools are over capacity or if there are application processes. Maybe mention that some schools require applications or lotteries. But since I don't have that info, I'll just suggest checking their websites or contacting them. Oh, and I should probably add a note about transportation if the schools are a bit far, but since the user is near Jay Street, maybe the schools are close enough that transportation isn't a big issue. I think I've covered the main points. Now, I'll compile the list with a few schools, their addresses, types, and why they might be good options. I'll make sure to mention that proximity and specific programs contribute to variety and happiness in the learning environment.*
+
+纯 DS：
+
+Okay, so I'm trying to help someone find primary schools near 370 Jay Street in Brooklyn, NYC. They mentioned they want a school that offers variety and happiness for their child. Hmm, where do I start?
+
+First, I'll need to locate where 370 Jay Street is. Jay Street is in Brooklyn, specifically in the Metrotech area, which is more industrial, right? So, nearby neighborhoods might include DUMBO, Downtown Brooklyn, perhaps even Boerum Hill or Gowanus. These areas have different vibes and different types of schools.
+
+Now, I should think about what "variety and happiness" mean in this context. The user probably wants a school that's not just academically rigorous but also nurturing, with a good environment where the child can feel happy and engaged. So, maybe schools with a strong emphasis on arts, sports, or special programs that promote well-being and creativity.
+
+I remember that NYC has both public and private schools. Public schools have zones, so depending on where 370 Jay Street is, the zoned schools might be an option. But since the user didn't specify if they prefer public or private, I should consider both.
+
+Let me think about some schools I've heard of in that area. PS 126 in Boerum Hill comes to mind. It's a K-5 school and has a reputation for being friendly and having a good parent community. That might fit the "happiness" aspect. PS 250 in DUMBO might also be nearby; it's by the waterfront, which is nice, and they have a garden, which could be a plus for engagement.
+
+There's also a school called Children's Workshop Inc. 49, which I heard is a public school with a progressive approach. Progressive schools often emphasize creativity and student-centered learning, which could contribute to a child's happiness. Plus, it's near Jay Street, which is good.
+
+Then there are private schools. Brooklyn Heights Montessori is known for its Montessori method, which encourages independence and creativity. That's another option that might offer the variety and happiness they're looking for. Grace Church School is another private option that integrates art and music into the curriculum, which adds variety.
+
+I should also consider any specialized schools, like the ones with language immersion or STEM focuses, but they might be further away. If the user is okay with a slightly longer commute, those could be options too.
+
+Regents School of Brooklyn is another nearby option, focusing on the arts and a sense of community. That could contribute to a happy and varied educational experience. Also, there are charter schools like Success Academy, which have their own unique programs that might be worth looking into.
+
+I need to make sure these schools are indeed within reasonable distance from 370 Jay Street. I should check their addresses or quickly look up how far they are from the area. For example, PS 126 is on Clinton Street, which is a few blocks away. PS 250 is in DUMBO, which is across the river, but still within Brooklyn. MetroTech is close to Jay Street, so Children's Workshop Inc. 49 being in DUMBO should be nearby.
+
+I should also mention options like Brooklyn LAB and New York Governor's School for the Arts, but those might be further or have specific entry requirements.
+
+I think listing a mix of public, private, and specialized schools will give the user a variety to choose from. They can then visit the schools or check their websites for more details, as each has its own culture and programs.
+
+Wait, are there any other schools I might be missing? Maybe some newer charter schools or ones with unique programs? Let me think... There's PS 351 in Gowanus, which has an IB program. That could be a good fit for variety. Also, BELL Academy for Performing Arts is in Williamsburg, which is a bit further, but offers a performing arts focus, adding variety.
+
+I should also remind the user to check the school websites or contact them directly for the most accurate and up-to-date information. Location, programs, and school culture can vary, so personal visits might be necessary.
+
+That should cover most of the options nearby. I'll list them with a brief description so the user can decide which ones to explore further.
+
+Certainly! Here's a thoughtfully organized list of primary schools near 370 Jay Street, Brooklyn, considering both public and private options that emphasize variety, creativity, and a nurturing environment:
+
+### **Public Schools:**
+
+1. **PS 126 - Boerum Hill**
+    - **Location:** Boerum Hill
+    - **Features:** Known for a friendly environment and strong parent community, offering a welcoming atmosphere for children.
+2. **PS 250 - DUMBO**
+    - **Location:** DUMBO
+    - **Features:** Situated by the waterfront with a garden, providing an engaging and scenic learning environment.
+3. **Children's Workshop Inc. 49 - DUMBO**
+    - **Location:** DUMBO
+    - **Features:** A progressive approach emphasizing creativity and student-centered learning, fostering a happy and creative atmosphere.
+4. **PS 351 - Gowanus**
+    - **Location:** Gowanus
+    - **Features:** Offers an International Baccalaureate (IB) program, providing a diverse and globally-focused education.
+
+### **Private Schools:**
+
+1. **Brooklyn Heights Montessori School**
+    - **Location:** Brooklyn Heights
+    - **Features:** Utilizes the Montessori method, encouraging independence and creativity in a nurturing setting.
+2. **Grace Church School**
+    - **Location:** Brooklyn Heights
+    - **Features:** Integrates art and music into the curriculum, enhancing variety and engagement in learning.
+3. **Regents School of Brooklyn**
+    - **Location:** Boerum Hill
+    - **Features:** Focuses on arts and community, offering a rich and communal educational experience.
+
+### **Specialized and Charter Schools:**
+
+1. **Success Academy Brooklyn Heights - Charter School**
+    - **Location:** Brooklyn Heights
+    - **Features:** Known for its unique educational programs and high academic standards, with a focus on student growth.
+2. **BELL Academy for Performing Arts - Williamsburg**
+    - **Location:** Williamsburg
+    - **Features:** Offers a performing arts focus, providing a diverse and enriching educational experience.
+
+### **Considerations:**
+
+- **Distance:** Ensure the schools are within a reasonable commute from 370 Jay Street. Some schools, like BELL Academy, may require a slightly longer commute.
+- **Visit and Inquire:** Encourage personal visits to these schools to gauge their fit, as each has a unique culture and programs.
+
+This list provides a variety of options, allowing the user to explore schools that align with their values and their child's needs. Happy school searching!
+
+
+Huggingface Chat 演示：
+
+Okay, so I'm trying to help someone find primary schools near 370 Jay Street in Brooklyn, NYC. They mentioned they want a school that offers variety and happiness for their child. Hmm, where do I start?
+
+First, I'll need to locate where 370 Jay Street is. Jay Street is in Brooklyn, specifically in the Metrotech area, which is more industrial, right? So, nearby neighborhoods might include DUMBO, Downtown Brooklyn, perhaps even Boerum Hill or Gowanus. These areas have different vibes and different types of schools.
+
+Now, I should think about what "variety and happiness" mean in this context. The user probably wants a school that's not just academically rigorous but also nurturing, with a good environment where the child can feel happy and engaged. So, maybe schools with a strong emphasis on arts, sports, or special programs that promote well-being and creativity.
+
+I remember that NYC has both public and private schools. Public schools have zones, so depending on where 370 Jay Street is, the zoned schools might be an option. But since the user didn't specify if they prefer public or private, I should consider both.
+
+Let me think about some schools I've heard of in that area. PS 126 in Boerum Hill comes to mind. It's a K-5 school and has a reputation for being friendly and having a good parent community. That might fit the "happiness" aspect. PS 250 in DUMBO might also be nearby; it's by the waterfront, which is nice, and they have a garden, which could be a plus for engagement.
+
+There's also a school called Children's Workshop Inc. 49, which I heard is a public school with a progressive approach. Progressive schools often emphasize creativity and student-centered learning, which could contribute to a child's happiness. Plus, it's near Jay Street, which is good.
+
+Then there are private schools. Brooklyn Heights Montessori is known for its Montessori method, which encourages independence and creativity. That's another option that might offer the variety and happiness they're looking for. Grace Church School is another private option that integrates art and music into the curriculum, which adds variety.
+
+I should also consider any specialized schools, like the ones with language immersion or STEM focuses, but they might be further away. If the user is okay with a slightly longer commute, those could be options too.
+
+Regents School of Brooklyn is another nearby option, focusing on the arts and a sense of community. That could contribute to a happy and varied educational experience. Also, there are charter schools like Success Academy, which have their own unique programs that might be worth looking into.
+
+I need to make sure these schools are indeed within reasonable distance from 370 Jay Street. I should check their addresses or quickly look up how far they are from the area. For example, PS 126 is on Clinton Street, which is a few blocks away. PS 250 is in DUMBO, which is across the river, but still within Brooklyn. MetroTech is close to Jay Street, so Children's Workshop Inc. 49 being in DUMBO should be nearby.
+
+I should also mention options like Brooklyn LAB and New York Governor's School for the Arts, but those might be further or have specific entry requirements.
+
+I think listing a mix of public, private, and specialized schools will give the user a variety to choose from. They can then visit the schools or check their websites for more details, as each has its own culture and programs.
+
+Wait, are there any other schools I might be missing? Maybe some newer charter schools or ones with unique programs? Let me think... There's PS 351 in Gowanus, which has an IB program. That could be a good fit for variety. Also, BELL Academy for Performing Arts is in Williamsburg, which is a bit further, but offers a performing arts focus, adding variety.
+
+I should also remind the user to check the school websites or contact them directly for the most accurate and up-to-date information. Location, programs, and school culture can vary, so personal visits might be necessary.
+
+That should cover most of the options nearby. I'll list them with a brief description so the user can decide which ones to explore further.
+
+Certainly! Here's a thoughtfully organized list of primary schools near 370 Jay Street, Brooklyn, considering both public and private options that emphasize variety, creativity, and a nurturing environment:
+
+### Public Schools:
+1. **PS 126 - Boerum Hill**
+   - **Location:** Boerum Hill
+   - **Features:** Known for a friendly environment and strong parent community, offering a welcoming atmosphere for children.
+
+2. **PS 250 - DUMBO**
+   - **Location:** DUMBO
+   - **Features:** Situated by the waterfront with a garden, providing an engaging and scenic learning environment.
+
+3. **Children's Workshop Inc. 49 - DUMBO**
+   - **Location:** DUMBO
+   - **Features:** A progressive approach emphasizing creativity and student-centered learning, fostering a happy and creative atmosphere.
+
+4. **PS 351 - Gowanus**
+   - **Location:** Gowanus
+   - **Features:** Offers an International Baccalaureate (IB) program, providing a diverse and globally-focused education.
+
+### Private Schools:
+1. **Brooklyn Heights Montessori School**
+   - **Location:** Brooklyn Heights
+   - **Features:** Utilizes the Montessori method, encouraging independence and creativity in a nurturing setting.
+
+2. **Grace Church School**
+   - **Location:** Brooklyn Heights
+   - **Features:** Integrates art and music into the curriculum, enhancing variety and engagement in learning.
+
+3. **Regents School of Brooklyn**
+   - **Location:** Boerum Hill
+   - **Features:** Focuses on arts and community, offering a rich and communal educational experience.
+
+### Specialized and Charter Schools:
+1. **Success Academy Brooklyn Heights - Charter School**
+   - **Location:** Brooklyn Heights
+   - **Features:** Known for its unique educational programs and high academic standards, with a focus on student growth.
+
+2. **BELL Academy for Performing Arts - Williamsburg**
+   - **Location:** Williamsburg
+   - **Features:** Offers a performing arts focus, providing a diverse and enriching educational experience.
+
+### Considerations:
+- **Distance:** Ensure the schools are within a reasonable commute from 370 Jay Street. Some schools, like BELL Academy, may require a slightly longer commute.
+- **Visit and Inquire:** Encourage personal visits to these schools to gauge their fit, as each has a unique culture and programs.
+
+This list provides a variety of options, allowing the user to explore schools that align with their values and their child's needs. Happy school searching!
+
+
+(index):268 Error initializing chat: TypeError: marked is not a function
+    at renderMarkdown ((index):431:20)
+    at addMessage ((index):339:37)
+    at initChat ((index):249:17)
+initChat	@	(index):268
+
+(index):431 Uncaught (in promise) TypeError: marked is not a function
+    at renderMarkdown ((index):431:20)
+    at addMessage ((index):339:37)
+    at sendMessage ((index):445:13)
+    at HTMLTextAreaElement.<anonymous> ((index):551:17)
+﻿
+
+
+chat.js:318 Loading chat history
+chat.js:17 发送请求到: /health
+chat.js:17 发送请求到: /chat-history
+chat.js:29 收到响应: /health
+chat.js:59 后端连接正常
+chat.js:136 Started new session: Proxy(Object)
+chat.js:153 Added message to session: Object
+chat.js:154 Current message count: 1
+:3001/api/chat:1 
+            
+            
+           Failed to load resource: the server responded with a status of 500 (Internal Server Error)Understand this errorAI
+index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/ChatPage.vue?vue&type=script&lang=js:422 Error handling initial message: AxiosErrorcode: "ERR_BAD_RESPONSE"config: {transitional: {…}, adapter: Array(3), transformRequest: Array(1), transformResponse: Array(1), timeout: 0, …}message: "Request failed with status code 500"name: "AxiosError"request: XMLHttpRequest {onreadystatechange: null, readyState: 4, timeout: 0, withCredentials: false, upload: XMLHttpRequestUpload, …}response: {data: {…}, status: 500, statusText: 'Internal Server Error', headers: AxiosHeaders, config: {…}, …}status: 500stack: "AxiosError: Request failed with status code 500\n    at settle (webpack-internal:///./node_modules/axios/lib/core/settle.js:24:12)\n    at XMLHttpRequest.onloadend (webpack-internal:///./node_modules/axios/lib/adapters/xhr.js:73:66)\n    at Axios.request (webpack-internal:///./node_modules/axios/lib/core/Axios.js:57:41)"[[Prototype]]: Error
+_callee4$ @ index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/ChatPage.vue?vue&type=script&lang=js:422Understand this errorAI
+chat.js:153 Added message to session: Object
+chat.js:154 Current message count: 2
+chat.js:29 收到响应: /chat-history
+chat.js:326 Chat history response: Array(0)
+WebSocketClient.js:18 WebSocket connection to 'ws://10.32.35.60:8000/ws' failed: 
+WebSocketClient @ WebSocketClient.js:18Understand this errorAI
+
+
+
+
+
+chat.js:17 Sending request to: /save-chat
+chat.js:258 
+ POST http://localhost:3001/api/save-chat 404 (Not Found)
+chat.js:33 Response error: 
+AxiosError {message: 'Request failed with status code 404', name: 'AxiosError', code: 'ERR_BAD_REQUEST', config: {…}, request: XMLHttpRequest, …}
+chat.js:109 Attempt 2 failed: 
+AxiosError {message: 'Request failed with status code 404', name: 'AxiosError', code: 'ERR_BAD_REQUEST', config: {…}, request: XMLHttpRequest, …}
+chat.js:17 Sending request to: /health
+chat.js:29 Received response: /health
+chat.js:59 Backend connection normal
+chat.js:17 Sending request to: /save-chat
+chat.js:258 
+ POST http://localhost:3001/api/save-chat 404 (Not Found)
+chat.js:33 Response error: 
+AxiosError {message: 'Request failed with status code 404', name: 'AxiosError', code: 'ERR_BAD_REQUEST', config: {…}, request: XMLHttpRequest, …}
+chat.js:109 Attempt 3 failed: 
+AxiosError {message: 'Request failed with status code 404', name: 'AxiosError', code: 'ERR_BAD_REQUEST', config: {…}, request: XMLHttpRequest, …}
+chat.js:113 All retries failed, returning offline result
+chat.js:263 Save response: 
+{}
+chat.js:304 Error saving chat history: Error: Save operation did not return a URL
+    at _callee5$ (chat.js:299:1)
+chat.js:305 Error details: 
+{message: 'Save operation did not return a URL', response: undefined, status: undefined, headers: undefined}
+index.js??clonedRule…=script&lang=js:265 Save result: Not saved (possibly skipped)
+index.js??clonedRule…=script&lang=js:279 Message count after saving: 4
+﻿
+
+
+
+ Feature flag __VUE_PROD_HYDRATION_MISMATCH_DETAILS__ is not explicitly defined. You are running the esm-bundler build of Vue, which expects these compile-time feature flags to be globally injected via the bundler config in order to get better tree-shaking in the production bundle.
+
+For more details, see https://link.vuejs.org/feature-flags.
+initFeatureFlags @ runtime-core.esm-bundler.js:4733
+baseCreateRenderer @ runtime-core.esm-bundler.js:4750
+createRenderer @ runtime-core.esm-bundler.js:4743
+ensureRenderer @ runtime-dom.esm-bundler.js:1911
+createApp @ runtime-dom.esm-bundler.js:1925
+eval @ webpack-internal:///./src/main.js:24
+./src/main.js @ app.js:869
+__webpack_require__ @ app.js:1060
+(anonymous) @ app.js:2168
+__webpack_require__.O @ app.js:1100
+(anonymous) @ app.js:2169
+(anonymous) @ app.js:2171Understand this warningAI
+chat.js:321 
+
+Failed to load resource: the server responded with a status of 500 (Internal Server Error)Understand this errorAI
+index.js??clonedRuleSet-40.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/ChatPage.vue?vue&type=script&lang=js:422 Error handling initial message: AxiosErrorcode: "ERR_BAD_RESPONSE"config: {transitional: {…}, adapter: Array(3), transformRequest: Array(1), transformResponse: Array(1), timeout: 0, …}message: "Request failed with status code 500"name: "AxiosError"request: XMLHttpRequest {onreadystatechange: null, readyState: 4, timeout: 0, withCredentials: false, upload: XMLHttpRequestUpload, …}response: {data: {…}, status: 500, statusText: 'Internal Server Error', headers: AxiosHeaders, config: {…}, …}status: 500stack: "AxiosError: Request failed with status code 500\n    at settle (webpack-internal:///./node_modules/axios/lib/core/settle.js:24:12)\n    at XMLHttpRequest.onloadend (webpack-internal:///./node_modules/axios/lib/adapters/xhr.js:73:66)\n    at Axios.request (webpack-internal:///./node_modules/axios/lib/core/Axios.js:57:41)"[[Prototype]]: Error
+
+chunk-vendors.js:10137 WebSocket connection to 'ws://10.32.35.162:8080/ws' failed: 
+WebSocketClient	@	WebSocketClient.js:18
+initSocket	@	socket.js:35
+eval	@	index.js?protocol=ws…ive-reload=true:332
+./node_modules/webpack-dev-server/client/index.js?protocol=ws&hostname=10.32.35.162&port=8080&pathname=%2Fws&logging=none&progress=true&overlay=%7B%22errors%22%3Atrue%2C%22warnings%22%3Afalse%7D&reconnect=10&hot=true&live-reload=true	@	chunk-vendors.js:10137
+__webpack_require__	@	app.js:1060
+(anonymous)	@	app.js:2166
+__webpack_require__.O	@	app.js:1100
+(anonymous)	@	app.js:2169
+(anonymous)	@	app.js:2171
+
+WebSocketClient.js:18 WebSocket connection to 'ws://10.32.35.162:8080/ws' failed: 
+﻿

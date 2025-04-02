@@ -9,14 +9,21 @@ from typing import List, Dict, Any, Optional
 import numpy as np
 import sys
 import json
+import torch
+import faiss
+from sentence_transformers import SentenceTransformer
 
 # Add FlashRAG path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 
-# Import FlashRAG components
-from flashrag.config import Config
-from flashrag.utils import get_retriever as get_flashrag_retriever
-from flashrag.prompt import PromptTemplate
+# Import FlashRAG components if available
+try:
+    from flashrag.config import Config
+    from flashrag.utils import get_retriever as get_flashrag_retriever
+    from flashrag.prompt import PromptTemplate
+    FLASHRAG_AVAILABLE = True
+except ImportError:
+    FLASHRAG_AVAILABLE = False
 
 logger = logging.getLogger("retriever")
 
@@ -61,6 +68,11 @@ class DocumentRetriever:
         """
         Initialize FlashRAG retriever if available.
         """
+        if not FLASHRAG_AVAILABLE:
+            logger.warning("FlashRAG is not available. Please install it to use advanced retrieval capabilities.")
+            self.use_flashrag = False
+            return
+
         try:
             # Build FlashRAG configuration
             config_dict = {
@@ -249,6 +261,160 @@ class DocumentRetriever:
             logger.error(f"Error saving retrieval cache: {str(e)}")
 
 
+class FlashRAGRetriever:
+    """
+    A wrapper class for the FlashRAG retriever that ensures compatibility with the model server.
+    Uses the dense retrieval approach from FlashRAG.
+    """
+    
+    def __init__(self, corpus_path: str, index_path: str, model_name_or_path: str = "intfloat/e5-base-v2"):
+        self.corpus_path = corpus_path
+        self.index_path = index_path
+        self.model_name = model_name_or_path
+        
+        # Load corpus
+        self.corpus = self._load_corpus()
+        
+        # Initialize the index if it exists
+        if os.path.exists(index_path):
+            if os.path.isdir(index_path) and os.path.exists(os.path.join(index_path, "index.faiss")):
+                self.index = faiss.read_index(os.path.join(index_path, "index.faiss"))
+            else:
+                logger.warning(f"Index directory {index_path} exists but does not contain index.faiss")
+                self.index = None
+        else:
+            logger.warning(f"Index path {index_path} does not exist")
+            self.index = None
+            
+        # Initialize the embedding model
+        self.model = SentenceTransformer(model_name_or_path)
+        logger.info(f"FlashRAGRetriever initialized with {model_name_or_path}")
+        
+    def _load_corpus(self):
+        """Load the corpus from the JSONL file"""
+        corpus = []
+        try:
+            with open(self.corpus_path, 'r', encoding='utf-8') as f:
+                for line in f:
+                    try:
+                        item = json.loads(line.strip())
+                        corpus.append(item)
+                    except json.JSONDecodeError:
+                        logger.error(f"Error parsing JSON line: {line}")
+                        continue
+            logger.info(f"Loaded corpus with {len(corpus)} documents")
+            return corpus
+        except Exception as e:
+            logger.error(f"Failed to load corpus from {self.corpus_path}: {str(e)}")
+            return []
+            
+    def retrieve(self, query: str, top_k: int = 5) -> List[Dict[str, Any]]:
+        """Legacy API compatibility method"""
+        return self.search(query, num=top_k)
+        
+    def search(self, query: str, num: int = 5) -> List[Dict[str, Any]]:
+        """
+        Search the corpus for documents relevant to the query
+        
+        Args:
+            query: The search query
+            num: Number of documents to retrieve
+            
+        Returns:
+            List of dictionaries containing document info
+        """
+        if self.index is None:
+            logger.error("Index is not initialized. Cannot perform search.")
+            return []
+            
+        # Encode the query
+        query_embedding = self.model.encode(query, convert_to_tensor=True)
+        query_embedding_np = query_embedding.cpu().numpy().reshape(1, -1).astype(np.float32)
+        
+        # Search the index
+        scores, indices = self.index.search(query_embedding_np, k=num)
+        
+        # Get the documents
+        results = []
+        for i, idx in enumerate(indices[0]):
+            if idx < len(self.corpus):
+                doc = self.corpus[idx]
+                doc["score"] = float(scores[0][i])
+                results.append(doc)
+                
+        return results
+
+
+class BasicRetriever:
+    """
+    A simple retriever that uses sentence-transformers for embedding and semantic search
+    """
+    
+    def __init__(self, model_name_or_path: str = "intfloat/e5-base-v2"):
+        self.model_name = model_name_or_path
+        self.model = SentenceTransformer(model_name_or_path)
+        self.corpus = []
+        self.corpus_embeddings = None
+        logger.info(f"BasicRetriever initialized with {model_name_or_path}")
+        
+    def add_documents(self, documents: List[Dict[str, Any]]):
+        """
+        Add documents to the retriever
+        
+        Args:
+            documents: List of document dictionaries
+        """
+        self.corpus.extend(documents)
+        texts = [doc.get("contents", "") or doc.get("content", "") for doc in documents]
+        
+        # Create embeddings
+        embeddings = self.model.encode(texts, convert_to_tensor=True)
+        
+        if self.corpus_embeddings is None:
+            self.corpus_embeddings = embeddings
+        else:
+            self.corpus_embeddings = torch.cat([self.corpus_embeddings, embeddings])
+            
+        logger.info(f"Added {len(documents)} documents to BasicRetriever. Total: {len(self.corpus)}")
+        
+    def retrieve(self, query: str, top_k: int = 5) -> List[Dict[str, Any]]:
+        """Legacy API compatibility method"""
+        return self.search(query, num=top_k)
+        
+    def search(self, query: str, num: int = 5) -> List[Dict[str, Any]]:
+        """
+        Search the corpus for documents relevant to the query
+        
+        Args:
+            query: The search query
+            num: Number of documents to retrieve
+            
+        Returns:
+            List of dictionaries containing document info
+        """
+        if len(self.corpus) == 0:
+            logger.warning("No documents in the corpus. Cannot perform search.")
+            return []
+            
+        # Encode the query
+        query_embedding = self.model.encode(query, convert_to_tensor=True)
+        
+        # Compute cosine similarities
+        cos_scores = torch.nn.functional.cosine_similarity(query_embedding.unsqueeze(0), self.corpus_embeddings)
+        
+        # Get top-k results
+        top_k_results = []
+        top_results = torch.topk(cos_scores, min(num, len(self.corpus)))
+        
+        for score, idx in zip(top_results[0], top_results[1]):
+            doc = self.corpus[idx]
+            doc_copy = doc.copy()  # Create a copy to avoid modifying the original
+            doc_copy["score"] = float(score)
+            top_k_results.append(doc_copy)
+            
+        return top_k_results
+
+
 # Factory function to get the appropriate retriever
 def get_retriever(retriever_type: str = "flashrag", **kwargs) -> DocumentRetriever:
     """
@@ -287,10 +453,10 @@ def format_retrieved_documents(documents: List[Dict[str, Any]]) -> str:
     
     for i, doc in enumerate(documents):
         formatted_text += f"Document {i+1}:\n"
-        formatted_text += f"{doc['content']}\n"
+        formatted_text += f"{doc.get('content', doc.get('contents', ''))}\n"
         if 'title' in doc and doc['title']:
             formatted_text += f"Title: {doc['title']}\n"
-        formatted_text += f"Source: {doc['source']}\n\n"
+        formatted_text += f"Source: {doc.get('source', doc.get('id', 'Unknown'))}\n\n"
     
     formatted_text += "Please use this information to help answer the user's question."
     

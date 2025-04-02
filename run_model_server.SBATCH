@@ -9,7 +9,7 @@
 #SBATCH --account=pr_325_general
 #SBATCH --output=/scratch/sx2490/Logs/model_server/%j.out
 #SBATCH --error=/scratch/sx2490/Logs/model_server/%j.err
-#SBATCH --job-name=llama3_server
+#SBATCH --job-name=deepseek_server
 
 # Create log directory
 mkdir -p /scratch/sx2490/Logs/model_server
@@ -19,20 +19,23 @@ module purge
 
 # Set server port (change to an unused port if needed)
 export PORT=8000
+export STATIC_PORT=8080  # Static server port
 
 # Create node and port information file for reference
 NODEFILE="/scratch/sx2490/Logs/model_server/node_info.txt"
 echo "Job ID: $SLURM_JOB_ID" > $NODEFILE
 echo "Running on node: $SLURMD_NODENAME" >> $NODEFILE
-echo "Service port: $PORT" >> $NODEFILE
+echo "API service port: $PORT" >> $NODEFILE
+echo "Static server port: $STATIC_PORT" >> $NODEFILE
 echo "Start time: $(date)" >> $NODEFILE
 
 # Print node information (for SSH port forwarding)
 echo "================ SERVER INFORMATION ================"
 echo "Running on node: $SLURMD_NODENAME"
-echo "Using port: $PORT"
+echo "API server port: $PORT"
+echo "Static server port: $STATIC_PORT"
 echo "Use the following command for SSH port forwarding:"
-echo "ssh -L ${PORT}:${SLURMD_NODENAME}:${PORT} sx2490@greene.hpc.nyu.edu"
+echo "ssh -L ${PORT}:${SLURMD_NODENAME}:${PORT} -L ${STATIC_PORT}:${SLURMD_NODENAME}:${STATIC_PORT} sx2490@greene.hpc.nyu.edu"
 echo "===========================================" 
 
 # Create Python package and cache directories in scratch
@@ -84,42 +87,109 @@ singularity exec --nv \
     export TORCH_HOME=$SCRATCH_TORCH_CACHE; \
     export TRANSFORMERS_CACHE=$SCRATCH_TRANSFORMERS_CACHE; \
     export PIP_CACHE_DIR=$SCRATCH_PIP_CACHE; \
+    export PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:128; \
     \
-    # Install all required dependencies
+    # Install base dependencies
     pip install --user fastapi uvicorn pydantic -q; \
     pip install --user transformers accelerate bitsandbytes sentencepiece -q; \
+    \
+    # Install FlashRAG dependencies - including those missing from previous run
     pip install --user huggingface_hub sentence-transformers -q; \
     pip install --user datasets einops tiktoken -q; \
-    pip install --user faiss-cpu scipy numpy tqdm -q; \
-    pip install --user langchain -q; \
+    pip install --user faiss-cpu faiss-gpu scipy numpy tqdm -q; \
+    pip install --user langchain openai -q; \
+    pip install --user langid bm25s -q; \
     \
     # If FlashRAG is not installed, try to install it here
     if [ ! -d /scratch/sx2490/FlashRAG ]; then \
+        echo 'FlashRAG not found, cloning repository...'; \
         cd /scratch/sx2490 && \
         git clone https://github.com/RUC-NLPIR/FlashRAG.git && \
         cd FlashRAG && \
         pip install --user -e . -q; \
+        echo 'FlashRAG installed successfully.'; \
+    else \
+        echo 'FlashRAG already installed at /scratch/sx2490/FlashRAG'; \
     fi; \
     \
+    # Add FlashRAG to Python path
     export PYTHONPATH=/scratch/sx2490:/scratch/sx2490/FlashRAG:\$PYTHONPATH; \
     cd /scratch/sx2490 && \
     \
-    # Check if RAG initialization is needed and run if necessary
-    echo 'Checking if RAG initialization is needed...' && \
-    PROCESSED_DIR=/scratch/sx2490/geochat_gs/nyc_schools_data/processed && \
-    INDEX_PATH=\$PROCESSED_DIR/index && \
-    CORPUS_PATH=\$PROCESSED_DIR/corpus.jsonl && \
-    if [ ! -d \$INDEX_PATH ] || [ ! -f \$CORPUS_PATH ]; then \
-        echo 'RAG index or corpus not found. Running RAG initialization...' && \
+    # Check if data needs to be converted to a standard corpus format for FlashRAG
+    echo 'Checking if corpus conversion is needed...' && \
+    CORPUS_DIR=/scratch/sx2490/geochat_gs/nyc_schools_data && \
+    PROCESSED_DIR=\$CORPUS_DIR/processed && \
+    CORPUS_JSONL=\$PROCESSED_DIR/corpus.jsonl && \
+    mkdir -p \$PROCESSED_DIR && \
+    \
+    # Use separate Python script for corpus conversion
+    if [ ! -f \$CORPUS_JSONL ]; then \
+        echo 'Converting NYC schools data to corpus format...' && \
         cd /scratch/sx2490/geochat_gs && \
-        python init_rag.py --docs-dir nyc_schools_data --chunk-size 500 --chunk-overlap 50 --embedding-model intfloat/e5-base-v2; \
-        echo 'RAG initialization completed.'; \
+        python convert_corpus.py --corpus-dir \$CORPUS_DIR --output-file \$CORPUS_JSONL && \
+        echo 'Conversion complete'; \
     else \
-        echo 'RAG index and corpus already exist. Skipping initialization.'; \
+        echo 'Corpus file already exists: '\$CORPUS_JSONL; \
+        echo 'Corpus file content check:'; \
+        head -n 2 \$CORPUS_JSONL; \
+        echo '...'; \
+        wc -l \$CORPUS_JSONL; \
     fi && \
     \
+    # Verify corpus file exists and has valid content
+    if [ ! -f \$CORPUS_JSONL ]; then \
+        echo 'ERROR: Corpus file not created properly!'; \
+        exit 1; \
+    fi && \
+    \
+    # Check if RAG index exists and build it if needed
+    echo 'Checking if RAG initialization is needed...' && \
+    INDEX_PATH=\$PROCESSED_DIR/index && \
+    if [ ! -d \$INDEX_PATH ]; then \
+        echo 'RAG index not found. Building index...' && \
+        cd /scratch/sx2490 && \
+        # Use direct command, printing the exact command
+        echo 'Running: python -m flashrag.retriever.index_builder --retrieval_method e5 --model_path intfloat/e5-base-v2 --corpus_path '\$CORPUS_JSONL' --save_dir '\$PROCESSED_DIR' --use_fp16 --max_length 512 --batch_size 32 --sentence_transformer --faiss_type Flat' && \
+        \
+        python -m flashrag.retriever.index_builder \
+            --retrieval_method e5 \
+            --model_path intfloat/e5-base-v2 \
+            --corpus_path \$CORPUS_JSONL \
+            --save_dir \$PROCESSED_DIR \
+            --use_fp16 \
+            --max_length 512 \
+            --batch_size 32 \
+            --sentence_transformer \
+            --faiss_type Flat && \
+        echo 'RAG index creation completed.'; \
+        \
+        # Verify index was created
+        if [ ! -d \$INDEX_PATH ]; then \
+            echo 'ERROR: Index creation failed. Index directory not found!'; \
+            echo 'Listing contents of processed directory:'; \
+            ls -la \$PROCESSED_DIR; \
+            echo 'Falling back to basic retrieval without FlashRAG.'; \
+        else \
+            echo 'Index successfully created at: '\$INDEX_PATH; \
+            ls -la \$INDEX_PATH; \
+        fi; \
+    else \
+        echo 'RAG index already exists at: '\$INDEX_PATH; \
+        ls -la \$INDEX_PATH; \
+    fi && \
+    \
+    # Start both servers simultaneously
+    echo 'Starting both API and static servers...' && \
+    # Start static server in background
+    cd /scratch/sx2490/geochat_gs && \
+    echo 'Starting static server on port $STATIC_PORT...' && \
+    python static_server.py --port $STATIC_PORT > /scratch/sx2490/Logs/model_server/static_server.log 2>&1 & \
+    STATIC_PID=\$! && \
+    echo 'Static server started with PID: '\$STATIC_PID && \
+    \
     # Start the model server
-    echo 'Starting model server...' && \
+    echo 'Starting model server on port $PORT...' && \
     python -m geochat_gs.model_server"
 
 # Record end time

@@ -11,9 +11,13 @@ import os
 import logging
 import time
 import traceback
+import re
+import json
 from typing import List, Dict, Any, Optional
+import argparse
+import numpy as np
 
-# Import necessary libraries for LLaMA-3-8B
+# Import necessary libraries for DeepSeek-R1
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 # Import RAG components
@@ -36,15 +40,16 @@ logging.basicConfig(
 logger = logging.getLogger("model_server")
 
 # Create FastAPI application
-app = FastAPI(title="Large Language Model API", description="Web API for large language model chat service")
+app = FastAPI(title="DeepSeek-R1 Chat API", description="Web API for DeepSeek-R1 chat service with RAG capabilities")
 
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # For production, this should be set to specific domains
+    allow_origins=["http://localhost:8080"],  # Explicitly allow frontend origin
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
+    expose_headers=["*"]
 )
 
 # Add middleware for request logging
@@ -53,6 +58,7 @@ async def log_requests(request: Request, call_next):
     start_time = time.time()
     request_id = str(int(start_time * 1000))
     logger.info(f"[{request_id}] Request started: {request.method} {request.url}")
+    logger.info(f"[{request_id}] Request headers: {request.headers}")
     
     try:
         response = await call_next(request)
@@ -81,12 +87,71 @@ class ChatResponse(BaseModel):
     response: str
     status: str
     retrieval_sources: Optional[List[Dict[str, Any]]] = None
+    thinking: Optional[str] = None  # Add field for CoT thinking
     
 # Constants
 DEFAULT_MODEL_PATH = "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B"  # Long live DeepSeek!
 MAX_GPU_MEMORY = "13GiB"  # Adjust based on your GPU capacity
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 DOCUMENTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "nyc_schools_data")
+
+# Command line argument parsing 
+parser = argparse.ArgumentParser(description="DeepSeek-R1 Model Server with RAG")
+parser.add_argument("--port", type=int, default=8000, help="Port to run the server on")
+parser.add_argument("--data_dir", type=str, default=None, help="Directory containing RAG data")
+parser.add_argument("--use_quantization", action="store_true", help="Use 4-bit quantization for efficiency")
+args = parser.parse_args()
+
+# If a data directory is specified, update related variables
+if args.data_dir:
+    DOCUMENTS_DIR = args.data_dir
+    print(f"Using custom data directory: {DOCUMENTS_DIR}")
+else:
+    DOCUMENTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "nyc_schools_data")
+    print(f"Using default data directory: {DOCUMENTS_DIR}")
+
+# Get port from command line arguments first, then environment, then default
+port = args.port
+if not port:
+    # Try to get port from environment variable, with careful error handling
+    try:
+        port_env = os.environ.get("PORT", "8000")
+        # Make sure the port is clean - strip any extra text
+        port_env = port_env.strip().split("\n")[-1] if "\n" in port_env else port_env.strip()
+        port = int(port_env)
+    except (ValueError, TypeError):
+        print("Error parsing PORT environment variable, using default 8000")
+        port = 8000
+
+print(f"Using port: {port}")
+
+# Helper function to clean model output by removing special tokens and markers
+def clean_output(text):
+    # Remove common special tokens
+    text = re.sub(r'<\|begin_of_sentence\|>', '', text)
+    text = re.sub(r'<\|end_of_sentence\|>', '', text)
+    text = re.sub(r'', '', text)
+    text = re.sub(r'', '', text)
+    
+    # Remove DeepSeek role markers
+    text = re.sub(r'<\|[a-zA-Z]+\|>', '', text)
+    
+    # Clean extra whitespace
+    text = re.sub(r'\n\s*\n', '\n\n', text)
+    text = re.sub(r'^\s+', '', text)
+    text = re.sub(r'\s+$', '', text)
+    
+    return text
+
+# Extract thinking content if present (for CoT models)
+def extract_thinking(text):
+    thinking_match = re.search(r'<think>(.*?)</think>', text, re.DOTALL)
+    if thinking_match:
+        thinking = thinking_match.group(1).strip()
+        # Remove the thinking section from the text
+        text = re.sub(r'<think>.*?</think>', '', text, flags=re.DOTALL)
+        return text, thinking
+    return text, None
 
 # Load model
 def load_model():
@@ -136,12 +201,6 @@ def load_model():
         logger.error(traceback.format_exc())
         raise e
 
-# Format messages for LLaMA-3 input
-def format_messages(messages):
-    # DeepSeek-R1 can use the built-in chat template
-    # This is simpler than manually formatting
-    return messages  # Return messages directly, tokenizer will handle formatting
-
 # Generate response
 def generate_response(messages, model, tokenizer, max_length=2048, temperature=0.7, top_p=0.9):
     try:
@@ -182,84 +241,118 @@ def generate_response(messages, model, tokenizer, max_length=2048, temperature=0
             logger.info(f"Raw output: {output}")
         
         # Extract only the assistant response
-        # Find the last assistant segment
-        response_start = output.rfind("<|assistant|>") + len("<|assistant|>\n")
-        response_end = output.rfind("</s>", response_start)
-        
-        # Add logging for response extraction
-        logger.info(f"Response extraction: start={response_start}, end={response_end}")
-        
-        if response_end == -1:
+        # For DeepSeek models, extract content between the last assistant marker and end of text
+        response_start = output.rfind("<|assistant|>")
+        if response_start != -1:
+            response_start += len("<|assistant|>")
             response = output[response_start:]
         else:
-            response = output[response_start:response_end]
+            # Fallback extraction if marker not found
+            response = output
+        
+        # Clean the response and extract thinking if present
+        response = clean_output(response)
+        response, thinking = extract_thinking(response)
         
         logger.info(f"Generated response length: {len(response)} chars")
-        return response.strip()
+        if thinking:
+            logger.info(f"Extracted thinking: {thinking[:100]}...")
+        
+        return response.strip(), thinking
     except Exception as e:
         logger.error(f"Error occurred while generating response: {str(e)}")
         logger.exception(e)  # Log full traceback for debugging
         raise e
 
 # Initialize FlashRAG retriever
-def init_retriever():
+def init_retriever(use_flashrag: bool = True):
+    """Initialize the retriever with FlashRAG if available."""
     try:
         logger.info("Initializing FlashRAG retriever...")
         
-        # Check processed data directory and index
-        processed_dir = os.path.join(DOCUMENTS_DIR, "processed")
-        if not os.path.exists(processed_dir):
-            logger.warning(f"Processed documents directory {processed_dir} does not exist. Creating...")
-            os.makedirs(processed_dir, exist_ok=True)
+        # Set up directories
+        corpus_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "nyc_schools_data")
+        processed_dir = os.path.join(corpus_dir, "processed")
+        corpus_file = os.path.join(processed_dir, "corpus.jsonl")
+        index_dir = os.path.join(processed_dir, "index")
         
-        # Check if index and corpus already exist before initializing retriever
-        index_path = os.path.join(processed_dir, "index")
-        corpus_path = os.path.join(processed_dir, "corpus.jsonl")
+        # Check for alternative index file (e5_Flat.index)
+        alt_index_file = os.path.join(processed_dir, "e5_Flat.index")
         
-        index_exists = os.path.exists(index_path)
-        corpus_exists = os.path.exists(corpus_path)
-        logger.info(f"Index exists: {index_exists}, Corpus exists: {corpus_exists}")
+        # Check if files exist
+        index_exists = os.path.exists(index_dir)
+        alt_index_exists = os.path.exists(alt_index_file)
+        corpus_exists = os.path.exists(corpus_file)
         
-        # Initialize retriever with fallback mechanism
-        try:
-            # First try with FlashRAG enabled
+        logger.info(f"Index exists: {index_exists}, Alt index exists: {alt_index_exists}, Corpus exists: {corpus_exists}")
+        
+        if use_flashrag:
             logger.info("Attempting to initialize retriever with FlashRAG...")
-            retriever = DocumentRetriever(
-                embedding_model="intfloat/e5-base-v2",
-                documents_dir=DOCUMENTS_DIR,
-                index_path=index_path,
-                use_flashrag=True
-            )
             
-            # Test retriever to ensure it's working
-            if index_exists and corpus_exists:
-                logger.info("Testing retriever with a sample query...")
-                test_results = retriever.retrieve("test query", top_k=1)
-                logger.info(f"Retriever test result count: {len(test_results)}")
+            if index_exists:
+                # Use the regular index directory
+                from rag.retriever import FlashRAGRetriever
+                retriever = FlashRAGRetriever(
+                    corpus_path=corpus_file,
+                    index_path=index_dir,
+                    model_name_or_path="intfloat/e5-base-v2"
+                )
+                logger.info("FlashRAG retriever initialized with standard index")
                 return retriever
-                
-        except Exception as e:
-            logger.error(f"Error initializing FlashRAG retriever: {str(e)}")
-            logger.error(traceback.format_exc())
-        
-        # If we get here, either the test failed or an exception occurred
-        # Fall back to basic retriever
-        logger.warning("Falling back to basic retrieval without FlashRAG")
-        return DocumentRetriever(
-            documents_dir=DOCUMENTS_DIR,
-            use_flashrag=False
-        )
+            elif alt_index_exists:
+                # Create a symlink or copy the alternative index file
+                try:
+                    # Create index directory if it doesn't exist
+                    if not os.path.exists(index_dir):
+                        os.makedirs(index_dir)
+                    
+                    # Create a symlink from the alt index to the expected location
+                    index_file_in_dir = os.path.join(index_dir, "index.faiss")
+                    if not os.path.exists(index_file_in_dir):
+                        logger.info(f"Creating symlink from {alt_index_file} to {index_file_in_dir}")
+                        
+                        # For Windows compatibility, use copy instead of symlink
+                        import shutil
+                        shutil.copy(alt_index_file, index_file_in_dir)
+                        
+                        # Also copy the corpus.jsonl to the index directory if needed
+                        corpus_in_index = os.path.join(index_dir, "corpus.jsonl")
+                        if not os.path.exists(corpus_in_index):
+                            shutil.copy(corpus_file, corpus_in_index)
+                    
+                    # Now init with the index directory
+                    from rag.retriever import FlashRAGRetriever
+                    retriever = FlashRAGRetriever(
+                        corpus_path=corpus_file,
+                        index_path=index_dir,
+                        model_name_or_path="intfloat/e5-base-v2"
+                    )
+                    logger.info("FlashRAG retriever initialized with converted alternative index")
+                    return retriever
+                except Exception as e:
+                    logger.error(f"Failed to use alternative index: {str(e)}")
+                    raise
     except Exception as e:
-        logger.error(f"Fatal error initializing retriever: {str(e)}")
-        logger.error(traceback.format_exc())
-        # Create a dummy retriever that just returns empty results to prevent the server from crashing
-        class DummyRetriever:
-            def retrieve(self, *args, **kwargs):
-                return []
-            def batch_search(self, *args, **kwargs):
-                return [[]]
-        logger.warning("Using dummy retriever that returns empty results")
-        return DummyRetriever()
+        logger.error(f"Failed to initialize FlashRAG retriever: {str(e)}")
+        logger.warning("Falling back to basic retrieval without FlashRAG")
+    
+    # Fallback to regular retriever without FlashRAG
+    from rag.retriever import BasicRetriever
+    retriever = BasicRetriever(model_name_or_path="intfloat/e5-base-v2")
+    
+    # Load NYC schools data directly into the BasicRetriever
+    if corpus_exists:
+        try:
+            logger.info(f"Loading corpus data from {corpus_file}")
+            with open(corpus_file, 'r', encoding='utf-8') as f:
+                corpus_data = [json.loads(line) for line in f]
+            
+            logger.info(f"Adding {len(corpus_data)} documents to BasicRetriever")
+            retriever.add_documents(corpus_data)
+        except Exception as e:
+            logger.error(f"Error loading corpus data: {str(e)}")
+    
+    return retriever
 
 # Application startup event
 model = None
@@ -349,12 +442,12 @@ async def chat(request: ChatRequest):
                 if not has_system_msg:
                     augmented_messages.insert(0, {
                         "role": "system",
-                        "content": f"You are a helpful assistant. {context}"
+                        "content": f"You are a helpful assistant. Use the following information to answer the user's question:\n\n{context}"
                     })
                 
                 # Generate response with context-augmented messages
                 generation_start_time = time.time()
-                response = generate_response(
+                response, thinking = generate_response(
                     augmented_messages,
                     model,
                     tokenizer,
@@ -372,7 +465,8 @@ async def chat(request: ChatRequest):
                 return ChatResponse(
                     response=response,
                     status="success",
-                    retrieval_sources=retrieval_results
+                    retrieval_sources=retrieval_results,
+                    thinking=thinking
                 )
             else:
                 # If retrieval query cannot be determined, fall back to regular response
@@ -381,7 +475,7 @@ async def chat(request: ChatRequest):
         # If not using retrieval, return regular response
         logger.info("Generating response without retrieval")
         generation_start_time = time.time()
-        response = generate_response(
+        response, thinking = generate_response(
             request.messages, 
             model, 
             tokenizer, 
@@ -398,7 +492,8 @@ async def chat(request: ChatRequest):
         
         return ChatResponse(
             response=response, 
-            status="success"
+            status="success",
+            thinking=thinking
         )
     except Exception as e:
         logger.error(f"Error in /api/chat: {str(e)}")
@@ -425,13 +520,10 @@ async def health_check():
 @app.get("/")
 async def root():
     """Root endpoint for basic connection testing"""
-    return {"message": "Model Server API is running. Use /api/chat for chat functionality."}
+    return {"message": "DeepSeek-R1 Model Server API is running. Use /api/chat for chat functionality."}
 
 # Main function
 if __name__ == "__main__":
-    # Get port from environment variable, default to 8000
-    port = int(os.environ.get("PORT", 8000))
-    
-    # Start server
-    logger.info(f"Starting uvicorn server on port {port}")
-    uvicorn.run(app, host="0.0.0.0", port=port, log_level="info") 
+    # Use the port we carefully determined at the top
+    print(f"Starting uvicorn server on port {port}")
+    uvicorn.run(app, host="0.0.0.0", port=port, log_level="info")
