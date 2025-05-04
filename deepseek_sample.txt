@@ -1,6 +1,6 @@
 效果演示：
 本地部署 DeepSeek
-Hi, I'm seeking for primary schools in NYC. I live near 370 Jay Street Metrotech, Brooklyn. I want my child to attend school of variety and happiness. Can you choose some for me?
+Hi, I'm seeking for primary schools in NYC. I live near the Central Park. I want my child to attend school of variety and happiness. Can you choose some for me?
 
 RAG+DS：
 
@@ -270,3 +270,105 @@ __webpack_require__.O	@	app.js:1100
 
 WebSocketClient.js:18 WebSocket connection to 'ws://10.32.35.162:8080/ws' failed: 
 ﻿
+
+
+
+
+
+427
+MainLayout: Loading chat history...
+chat.js:351 Loading chat history
+chat.js:19 Sending request to: /health 
+chat.js:41 Received response: /health 
+chat.js:89 Backend connection normal
+chat.js:19 Sending request to: /chat-history 
+:8080/favicon.ico:1 
+            
+            
+            Failed to load resource: the server responded with a status of 404 (Not Found)
+WebSocketService.js:228 [WebSocketService] Connecting to WebSocket at ws://localhost:8080/ws
+WebSocketService.js:228 [WebSocketService] WebSocket connection established
+main.js:11 WebSocket connected: Object
+WebSocketService.js:228 [WebSocketService] Message received: Object
+main.js:20 WebSocket message received: Object
+WebSocketService.js:228 [WebSocketService] Message received: Object
+main.js:20 WebSocket message received: Object
+WebSocketService.js:228 [WebSocketService] Message received: Object
+main.js:20 WebSocket message received: Object
+WebSocketService.js:228 [WebSocketService] Message received: Object
+main.js:20 WebSocket message received: Object
+WebSocketService.js:228 [WebSocketService] Message received: Object
+main.js:20 WebSocket message received: Object
+WebSocketService.js:228 [WebSocketService] Message received: Object
+main.js:20 WebSocket message received: Object
+WebSocketService.js:228 [WebSocketService] Message received: Object
+main.js:20 WebSocket message received: Object
+chat.js:41 Received response: /chat-history 
+chat.js:359 Chat history response: Array(21)
+MainLayout.vue:90 MainLayout: Chat history loaded: 21 sessions
+WebSocketClient.js:13  WebSocket connection to 'ws://10.32.35.159:8080/ws' failed: 
+WebSocketClient @ WebSocketClient.js:13
+Chatbot.vue:57 Sending message from Chatbot, redirecting to ChatPage: Hi, I'm seeking for primary schools in NYC. I live near 370 Jay Street Metrotech, Brooklyn. I want my child to attend school of variety and happiness. Can you choose some for me?
+chat.js:351 Loading chat history
+MainLayout.vue:88 MainLayout: Loading chat history...
+chat.js:351 Loading chat history
+2chat.js:19 Sending request to: /chat-history 
+chat.js:41 Received response: /chat-history 
+chat.js:359 Chat history response: Array(21)
+ChatPage.vue:438 Loading chat history...
+[新] 使用 Edge 中的 Copilot 来解释控制台错误: 单击
+         
+         以说明错误。
+        了解更多信息
+        不再显示
+WebSocketClient.js:13  WebSocket connection to 'ws://10.32.35.159:8080/ws' failed: 
+WebSocketClient @ WebSocketClient.js:13
+chat.js:41 Received response: /chat-history 
+chat.js:359 Chat history response: (21) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+MainLayout.vue:90 MainLayout: Chat history loaded: 21 sessions
+ChatPage.vue:441 Loaded 21 chat sessions
+chat.js:19 Sending request to: /health 
+chat.js:41 Received response: /health 
+chat.js:89 Backend connection normal
+chat.js:166 Started new session: Proxy(Object) {messages: Array(0), sessionId: 1745795157468, timestamp: '2025-04-27T23:05:57.468Z'}
+chat.js:183 Added message to session: {type: 'user', content: "Hi, I'm seeking for primary schools in NYC. I live…ariety and happiness. Can you choose some for me?"}
+chat.js:184 Current message count: 1
+ChatPage.vue:527 
+            
+            
+            POST http://localhost:3001/api/chat 503 (Service Unavailable)
+dispatchXhrRequest @ xhr.js:195
+xhr @ xhr.js:15
+dispatchRequest @ dispatchRequest.js:51
+_request @ Axios.js:187
+request @ Axios.js:40
+httpMethod @ Axios.js:226
+wrap @ bind.js:5
+_callee6$ @ ChatPage.vue:527
+tryCatch @ regeneratorRuntime.js:45
+eval @ regeneratorRuntime.js:133
+eval @ regeneratorRuntime.js:74
+asyncGeneratorStep @ asyncToGenerator.js:3
+_next @ asyncToGenerator.js:17
+Promise.then
+asyncGeneratorStep @ asyncToGenerator.js:8
+_next @ asyncToGenerator.js:17
+ChatPage.vue:546  Error handling initial message: AxiosError {message: 'Request failed with status code 503', name: 'AxiosError', code: 'ERR_BAD_RESPONSE', config: {…}, request: XMLHttpRequest, …}
+_callee6$ @ ChatPage.vue:546
+tryCatch @ regeneratorRuntime.js:45
+eval @ regeneratorRuntime.js:133
+eval @ regeneratorRuntime.js:74
+asyncGeneratorStep @ asyncToGenerator.js:3
+_throw @ asyncToGenerator.js:20
+Promise.then
+asyncGeneratorStep @ asyncToGenerator.js:8
+_next @ asyncToGenerator.js:17
+Promise.then
+asyncGeneratorStep @ asyncToGenerator.js:8
+_next @ asyncToGenerator.js:17
+chat.js:183 Added message to session: {type: 'bot', content: 'Sorry, there was an error processing your request. Please try again.', error: true}content: "Sorry, there was an error processing your request. Please try again."error: truetype: "bot"[[Prototype]]: Object
+chat.js:184 Current message count: 2
+WebSocketClient.js:13  WebSocket connection to 'ws://10.32.35.159:8080/ws' failed: 
+WebSocketClient @ WebSocketClient.js:13
+initSocket @ socket.js:27
+eval @ socket.js:51

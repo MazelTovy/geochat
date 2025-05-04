@@ -3,7 +3,7 @@
 
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, StreamingResponse
 from pydantic import BaseModel
 import torch
 import uvicorn
@@ -19,6 +19,9 @@ import numpy as np
 
 # Import necessary libraries for DeepSeek-R1
 from transformers import AutoModelForCausalLM, AutoTokenizer
+from vllm import LLM, SamplingParams
+from openai import OpenAI
+import httpx
 
 # Import RAG components
 from rag.retriever import DocumentRetriever, format_retrieved_documents
@@ -26,6 +29,15 @@ from rag.retriever import DocumentRetriever, format_retrieved_documents
 # Set environment variables at the top of the file to use scratch dir
 os.environ["HF_HOME"] = "/scratch/sx2490/huggingface_cache"  # Use scratch directory for larger quota
 os.makedirs("/scratch/sx2490/huggingface_cache", exist_ok=True)
+
+openai_api_key = "EMPTY"
+openai_api_base = "http://localhost:8000/v1"
+client = OpenAI(
+    api_key=openai_api_key, 
+    base_url=openai_api_base,
+    http_client=httpx.Client(verify=False)  # 禁用SSL验证
+)
+
 
 # Configure detailed logging
 os.makedirs("/scratch/sx2490/Logs/model_server", exist_ok=True)
@@ -51,6 +63,102 @@ app.add_middleware(
     allow_headers=["*"],
     expose_headers=["*"]
 )
+
+# 确保VLLM_SERVER_URL指向正确的端口
+VLLM_SERVER_URL = "http://localhost:8000/v1/chat/completions"
+
+async def generate_response_vllm_api(messages, max_length=2048, temperature=0.7, top_p=0.9):
+    """Send request to vllm api with reasoning support"""
+    payload = {
+        "model": "DeepSeek-R1", # 使用服务器启动时的served-model-name
+        "messages": messages,
+        "max_tokens": max_length,
+        "temperature": temperature,
+        "top_p": top_p,
+        "stream": True
+    }
+    
+    try:
+        async with httpx.AsyncClient(timeout=300.0, verify=False) as client:
+            response = await client.post(VLLM_SERVER_URL, json=payload)
+            response.raise_for_status()
+            result = response.json()
+            
+            # 从响应中提取内容和reasoning
+            content = result["choices"][0]["message"]["content"]
+            reasoning_content = result["choices"][0]["message"].get("reasoning_content")
+            
+            # 可能的logprobs
+            logprobs = None
+            if "logprobs" in result["choices"][0]:
+                logprobs = result["choices"][0]["logprobs"]
+            
+            logger.info(f"vLLM API response received: {len(content)} chars")
+            if reasoning_content:
+                logger.info(f"Reasoning content: {len(reasoning_content)} chars")
+            
+            return content, reasoning_content, logprobs
+    except Exception as e:
+        logger.error(f"Error in vLLM API call: {str(e)}")
+        logger.error(traceback.format_exc())
+        raise e
+
+async def generate_response_vllm_api_stream(messages, max_length=2048, temperature=0.7, top_p=0.9):
+    """Send request to vllm api with streaming support"""
+    payload = {
+        "model": "DeepSeek-R1", 
+        "messages": messages,
+        "max_tokens": max_length,
+        "temperature": temperature,
+        "top_p": top_p,
+        "stream": True  # 启用流式输出
+    }
+    
+    full_content = ""
+    full_reasoning = ""
+    
+    try:
+        async with httpx.AsyncClient(timeout=300.0, verify=False) as client:
+            async with client.stream("POST", VLLM_SERVER_URL, json=payload) as response:
+                response.raise_for_status()
+                
+                async for chunk in response.aiter_lines():
+                    if not chunk.strip():
+                        continue
+                    
+                    # 去除 "data: " 前缀
+                    if chunk.startswith("data: "):
+                        chunk = chunk[6:]
+                    
+                    # 跳过结束标志
+                    if chunk == "[DONE]":
+                        break
+                    
+                    try:
+                        chunk_data = json.loads(chunk)
+                        delta = chunk_data["choices"][0]["delta"]
+                        
+                        # 处理内容增量
+                        if "content" in delta and delta["content"]:
+                            full_content += delta["content"]
+                        
+                        # 处理推理内容增量
+                        if "reasoning_content" in delta and delta["reasoning_content"]:
+                            full_reasoning += delta["reasoning_content"]
+                            
+                    except json.JSONDecodeError:
+                        logger.warning(f"Failed to decode chunk: {chunk}")
+                        continue
+            
+        logger.info(f"vLLM API streaming response completed: {len(full_content)} chars")
+        if full_reasoning:
+            logger.info(f"Reasoning content: {len(full_reasoning)} chars")
+        
+        return full_content, full_reasoning, None  # 流式模式下通常没有logprobs
+    except Exception as e:
+        logger.error(f"Error in vLLM API streaming call: {str(e)}")
+        logger.error(traceback.format_exc())
+        raise e
 
 # Add middleware for request logging
 @app.middleware("http")
@@ -88,9 +196,10 @@ class ChatResponse(BaseModel):
     status: str
     retrieval_sources: Optional[List[Dict[str, Any]]] = None
     thinking: Optional[str] = None  # Add field for CoT thinking
+    logprobs: Optional[List[float]] = None
     
 # Constants
-DEFAULT_MODEL_PATH = "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B"  # Long live DeepSeek!
+DEFAULT_MODEL_PATH = "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"  # Long live DeepSeek!
 MAX_GPU_MEMORY = "13GiB"  # Adjust based on your GPU capacity
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 DOCUMENTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "nyc_schools_data")
@@ -100,6 +209,7 @@ parser = argparse.ArgumentParser(description="DeepSeek-R1 Model Server with RAG"
 parser.add_argument("--port", type=int, default=8000, help="Port to run the server on")
 parser.add_argument("--data_dir", type=str, default=None, help="Directory containing RAG data")
 parser.add_argument("--use_quantization", action="store_true", help="Use 4-bit quantization for efficiency")
+parser.add_argument("--vllm_port", type=int, default=8000, help="Port where vLLM API is running")
 args = parser.parse_args()
 
 # If a data directory is specified, update related variables
@@ -153,6 +263,30 @@ def extract_thinking(text):
         return text, thinking
     return text, None
 
+vllm_model = None          # 全局句柄
+
+def load_vllm_model():
+    """Load DeepSeek-R1 with vLLM."""
+    global vllm_model
+    logger.info("Loading DeepSeek-R1 with vLLM …")
+    t0 = time.time()
+
+    vllm_model = LLM(
+        model=DEFAULT_MODEL_PATH,
+        dtype="float16",              # fp16
+        # 可选: quantization="awq"
+    )
+
+    tokenizer = AutoTokenizer.from_pretrained(
+        DEFAULT_MODEL_PATH,
+        trust_remote_code=True
+    )
+    if tokenizer.pad_token is None:
+        tokenizer.pad_token = tokenizer.eos_token
+
+    logger.info(f"vLLM loaded in {time.time()-t0:.1f}s")
+    return vllm_model, tokenizer
+
 # Load model
 def load_model():
     logger.info(f"Loading DeepSeek-R1 model on {DEVICE}...")
@@ -200,6 +334,40 @@ def load_model():
         logger.error(f"Failed to load model: {str(e)}")
         logger.error(traceback.format_exc())
         raise e
+
+def generate_response_vllm(messages,
+                           tokenizer,
+                           max_length=2048,
+                           temperature=0.7,
+                           top_p=0.9):
+    """Generate text + token-level logprobs via vLLM."""
+    # 1. prompt 拼接
+    prompt = tokenizer.apply_chat_template(
+        messages, tokenize=False, add_generation_prompt=True
+    )
+
+    # 2. sampling 参数 – reason_outputs=True
+    sampling_params = SamplingParams(
+        max_tokens=max_length,
+        temperature=temperature,
+        top_p=top_p,
+        reasoning_outputs=True,       # ⭐ 关键开关
+    )
+
+    # 3. 调用 vLLM
+    outputs = vllm_model.generate(prompt, sampling_params)
+    out = outputs[0].outputs[0]       # 仅取单条
+
+    # 4. 解析
+    raw_text = out.text
+    response_clean = clean_output(raw_text)
+    response_clean, thinking = extract_thinking(response_clean)
+
+    return dict(
+        text=response_clean.strip(),
+        thinking=thinking,
+        logprobs=out.logprobs          # 这里是 token 对齐的 logprobs 列表
+    )
 
 # Generate response
 def generate_response(messages, model, tokenizer, max_length=2048, temperature=0.7, top_p=0.9):
@@ -364,19 +532,13 @@ from contextlib import asynccontextmanager
 
 @asynccontextmanager
 async def lifespan(app):
-    # Startup: load model and initialize retriever
-    global model, tokenizer, retriever
-    try:
-        logger.info("=== Starting model server ===")
-        model, tokenizer = load_model()
-        retriever = init_retriever()
-        logger.info("Server initialization complete")
-    except Exception as e:
-        logger.error(f"Error during startup: {str(e)}")
-        logger.error(traceback.format_exc())
+    global retriever
+    logger.info("=== Starting model server ===")
+    retriever = init_retriever()
+    logger.info("Server initialization complete")
     yield
-    # Shutdown: cleanup
     logger.info("=== Shutting down model server ===")
+
 
 app.router.lifespan_context = lifespan
 
@@ -387,24 +549,10 @@ async def chat(request: ChatRequest):
     logger.info(f"Chat request received: {len(request.messages)} messages, use_retrieval={request.use_retrieval}")
     
     try:
-        # Check if model is loaded
-        if model is None or tokenizer is None:
-            logger.error("Model or tokenizer not loaded")
-            raise HTTPException(status_code=503, detail="Model not loaded. Please try again later.")
-            
-        # Log first and last user message for context (truncated for privacy)
-        if request.messages:
-            first_msg = request.messages[0].get('content', '')[:100]
-            last_msg = request.messages[-1].get('content', '')[:100]
-            logger.info(f"First message: '{first_msg}...'")
-            logger.info(f"Last message: '{last_msg}...'")
-        
         # Handle retrieval if requested
         if request.use_retrieval:
-            # Determine query for retrieval
             query_for_retrieval = request.query_for_retrieval
             
-            # If no retrieval query is specified, use the last user message
             if not query_for_retrieval:
                 for msg in reversed(request.messages):
                     if msg.get("role") == "user":
@@ -414,7 +562,6 @@ async def chat(request: ChatRequest):
             if query_for_retrieval:
                 logger.info(f"Retrieval query: '{query_for_retrieval[:100]}...'")
                 
-                # Get retrieval results
                 retrieval_start_time = time.time()
                 retrieval_results = retriever.retrieve(
                     query_for_retrieval, 
@@ -424,33 +571,27 @@ async def chat(request: ChatRequest):
                 
                 logger.info(f"Retrieved {len(retrieval_results)} documents in {retrieval_time:.2f}s")
                 
-                # Format retrieval results as context
                 context = format_retrieved_documents(retrieval_results)
                 
-                # Add system message as context
                 has_system_msg = False
                 augmented_messages = []
                 
                 for msg in request.messages:
                     if msg.get("role") == "system":
-                        # If there's already a system message, add context to it
                         has_system_msg = True
                         msg["content"] = f"{msg['content']}\n\n{context}"
                     augmented_messages.append(msg)
                 
-                # If no system message exists, add a new one
                 if not has_system_msg:
                     augmented_messages.insert(0, {
                         "role": "system",
                         "content": f"You are a helpful assistant. Use the following information to answer the user's question:\n\n{context}"
                     })
                 
-                # Generate response with context-augmented messages
                 generation_start_time = time.time()
-                response, thinking = generate_response(
+                # Use streaming function instead
+                response, reasoning_content, logprobs = await generate_response_vllm_api_stream(
                     augmented_messages,
-                    model,
-                    tokenizer,
                     max_length=request.max_length,
                     temperature=request.temperature,
                     top_p=request.top_p
@@ -466,19 +607,18 @@ async def chat(request: ChatRequest):
                     response=response,
                     status="success",
                     retrieval_sources=retrieval_results,
-                    thinking=thinking
+                    thinking=reasoning_content,
+                    logprobs=logprobs
                 )
             else:
-                # If retrieval query cannot be determined, fall back to regular response
                 logger.warning("Retrieval was requested but no query was provided or could be inferred.")
-                
+        
         # If not using retrieval, return regular response
         logger.info("Generating response without retrieval")
         generation_start_time = time.time()
-        response, thinking = generate_response(
+        # Use streaming function instead
+        response, reasoning_content, logprobs = await generate_response_vllm_api_stream(
             request.messages, 
-            model, 
-            tokenizer, 
             max_length=request.max_length,
             temperature=request.temperature,
             top_p=request.top_p
@@ -493,25 +633,88 @@ async def chat(request: ChatRequest):
         return ChatResponse(
             response=response, 
             status="success",
-            thinking=thinking
+            thinking=reasoning_content,
+            logprobs=logprobs
         )
     except Exception as e:
         logger.error(f"Error in /api/chat: {str(e)}")
         logger.error(traceback.format_exc())
         raise HTTPException(status_code=500, detail=str(e))
 
+# Add a streaming endpoint with Server-Sent Events
+@app.post("/api/chat/stream")
+async def chat_stream(request: ChatRequest):
+    logger.info(f"Streaming chat request received: {len(request.messages)} messages")
+    
+    async def event_generator():
+        try:
+            # Initialize streaming payload
+            payload = {
+                "model": "DeepSeek-R1", 
+                "messages": request.messages,
+                "max_tokens": request.max_length,
+                "temperature": request.temperature,
+                "top_p": request.top_p,
+                "stream": True
+            }
+            
+            # Send the request to vLLM with streaming enabled
+            async with httpx.AsyncClient(timeout=300.0, verify=False) as client:
+                async with client.stream("POST", VLLM_SERVER_URL, json=payload) as response:
+                    response.raise_for_status()
+                    
+                    # Stream each chunk back to the client as SSE
+                    async for chunk in response.aiter_lines():
+                        if not chunk.strip():
+                            continue
+                        
+                        # Skip the "data: " prefix if it exists
+                        if chunk.startswith("data: "):
+                            chunk = chunk[6:]
+                        
+                        # Skip ending marker
+                        if chunk == "[DONE]":
+                            yield f"data: [DONE]\n\n"
+                            break
+                        
+                        # Forward the chunk
+                        yield f"data: {chunk}\n\n"
+                        
+        except Exception as e:
+            logger.error(f"Error in streaming: {str(e)}")
+            error_json = json.dumps({"error": str(e)})
+            yield f"data: {error_json}\n\n"
+    
+    return StreamingResponse(
+        event_generator(),
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "Connection": "keep-alive",
+            "Content-Type": "text/event-stream"
+        }
+    )
+
 @app.get("/api/health")
 async def health_check():
     retrieval_ready = retriever is not None
-    model_loaded = model is not None
     
-    logger.info(f"Health check: model_loaded={model_loaded}, retrieval_ready={retrieval_ready}, device={DEVICE}")
+    # 检查vLLM服务是否可用
+    vllm_available = False
+    try:
+        async with httpx.AsyncClient(timeout=5.0, verify=False) as client:
+            response = await client.get("http://localhost:8000/v1/models")
+            vllm_available = response.status_code == 200
+    except Exception as e:
+        logger.error(f"Error checking vLLM availability: {str(e)}")
     
-    status = "healthy" if model_loaded else "unavailable"
+    logger.info(f"Health check: vllm_available={vllm_available}, retrieval_ready={retrieval_ready}, device={DEVICE}")
+    
+    status = "healthy" if vllm_available and retrieval_ready else "unavailable"
     
     return {
         "status": status, 
-        "model_loaded": model_loaded, 
+        "vllm_available": vllm_available,
         "device": DEVICE,
         "retrieval_ready": retrieval_ready,
         "server_time": time.strftime("%Y-%m-%d %H:%M:%S")
