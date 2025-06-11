@@ -111,7 +111,7 @@ async def generate_response_vllm_api_stream(messages, max_length=2048, temperatu
         "max_tokens": max_length,
         "temperature": temperature,
         "top_p": top_p,
-        "stream": True  # 启用流式输出
+        "stream": True  # Enable streaming
     }
     
     full_content = ""
@@ -126,11 +126,11 @@ async def generate_response_vllm_api_stream(messages, max_length=2048, temperatu
                     if not chunk.strip():
                         continue
                     
-                    # 去除 "data: " 前缀
+                    # Remove "data: " prefix
                     if chunk.startswith("data: "):
                         chunk = chunk[6:]
                     
-                    # 跳过结束标志
+                    # Skip end marker
                     if chunk == "[DONE]":
                         break
                     
@@ -138,11 +138,11 @@ async def generate_response_vllm_api_stream(messages, max_length=2048, temperatu
                         chunk_data = json.loads(chunk)
                         delta = chunk_data["choices"][0]["delta"]
                         
-                        # 处理内容增量
+                        # Process content increment
                         if "content" in delta and delta["content"]:
                             full_content += delta["content"]
                         
-                        # 处理推理内容增量
+                        # Process reasoning content increment
                         if "reasoning_content" in delta and delta["reasoning_content"]:
                             full_reasoning += delta["reasoning_content"]
                             
@@ -154,7 +154,7 @@ async def generate_response_vllm_api_stream(messages, max_length=2048, temperatu
         if full_reasoning:
             logger.info(f"Reasoning content: {len(full_reasoning)} chars")
         
-        return full_content, full_reasoning, None  # 流式模式下通常没有logprobs
+        return full_content, full_reasoning, None  # Streaming mode usually has no logprobs
     except Exception as e:
         logger.error(f"Error in vLLM API streaming call: {str(e)}")
         logger.error(traceback.format_exc())
