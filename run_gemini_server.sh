@@ -8,7 +8,7 @@ echo "Starting Gemini Model Server..."
 export PYTHONPATH=/scratch/sx2490/geochat_gs:$PYTHONPATH
 
 # 请在这里设置您的 Gemini API Key
-export GEMINI_API_KEY="AIzaSyCa_W1oSN7oxMSvY4vYj44madQo6JztpRA"
+export GEMINI_API_KEY="YOUR_GEMINI_API"
 
 # 检查API Key
 if [ "$GEMINI_API_KEY" = "YOUR_GEMINI_API_KEY_HERE" ]; then
