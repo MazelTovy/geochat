@@ -26,7 +26,7 @@ export TORCH_HOME=$SCRATCH_TORCH_CACHE
 export TRANSFORMERS_CACHE=$SCRATCH_TRANSFORMERS_CACHE
 export PIP_CACHE_DIR=$SCRATCH_PIP_CACHE
 export PYTHONPATH="/scratch/sx2490/geochat_gs:$PYTHONPATH"
-export GEMINI_API_KEY="AIzaSyCa_W1oSN7oxMSvY4vYj44madQo6JztpRA"
+export GEMINI_API_KEY="Your_api_key"
 
 # Change to geochat_gs directory
 cd /scratch/sx2490/geochat_gs
